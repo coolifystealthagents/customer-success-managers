@@ -1,0 +1,167 @@
+{
+  "site": "CustomerSuccessManagers.com",
+  "repository": "coolifystealthagents/customer-success-managers",
+  "branch": "main",
+  "baseSha": "3f495dbb107d71ff851387b8d24543c00a5f4d08",
+  "publicationDate": "2026-10-12",
+  "counts": {
+    "blog": 12,
+    "research": 5,
+    "thumbnails": 17
+  },
+  "registryPaths": [
+    "lib/october-12/blogPosts.ts",
+    "lib/october-12/researchPosts.ts",
+    "lib/content.ts"
+  ],
+  "routePaths": [
+    "app/blog/[slug]/page.tsx",
+    "app/research/[slug]/page.tsx"
+  ],
+  "indexPaths": [
+    "app/blog/page.tsx",
+    "app/research/page.tsx"
+  ],
+  "sidebarPaths": [
+    "app/blog/[slug]/page.tsx",
+    "app/research/[slug]/page.tsx"
+  ],
+  "articles": [
+    {
+      "section": "Blog",
+      "title": "Creating an Acceptance Gate for Customer Onboarding",
+      "slug": "customer-onboarding-acceptance-gate",
+      "sourcePath": "lib/october-12/blogPosts.ts",
+      "thumbnailPath": "public/october-12/customer-onboarding-acceptance-gate.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Building an Assumption Register for Customer Success Plans",
+      "slug": "success-plan-assumption-register",
+      "sourcePath": "lib/october-12/blogPosts.ts",
+      "thumbnailPath": "public/october-12/success-plan-assumption-register.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Keeping Customer Health Scores Inside Their Evidence Boundary",
+      "slug": "customer-health-score-evidence-boundary",
+      "sourcePath": "lib/october-12/blogPosts.ts",
+      "thumbnailPath": "public/october-12/customer-health-score-evidence-boundary.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Handing Off Renewal Risk Without Losing Evidence",
+      "slug": "renewal-risk-handoff",
+      "sourcePath": "lib/october-12/blogPosts.ts",
+      "thumbnailPath": "public/october-12/renewal-risk-handoff.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Preparing an Executive Business Review Source Pack",
+      "slug": "executive-business-review-source-pack",
+      "sourcePath": "lib/october-12/blogPosts.ts",
+      "thumbnailPath": "public/october-12/executive-business-review-source-pack.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Maintaining a Product Adoption Barrier Register",
+      "slug": "product-adoption-barrier-register",
+      "sourcePath": "lib/october-12/blogPosts.ts",
+      "thumbnailPath": "public/october-12/product-adoption-barrier-register.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Running a Customer Commitment Ledger Across Teams",
+      "slug": "customer-commitment-ledger",
+      "sourcePath": "lib/october-12/blogPosts.ts",
+      "thumbnailPath": "public/october-12/customer-commitment-ledger.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Preserving Account Continuity When a Customer Champion Leaves",
+      "slug": "champion-transition-continuity",
+      "sourcePath": "lib/october-12/blogPosts.ts",
+      "thumbnailPath": "public/october-12/champion-transition-continuity.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Writing a Customer Escalation Recovery Brief",
+      "slug": "escalation-recovery-brief",
+      "sourcePath": "lib/october-12/blogPosts.ts",
+      "thumbnailPath": "public/october-12/escalation-recovery-brief.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Coding Voice-of-Customer Evidence Without Flattening Context",
+      "slug": "voice-of-customer-coding",
+      "sourcePath": "lib/october-12/blogPosts.ts",
+      "thumbnailPath": "public/october-12/voice-of-customer-coding.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Reviewing Customer Data Access for Success Teams",
+      "slug": "customer-data-access-review",
+      "sourcePath": "lib/october-12/blogPosts.ts",
+      "thumbnailPath": "public/october-12/customer-data-access-review.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Separating Expansion Readiness from Sales Optimism",
+      "slug": "expansion-readiness-evidence",
+      "sourcePath": "lib/october-12/blogPosts.ts",
+      "thumbnailPath": "public/october-12/expansion-readiness-evidence.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Research",
+      "title": "Agreement in Customer Health Classification",
+      "slug": "customer-health-classification-agreement-study",
+      "sourcePath": "lib/october-12/researchPosts.ts",
+      "thumbnailPath": "public/october-12/customer-health-classification-agreement-study.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Research",
+      "title": "Completeness of Customer Onboarding Acceptance Evidence",
+      "slug": "onboarding-acceptance-evidence-study",
+      "sourcePath": "lib/october-12/researchPosts.ts",
+      "thumbnailPath": "public/october-12/onboarding-acceptance-evidence-study.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Research",
+      "title": "Freshness of Evidence Used in Renewal Risk Reviews",
+      "slug": "renewal-risk-signal-freshness-study",
+      "sourcePath": "lib/october-12/researchPosts.ts",
+      "thumbnailPath": "public/october-12/renewal-risk-signal-freshness-study.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Research",
+      "title": "Reproducibility of Customer Commitment Closure",
+      "slug": "customer-commitment-closure-study",
+      "sourcePath": "lib/october-12/researchPosts.ts",
+      "thumbnailPath": "public/october-12/customer-commitment-closure-study.webp",
+      "registryPath": "lib/content.ts"
+    },
+    {
+      "section": "Research",
+      "title": "Reliability of Voice-of-Customer Evidence Coding",
+      "slug": "voice-of-customer-coding-reliability-study",
+      "sourcePath": "lib/october-12/researchPosts.ts",
+      "thumbnailPath": "public/october-12/voice-of-customer-coding-reliability-study.webp",
+      "registryPath": "lib/content.ts"
+    }
+  ]
+}

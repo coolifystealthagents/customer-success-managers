@@ -1,7 +1,10 @@
 import { site } from './site';
 import type { BlogPost, ResearchPost } from './types';
+import { october12BlogPosts } from './october-12/blogPosts';
+import { october12ResearchPosts } from './october-12/researchPosts';
 
 export const blogPosts: BlogPost[] = [
+  ...october12BlogPosts,
   {
     "slug": "customer-success-director-vs-csm-va",
     "title": "Customer success director vs CSM VA",
@@ -469,6 +472,7 @@ export const blogPosts: BlogPost[] = [
   }
 ];
 export const researchPosts: ResearchPost[] = [
+  ...october12ResearchPosts,
   {
     "slug": "customer-onboarding-support-workflow-boundary-review-1",
     "title": "Customer onboarding support: workflow boundary review",
