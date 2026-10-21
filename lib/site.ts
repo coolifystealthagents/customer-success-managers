@@ -1,108 +1,15 @@
 import type { SiteConfig } from './types';
 export const site: SiteConfig = {
-  "name": "Customer Success Managers",
-  "domain": "customersuccessmanagers.com",
-  "siteId": "customer-success-managers",
-  "niche": "customer success teams",
-  "audience": "customer success leaders, SaaS operators, and account teams",
-  "design": "orbit",
-  "eyebrow": "Customer success organized around outcomes",
-  "hero": "Keep every customer journey",
-  "heroAccent": "in a healthy orbit.",
-  "heroBody": "Specialist remote customer success staff support onboarding records, health checks, meeting coordination, adoption follow up, knowledge operations, and escalation routing while account owners lead the relationship.",
-  "manifesto": "Strong customer success makes context portable, risk visible, and every next step easy to own.",
-  "primary": "#0b807a",
-  "secondary": "#58c9c2",
-  "accent": "#ff8f7a",
-  "canvas": "#ecfbf8",
-  "ink": "#073631",
-  "displayFont": "Avenir Next",
-  "bodyFont": "Trebuchet MS",
-  "heroImage": "/hero.png",
-  "heroAlt": "Customer portraits in glass spheres orbiting a glowing success beacon in deep teal space",
-  "services": [
-    {
-      "slug": "customer-onboarding-support",
-      "name": "Customer onboarding support",
-      "short": "Keep plans, tasks, and approved communication organized.",
-      "tasks": [
-        "Prepare onboarding records",
-        "Maintain task ownership",
-        "Coordinate approved reminders",
-        "Flag blocked steps"
-      ]
-    },
-    {
-      "slug": "customer-health-operations",
-      "name": "Customer health operations",
-      "short": "Prepare consistent views from approved health signals.",
-      "tasks": [
-        "Compile approved indicators",
-        "Check source freshness",
-        "Prepare review summaries",
-        "Flag risk exceptions"
-      ]
-    },
-    {
-      "slug": "business-review-preparation",
-      "name": "Business review preparation",
-      "short": "Organize context and materials for accountable account owners.",
-      "tasks": [
-        "Prepare meeting briefs",
-        "Compile approved outcomes",
-        "Maintain action logs",
-        "Route strategic questions"
-      ]
-    },
-    {
-      "slug": "adoption-follow-up",
-      "name": "Adoption follow up support",
-      "short": "Coordinate approved education and next steps around product use.",
-      "tasks": [
-        "Prepare follow up queues",
-        "Send approved resources",
-        "Record customer responses",
-        "Escalate adoption risks"
-      ]
-    },
-    {
-      "slug": "knowledge-operations",
-      "name": "Knowledge operations",
-      "short": "Maintain accurate, reviewable customer-facing resources.",
-      "tasks": [
-        "Organize knowledge records",
-        "Track approved versions",
-        "Route update requests",
-        "Flag outdated guidance"
-      ]
-    },
-    {
-      "slug": "escalation-coordination",
-      "name": "Escalation coordination",
-      "short": "Document context and route issues to the right accountable owner.",
-      "tasks": [
-        "Prepare escalation records",
-        "Maintain status updates",
-        "Track promised actions",
-        "Escalate urgent changes"
-      ]
-    }
+  name:'Customer Success Managers',domain:'customersuccessmanagers.com',siteId:'customer-success-managers',niche:'customer success teams',audience:'customer success leaders, SaaS operators, and account teams',design:'orbit',
+  eyebrow:'Customer success organized around outcomes',hero:'Keep every customer journey',heroAccent:'in a healthy orbit.',heroBody:'Specialist remote customer success staff support onboarding records, health checks, meeting coordination, adoption follow up, knowledge operations, and escalation routing while account owners lead the relationship.',manifesto:'Strong customer success makes context portable, risk visible, and every next step easy to own.',
+  primary:'#0b807a',secondary:'#58c9c2',accent:'#ff8f7a',canvas:'#ecfbf8',ink:'#073631',displayFont:'Avenir Next',bodyFont:'Trebuchet MS',heroImage:'/hero.png',heroAlt:'Customer portraits in glass spheres orbiting a glowing success beacon in deep teal space',
+  services:[
+    {slug:'customer-onboarding-support',name:'Customer onboarding support',short:'Keep plans, tasks, and approved communication organized.',intro:'Turn an approved onboarding plan into a visible operating rhythm. A remote specialist can maintain the record, prepare reminders, reconcile task ownership, and surface blocked steps while the account owner leads the relationship.',tasks:['Prepare onboarding records from approved templates','Maintain task owners, dates, and dependency notes','Coordinate approved reminders and meeting logistics','Reconcile completed steps with source systems','Flag blocked steps to the named account owner'],outcomes:['A current onboarding record','Clear next actions after each touchpoint','Visible blockers with an accountable owner','Consistent handoff notes for the account team'],workflow:['Receive the approved plan and customer stage','Check required fields and source freshness','Prepare the next approved action or reminder','Record the response and update status','Transfer exceptions to the accountable owner'],boundaries:['No product, pricing, scope, or delivery promises','No changes to contract or implementation commitments','No independent interpretation of security requirements'],measures:['Records updated within the agreed cadence','Open tasks with a named owner','Blocked steps routed within the agreed window','Sampled record completeness']},
+    {slug:'customer-health-operations',name:'Customer health operations',short:'Prepare consistent views from approved health signals.',intro:'Give customer leaders a review-ready view of the signals they have already approved. Support can reconcile source dates, assemble portfolio summaries, and route threshold exceptions without inventing a score or deciding account strategy.',tasks:['Compile approved product, support, and engagement indicators','Check source dates and missing inputs','Prepare portfolio and account review summaries','Maintain risk and opportunity follow-up queues','Flag threshold exceptions for owner review'],outcomes:['Health views with visible source dates','Missing-data exceptions separated from true risk','A repeatable portfolio review packet','A clear queue for account-owner decisions'],workflow:['Collect approved indicators from named systems','Validate freshness and required fields','Assemble the agreed view without changing definitions','Mark missing or conflicting inputs','Route the summary to the review owner'],boundaries:['No independent health-score design','No churn prediction claims or automated account decisions','No commercial or customer communication without approval'],measures:['Signal freshness','Missing-input rate','Exception age','Review packet completion']},
+    {slug:'business-review-preparation',name:'Business review preparation',short:'Organize context and materials for accountable account owners.',intro:'Reduce meeting preparation time without outsourcing the customer relationship. A specialist can assemble approved outcomes, open actions, adoption context, and logistics so the account owner can focus on the conversation and decisions.',tasks:['Prepare meeting briefs and agenda drafts','Compile approved outcomes and usage context','Maintain action and decision logs','Coordinate invitations and approved follow-up','Route strategic questions to the right owner'],outcomes:['A consistent pre-meeting brief','Current action and decision records','Fewer missing inputs before the review','Prompt follow-through after the meeting'],workflow:['Confirm meeting purpose, participants, and template','Collect approved facts from named sources','Identify gaps for owner review','Assemble the packet and logistics','Record approved actions and route follow-up'],boundaries:['No presentation of unapproved claims','No negotiation of renewal, price, or scope','No product roadmap or delivery commitments'],measures:['Packet ready before the review cutoff','Open actions with owners and dates','Missing-input exceptions','Follow-up recorded after the meeting']},
+    {slug:'adoption-follow-up',name:'Adoption follow up support',short:'Coordinate approved education and next steps around product use.',intro:'Keep approved education and next steps moving after the account owner defines the adoption plan. Support can prepare segmented queues, send approved resources, log responses, and escalate risk signals without giving product advice beyond reviewed materials.',tasks:['Prepare follow-up queues from approved criteria','Send approved learning resources and reminders','Record customer responses and requested help','Maintain attendance and completion records','Escalate adoption risks or unclear requests'],outcomes:['A visible follow-up queue','Consistent use of current approved resources','Customer responses captured for the owner','Risks separated from routine reminders'],workflow:['Receive approved audience and outreach rules','Check consent, status, and current resource version','Prepare or send the approved message','Record delivery and response status','Route questions or risk signals to the owner'],boundaries:['No unapproved advice or custom product commitments','No independent targeting or pressure tactics','No security, legal, or commercial interpretation'],measures:['Queue age','Approved-resource version compliance','Response capture rate','Risk transfer time']},
+    {slug:'knowledge-operations',name:'Knowledge operations',short:'Maintain accurate, reviewable customer-facing resources.',intro:'Help teams keep customer-facing guidance findable and current. A specialist can manage the inventory, version records, review queue, and publication checklist while subject-matter owners approve every substantive change.',tasks:['Maintain the knowledge inventory and ownership record','Track approved versions and review dates','Route update requests to subject-matter owners','Apply approved edits and publication checks','Flag duplicate, stale, or conflicting guidance'],outcomes:['A searchable source of current guidance','Visible owners and review dates','A controlled path from request to publication','Fewer stale or conflicting resources'],workflow:['Receive an update request with source evidence','Identify the current approved record and owner','Prepare the requested change for review','Publish only after documented approval','Record version, date, and superseded material'],boundaries:['No independent policy or product interpretation','No publication without the required approval','No removal of retention or evidence records'],measures:['Items with owner and review date','Age of update requests','Stale-content exceptions','Publication checklist completion']},
+    {slug:'escalation-coordination',name:'Escalation coordination',short:'Document context and route issues to the right accountable owner.',intro:'Create a disciplined record around issues that need accountable judgment. Support can capture the original request, gather approved context, maintain status, and track promised actions while authorized leaders decide severity, response, remedy, and customer commitments.',tasks:['Prepare escalation records from the original request','Gather approved timeline and account context','Maintain owner, status, and next-action fields','Coordinate approved internal updates','Track promised actions and acknowledgements'],outcomes:['A complete escalation record','One visible owner and current next action','A timestamped handoff trail','Fewer status gaps during resolution'],workflow:['Capture the original issue without rewriting its meaning','Check required context and source links','Route by the approved escalation matrix','Record owner acknowledgement and status','Close only with documented owner confirmation'],boundaries:['No independent severity, remedy, or liability decision','No customer promise without authorized approval','No alteration of the original complaint or source record'],measures:['Time to owner acknowledgement','Records with required context','Age of unresolved next actions','Documented closure confirmation']}
   ],
-  "categories": [
-    "Customer onboarding",
-    "Health systems",
-    "Adoption operations",
-    "Role design"
-  ],
-  "principles": [
-    "Top 1 percent selectivity",
-    "Clear role boundaries",
-    "Reviewable workflows"
-  ],
-  "sources": [
-    {
-      "label": "National Institute of Standards and Technology",
-      "url": "https://www.nist.gov/privacy-framework"
-    }
-  ]
+  categories:['Customer onboarding','Health systems','Adoption operations','Role design'],principles:['Selective matching','Clear role boundaries','Reviewable workflows'],sources:[{label:'National Institute of Standards and Technology',url:'https://www.nist.gov/privacy-framework'}]
 };

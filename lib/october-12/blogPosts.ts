@@ -94,7 +94,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "An authorized action, confirmed delivery, customer or system acknowledgement, and a retained endpoint."
       }
     ],
-    "internalService": "/services/live-chat-support",
+    "internalService": "/services/customer-health-operations",
     "internalSibling": "/blog/success-plan-assumption-register",
     "source": {
       "label": "NIST Privacy Framework",
@@ -195,7 +195,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "An authorized action, confirmed delivery, customer or system acknowledgement, and a retained endpoint."
       }
     ],
-    "internalService": "/services/live-chat-support",
+    "internalService": "/services/customer-health-operations",
     "internalSibling": "/blog/customer-health-score-evidence-boundary",
     "source": {
       "label": "GAO Evidence-Based Policymaking",
@@ -296,7 +296,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "An authorized action, confirmed delivery, customer or system acknowledgement, and a retained endpoint."
       }
     ],
-    "internalService": "/services/live-chat-support",
+    "internalService": "/services/customer-health-operations",
     "internalSibling": "/blog/renewal-risk-handoff",
     "source": {
       "label": "NIST AI Risk Management Framework",
@@ -397,7 +397,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "An authorized action, confirmed delivery, customer or system acknowledgement, and a retained endpoint."
       }
     ],
-    "internalService": "/services/live-chat-support",
+    "internalService": "/services/customer-health-operations",
     "internalSibling": "/blog/executive-business-review-source-pack",
     "source": {
       "label": "NARA Records Management Guidance",
@@ -498,7 +498,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "An authorized action, confirmed delivery, customer or system acknowledgement, and a retained endpoint."
       }
     ],
-    "internalService": "/services/live-chat-support",
+    "internalService": "/services/customer-health-operations",
     "internalSibling": "/blog/product-adoption-barrier-register",
     "source": {
       "label": "Federal Plain Language Guidelines",
@@ -599,7 +599,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "An authorized action, confirmed delivery, customer or system acknowledgement, and a retained endpoint."
       }
     ],
-    "internalService": "/services/live-chat-support",
+    "internalService": "/services/customer-health-operations",
     "internalSibling": "/blog/customer-commitment-ledger",
     "source": {
       "label": "Digital.gov User Experience",
@@ -700,7 +700,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "An authorized action, confirmed delivery, customer or system acknowledgement, and a retained endpoint."
       }
     ],
-    "internalService": "/services/live-chat-support",
+    "internalService": "/services/customer-health-operations",
     "internalSibling": "/blog/champion-transition-continuity",
     "source": {
       "label": "NARA Records Management Guidance",
@@ -801,7 +801,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "An authorized action, confirmed delivery, customer or system acknowledgement, and a retained endpoint."
       }
     ],
-    "internalService": "/services/live-chat-support",
+    "internalService": "/services/customer-health-operations",
     "internalSibling": "/blog/escalation-recovery-brief",
     "source": {
       "label": "FTC Data Security Guidance",
@@ -902,7 +902,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "An authorized action, confirmed delivery, customer or system acknowledgement, and a retained endpoint."
       }
     ],
-    "internalService": "/services/live-chat-support",
+    "internalService": "/services/customer-health-operations",
     "internalSibling": "/blog/voice-of-customer-coding",
     "source": {
       "label": "CISA Incident Response Basics",
@@ -1003,7 +1003,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "An authorized action, confirmed delivery, customer or system acknowledgement, and a retained endpoint."
       }
     ],
-    "internalService": "/services/live-chat-support",
+    "internalService": "/services/customer-health-operations",
     "internalSibling": "/blog/customer-data-access-review",
     "source": {
       "label": "OMB Statistical Standards",
@@ -1104,7 +1104,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "An authorized action, confirmed delivery, customer or system acknowledgement, and a retained endpoint."
       }
     ],
-    "internalService": "/services/live-chat-support",
+    "internalService": "/services/customer-health-operations",
     "internalSibling": "/blog/expansion-readiness-evidence",
     "source": {
       "label": "NIST Digital Identity Guidelines",
@@ -1205,7 +1205,7 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "An authorized action, confirmed delivery, customer or system acknowledgement, and a retained endpoint."
       }
     ],
-    "internalService": "/services/live-chat-support",
+    "internalService": "/services/customer-health-operations",
     "internalSibling": "/blog/customer-onboarding-acceptance-gate",
     "source": {
       "label": "SBA Market Research Guidance",

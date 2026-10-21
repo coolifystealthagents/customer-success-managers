@@ -1,3 +1,4 @@
-import type { Metadata } from 'next';
-export const metadata:Metadata={title:'Choose a time',robots:{index:false,follow:false}};
-export default function ThankYouPage(){return <main><header className="page-hero"><p className="eyebrow">Request received</p><h1>Thanks. Pick a time that works for you.</h1><p>Your free consultation can help turn the workflow into a clear support brief.</p></header><section className="content-wrap"><iframe className="booking-frame" title="Book your consultation" src="https://go.oncehub.com/StealthAgentsTeam?brdr=1pxd8d8d8&dt=&em=1&Si=1" loading="lazy"/></section></main>}
+import type{Metadata}from'next';
+export const metadata:Metadata={title:'Choose a consultation time',robots:{index:false,follow:false},alternates:{canonical:'/thank-you'}};
+const bookingUrl='https://go.oncehub.com/StealthAgentsTeam?brdr=1pxd8d8d8&dt=&em=1&Si=1';
+export default function ThankYouPage(){return <main id="main-content"><header className="page-hero conversion-hero"><p className="eyebrow">Request validated</p><h1>Choose a time for the conversation.</h1><p>Your inquiry passed first-party validation. Use the scheduler below to select a consultation time. A booking is confirmed only after OnceHub shows its confirmation.</p><a className="button primary" href={bookingUrl} rel="noopener noreferrer">Open the scheduler in a new page</a></header><section className="content-wrap booking-wrap"><iframe className="booking-frame" title="Book your customer success staffing consultation" src={bookingUrl} loading="lazy"/></section></main>}

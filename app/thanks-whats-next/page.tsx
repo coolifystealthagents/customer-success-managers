@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-export const metadata:Metadata={title:'What happens next',robots:{index:false,follow:false}};
-export default function NextPage(){return <main><section className="not-found"><div><p className="eyebrow">You are booked</p><h1>Here is what happens next.</h1><p>Bring one recurring workflow that needs a clearer owner, output, or review point. We will use it to make the conversation practical.</p><Link className="button primary" href="/blog">Read practical guides</Link></div></section></main>}
+import type{Metadata}from'next';import Link from'next/link';
+export const metadata:Metadata={title:'Prepare for your consultation',robots:{index:false,follow:false},alternates:{canonical:'/thanks-whats-next'}};
+export default function NextPage(){return <main id="main-content"><section className="not-found preparation-page"><div><p className="eyebrow">Consultation preparation</p><h1>Bring one customer journey into focus.</h1><p>Prepare the approved source, current owner, recurring steps, completion record, and point where the work needs accountable judgment. Do not bring credentials or confidential customer records.</p><div className="hero-actions"><Link className="button primary" href="/services">Review support scopes</Link><Link className="quiet-link" href="/blog">Read practical guides</Link></div></div></section></main>}

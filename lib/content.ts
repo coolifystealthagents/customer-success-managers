@@ -2,8 +2,9 @@ import { site } from './site';
 import type { BlogPost, ResearchPost } from './types';
 import { october12BlogPosts } from './october-12/blogPosts';
 import { october12ResearchPosts } from './october-12/researchPosts';
+import { enrichBlogPost, enrichResearchPost } from './editorial-enrichment';
 
-export const blogPosts: BlogPost[] = [
+const rawBlogPosts: BlogPost[] = [
   ...october12BlogPosts,
   {
     "slug": "customer-success-director-vs-csm-va",
@@ -471,7 +472,7 @@ export const blogPosts: BlogPost[] = [
     }
   }
 ];
-export const researchPosts: ResearchPost[] = [
+const rawResearchPosts: ResearchPost[] = [
   ...october12ResearchPosts,
   {
     "slug": "customer-onboarding-support-workflow-boundary-review-1",
@@ -915,12 +916,13 @@ export const researchPosts: ResearchPost[] = [
   }
 ];
 
+export const blogPosts: BlogPost[] = rawBlogPosts.map(enrichBlogPost);
+export const researchPosts: ResearchPost[] = rawResearchPosts.map(enrichResearchPost);
+
 export const nav = [
+  { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
-  { href: '/about', label: 'About' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/research', label: 'Research' },
-  { href: '/contact-us', label: 'Contact' }
+  { href: '/contact-us', label: 'Contact Us' }
 ];
 
 export function serviceBySlug(slug: string) { return site.services.find((service) => service.slug === slug); }
