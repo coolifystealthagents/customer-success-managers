@@ -43,7 +43,10 @@ for index, article in enumerate(articles):
     draw.line((65, 490, 740, 490), fill=gold, width=4)
     draw.text((65, 518), 'Customer Success Managers', font=ImageFont.truetype(bold, 29), fill='white')
     draw.text((65, 558), 'context  •  adoption  •  verified outcomes', font=ImageFont.truetype(regular, 20), fill=accent)
-    target = ROOT / article['thumbnailPath']
+    thumbnails_root = (ROOT / 'public/october-12').resolve()
+    target = (ROOT / article['thumbnailPath']).resolve()
+    if target.parent != thumbnails_root or target.suffix != '.webp':
+        raise ValueError(f"Unsafe thumbnailPath for {article.get('slug', 'unknown')}: target must be a direct .webp child of public/october-12")
     target.parent.mkdir(parents=True, exist_ok=True)
     image.save(target, 'WEBP', quality=88, method=6)
 

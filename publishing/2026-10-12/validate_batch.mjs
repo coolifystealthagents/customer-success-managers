@@ -73,6 +73,7 @@ const hashes = actualThumbnailNames.map((name) => createHash('sha256').update(re
 check(new Set(hashes).size === actualThumbnailNames.length, 'October thumbnails are not unique');
 const generator = read('publishing/2026-10-12/generate_thumbnails.py');
 check(generator.includes("if 'thumbnailPath' in article") && generator.includes('(1200,630)'), 'thumbnail generator is not restricted to declared thumbnails at 1200x630');
+check(generator.includes("(ROOT / 'public/october-12').resolve()") && generator.includes('target.parent != thumbnails_root') && generator.includes("target.suffix != '.webp'"), 'thumbnail generator does not enforce direct .webp containment');
 
 if (errors.length) {
   console.error(`Validation failed (${errors.length})`);
