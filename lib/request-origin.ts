@@ -15,6 +15,6 @@ export function isAllowedBrowserOrigin(request: Request): boolean {
     return false;
   }
   if (PRODUCTION_ORIGINS.has(origin.origin)) return true;
-  if (process.env.ALLOW_LOCAL_ORIGINS !== '1') return false;
+  if (process.env.NODE_ENV === 'production' || process.env.ALLOW_LOCAL_ORIGINS !== '1') return false;
   return origin.protocol === 'http:' && (origin.hostname === 'localhost' || origin.hostname === '127.0.0.1');
 }

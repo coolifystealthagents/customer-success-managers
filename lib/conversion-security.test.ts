@@ -1,12 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { deliverLead } from './lead-delivery.ts';
-import { emitAcceptedLeadEvent, isValidBrowserTrackingPayload, sanitizeBrowserTrackingPayload, TRACKING_API } from './lead-tracking.ts';
+import { emitAcceptedLeadEvent, isValidBrowserTrackingPayload, sanitizeBrowserTrackingPayload, trackingEndpoint, TRACKING_API } from './lead-tracking.ts';
 import { isAllowedBrowserOrigin } from './request-origin.ts';
 import { claimSubmission, markSubmission, releaseFailedSubmission } from './lead-idempotency.ts';
 import { mkdtemp, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
+
+const mutableEnv = process.env as Record<string, string | undefined>;
 
 const lead = {
   submissionId: '123e4567-e89b-42d3-a456-426614174000',
@@ -33,17 +35,22 @@ function event(eventType = 'pageview', metadata: Record<string, unknown> = { tra
   };
 }
 
-test('origin policy is fixed and local access is explicitly gated', () => {
+test('origin policy is fixed and local access is explicitly gated outside production', () => {
   const previous = process.env.ALLOW_LOCAL_ORIGINS;
+  const previousNodeEnv = mutableEnv.NODE_ENV;
   delete process.env.ALLOW_LOCAL_ORIGINS;
   const request = (origin: string, forwarded = 'customersuccessmanagers.com') => new Request('https://internal/ingest', { headers: { origin, 'x-forwarded-host': forwarded } });
   assert.equal(isAllowedBrowserOrigin(request('https://customersuccessmanagers.com', 'attacker.example')), true);
   assert.equal(isAllowedBrowserOrigin(request('https://attacker.example', 'customersuccessmanagers.com')), false);
   assert.equal(isAllowedBrowserOrigin(request('http://localhost:3000')), false);
   process.env.ALLOW_LOCAL_ORIGINS = '1';
+  mutableEnv.NODE_ENV = 'development';
   assert.equal(isAllowedBrowserOrigin(request('http://localhost:3000')), true);
   assert.equal(isAllowedBrowserOrigin(request('https://localhost:3000')), false);
+  mutableEnv.NODE_ENV = 'production';
+  assert.equal(isAllowedBrowserOrigin(request('http://localhost:3000')), false);
   if (previous === undefined) delete process.env.ALLOW_LOCAL_ORIGINS; else process.env.ALLOW_LOCAL_ORIGINS = previous;
+  if (previousNodeEnv === undefined) delete mutableEnv.NODE_ENV; else mutableEnv.NODE_ENV = previousNodeEnv;
 });
 
 test('browser tracking is a fixed CSM schema that strips mutable text and blocks lead or arbitrary events', () => {
@@ -60,6 +67,8 @@ test('browser tracking is a fixed CSM schema that strips mutable text and blocks
   assert.ok(sanitized);
   assert.equal(JSON.stringify(sanitized).includes('free text'), false);
   assert.equal(isValidBrowserTrackingPayload({ site_id: 'customer-success-managers', events: [{ ...event(), surprise: 'field' }] }), false);
+  assert.equal(isValidBrowserTrackingPayload({ site_id: 'customer-success-managers', events: [{ ...event(), page_path: '/alice@example.com' }] }), false);
+  assert.equal(isValidBrowserTrackingPayload({ site_id: 'customer-success-managers', events: [{ ...event(), timestamp: 'Wed, 09 Feb 1994 22:23:32 GMT (Alice Doe)' }] }), false);
 });
 
 test('filesystem claim is atomic across workers and preserves delivered replay/conflict state', async () => {
@@ -95,7 +104,25 @@ test('lead delivery uses ACR first and does not invoke fallback after a 2xx', as
   const oldFetch = globalThis.fetch;
   globalThis.fetch = async (input) => { calls.push(String(input)); return new Response(null, { status: 204 }); };
   try {
-    assert.deepEqual(await deliverLead(lead), { delivered: true, channel: 'acr' });
+    assert.deepEqual(await deliverLead(lead), { outcome: 'delivered', channel: 'acr' });
+    assert.deepEqual(calls, ['https://lead.example.test/submit']);
+  } finally {
+    globalThis.fetch = oldFetch;
+    if (previousAcr === undefined) delete process.env.ACR_LEAD_ENDPOINT; else process.env.ACR_LEAD_ENDPOINT = previousAcr;
+    if (previousMattermost === undefined) delete process.env.SITE_MATTERMOST_FALLBACK_WEBHOOK_URL; else process.env.SITE_MATTERMOST_FALLBACK_WEBHOOK_URL = previousMattermost;
+  }
+});
+
+test('uncertain ACR acknowledgement does not fan out to fallback', async () => {
+  const previousAcr = process.env.ACR_LEAD_ENDPOINT;
+  const previousMattermost = process.env.SITE_MATTERMOST_FALLBACK_WEBHOOK_URL;
+  process.env.ACR_LEAD_ENDPOINT = 'https://lead.example.test/submit';
+  process.env.SITE_MATTERMOST_FALLBACK_WEBHOOK_URL = 'https://mattermost.example.test/hook';
+  const calls: string[] = [];
+  const oldFetch = globalThis.fetch;
+  globalThis.fetch = async (input) => { calls.push(String(input)); throw new Error('acknowledgement lost'); };
+  try {
+    assert.deepEqual(await deliverLead(lead), { outcome: 'uncertain' });
     assert.deepEqual(calls, ['https://lead.example.test/submit']);
   } finally {
     globalThis.fetch = oldFetch;
@@ -116,10 +143,10 @@ test('non-2xx ACR delivery falls back to Mattermost and only its 2xx is success'
     return new Response('', { status: calls.length === 1 ? 500 : 200 });
   };
   try {
-    assert.deepEqual(await deliverLead(lead), { delivered: true, channel: 'mattermost' });
+    assert.deepEqual(await deliverLead(lead), { outcome: 'delivered', channel: 'mattermost' });
     assert.deepEqual(calls, ['https://lead.example.test/submit', 'https://mattermost.example.test/hook']);
     globalThis.fetch = async () => new Response('', { status: 500 });
-    assert.deepEqual(await deliverLead(lead), { delivered: false });
+    assert.deepEqual(await deliverLead(lead), { outcome: 'rejected' });
   } finally {
     globalThis.fetch = oldFetch;
     if (previousAcr === undefined) delete process.env.ACR_LEAD_ENDPOINT; else process.env.ACR_LEAD_ENDPOINT = previousAcr;
@@ -159,5 +186,26 @@ test('tracking endpoint override is ignored outside explicit local testing', asy
     globalThis.fetch = oldFetch;
     if (previousEndpoint === undefined) delete process.env.TEST_ACR_TRACKING_ENDPOINT; else process.env.TEST_ACR_TRACKING_ENDPOINT = previousEndpoint;
     if (previousLocal === undefined) delete process.env.ALLOW_LOCAL_ORIGINS; else process.env.ALLOW_LOCAL_ORIGINS = previousLocal;
+  }
+});
+
+test('tracking endpoint override resolves only to loopback in non-production local testing', () => {
+  const previousEndpoint = process.env.TEST_ACR_TRACKING_ENDPOINT;
+  const previousLocal = process.env.ALLOW_LOCAL_ORIGINS;
+  const previousNodeEnv = mutableEnv.NODE_ENV;
+  try {
+    mutableEnv.NODE_ENV = 'development';
+    process.env.ALLOW_LOCAL_ORIGINS = '1';
+    process.env.TEST_ACR_TRACKING_ENDPOINT = 'http://127.0.0.1:4420/track';
+    assert.equal(trackingEndpoint(), 'http://127.0.0.1:4420/track');
+    process.env.TEST_ACR_TRACKING_ENDPOINT = 'https://evil.example/track';
+    assert.equal(trackingEndpoint(), TRACKING_API);
+    process.env.TEST_ACR_TRACKING_ENDPOINT = 'http://127.0.0.1:4420/track';
+    mutableEnv.NODE_ENV = 'production';
+    assert.equal(trackingEndpoint(), TRACKING_API);
+  } finally {
+    if (previousEndpoint === undefined) delete process.env.TEST_ACR_TRACKING_ENDPOINT; else process.env.TEST_ACR_TRACKING_ENDPOINT = previousEndpoint;
+    if (previousLocal === undefined) delete process.env.ALLOW_LOCAL_ORIGINS; else process.env.ALLOW_LOCAL_ORIGINS = previousLocal;
+    if (previousNodeEnv === undefined) delete mutableEnv.NODE_ENV; else mutableEnv.NODE_ENV = previousNodeEnv;
   }
 });

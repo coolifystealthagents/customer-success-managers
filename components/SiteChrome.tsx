@@ -24,8 +24,10 @@ export function Header() {
       if (event.key !== 'Tab' || !menuRef.current) return;
       const links = [...menuRef.current.querySelectorAll<HTMLElement>('a')];
       if (!links.length) return;
-      if (event.shiftKey && document.activeElement === links[0]) { event.preventDefault(); links.at(-1)?.focus(); }
-      if (!event.shiftKey && document.activeElement === links.at(-1)) { event.preventDefault(); links[0]?.focus(); }
+      if (event.shiftKey && document.activeElement === links[0]) { event.preventDefault(); buttonRef.current?.focus(); }
+      else if (event.shiftKey && document.activeElement === buttonRef.current) { event.preventDefault(); links.at(-1)?.focus(); }
+      else if (!event.shiftKey && document.activeElement === links.at(-1)) { event.preventDefault(); buttonRef.current?.focus(); }
+      else if (!event.shiftKey && document.activeElement === buttonRef.current) { event.preventDefault(); links[0]?.focus(); }
     };
     document.body.classList.add('menu-open');
     window.addEventListener('keydown', onKey);

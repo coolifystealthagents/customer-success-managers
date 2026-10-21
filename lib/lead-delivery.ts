@@ -1,10 +1,13 @@
 import { sendLeadFallbackToMattermost, type FallbackLeadPayload } from './lead-fallback-mattermost.ts';
 
 export type LeadDeliveryChannel = 'acr' | 'mattermost';
-export interface LeadDeliveryResult { delivered: boolean; channel?: LeadDeliveryChannel }
+export type LeadDeliveryResult =
+  | { outcome: 'delivered'; channel: LeadDeliveryChannel }
+  | { outcome: 'rejected' | 'uncertain' };
 
 /** ACR is the primary operational destination when configured. Mattermost is
- * always the fallback when ACR is absent, times out, throws, or returns non-2xx. */
+ * used when ACR is absent or definitely rejects the request. Uncertain ACR
+ * transport outcomes never fan out to a second sink. */
 export async function deliverLead(lead: FallbackLeadPayload): Promise<LeadDeliveryResult> {
   const endpoint = process.env.ACR_LEAD_ENDPOINT?.trim();
   if (endpoint) {
@@ -31,12 +34,16 @@ export async function deliverLead(lead: FallbackLeadPayload): Promise<LeadDelive
         signal: AbortSignal.timeout(8_000),
         cache: 'no-store',
       });
-      if (response.ok) return { delivered: true, channel: 'acr' };
+      if (response.ok) return { outcome: 'delivered', channel: 'acr' };
       console.error('[lead-delivery] ACR returned', response.status);
     } catch (error) {
       console.error('[lead-delivery] ACR failed', error);
+      // The receiver may have accepted the body before the timeout/network
+      // failure. Keep the claim and do not fan out to avoid a duplicate lead.
+      return { outcome: 'uncertain' };
     }
   }
-  const delivered = await sendLeadFallbackToMattermost(lead);
-  return delivered ? { delivered: true, channel: 'mattermost' } : { delivered: false };
+  const fallback = await sendLeadFallbackToMattermost(lead);
+  if (fallback === 'acknowledged') return { outcome: 'delivered', channel: 'mattermost' };
+  return { outcome: fallback === 'uncertain' ? 'uncertain' : 'rejected' };
 }

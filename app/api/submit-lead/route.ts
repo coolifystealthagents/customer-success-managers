@@ -93,7 +93,10 @@ export async function POST(request: Request) {
   }
 
   const result = await deliverLead(lead);
-  if (!result.delivered || !result.channel) {
+  if (result.outcome !== 'delivered') {
+    if (result.outcome === 'uncertain') {
+      return json('Delivery acknowledgement is uncertain. It was not sent again. Please do not resubmit this request.', 503);
+    }
     await releaseFailedSubmission(submissionId, fingerprint).catch(() => undefined);
     return json('We could not deliver your request right now. Your information was not accepted. Please try again later.', 503);
   }

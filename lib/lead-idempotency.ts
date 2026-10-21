@@ -7,7 +7,7 @@ export type ClaimResult = { kind: 'claimed' | 'delivered' | 'in_flight' | 'confl
 
 function rootDirectory(): string {
   const testRoot = process.env.TEST_LEAD_IDEMPOTENCY_DIR;
-  if (process.env.ALLOW_LOCAL_ORIGINS === '1' && testRoot?.startsWith('/tmp/')) return testRoot;
+  if (process.env.NODE_ENV !== 'production' && process.env.ALLOW_LOCAL_ORIGINS === '1' && testRoot?.startsWith('/tmp/')) return testRoot;
   return '/tmp/customer-success-managers-lead-idempotency-v1';
 }
 

@@ -20,6 +20,11 @@ const FUNNELS: Record<string, { step: number; label: string; path: string }> = {
   funnel_form_page: { step: 1, label: 'Form Page', path: '/contact-us' },
   funnel_form_submitted: { step: 2, label: 'Form Submitted', path: '/thank-you' },
 };
+const STATIC_PATHS = new Set([
+  '/', '/about', '/blog', '/book-a-call', '/contact-us', '/faq', '/privacy',
+  '/research', '/services', '/terms', '/thank-you', '/thanks-whats-next',
+]);
+const CONTENT_PATH = /^\/(?:services|blog|research)\/[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 type JsonRecord = Record<string, unknown>;
 export type SanitizedTrackingPayload = { site_id: typeof SITE_ID; events: JsonRecord[] };
@@ -41,7 +46,7 @@ function safePath(value: unknown): string | undefined {
   try {
     const parsed = new URL(value, CANONICAL_ORIGIN);
     if (parsed.origin !== CANONICAL_ORIGIN || parsed.pathname !== value) return undefined;
-    return parsed.pathname;
+    return STATIC_PATHS.has(parsed.pathname) || CONTENT_PATH.test(parsed.pathname) ? parsed.pathname : undefined;
   } catch { return undefined; }
 }
 
@@ -95,7 +100,9 @@ export function sanitizeBrowserTrackingPayload(payload: unknown): SanitizedTrack
     if (!record(event) || Object.keys(event).some((key) => !EVENT_FIELDS.has(key))) return null;
     const eventType = typeof event.event_type === 'string' && EXACT_BROWSER_EVENTS.has(event.event_type) ? event.event_type : undefined;
     const path = safePath(event.page_path);
-    const timestamp = typeof event.timestamp === 'string' && event.timestamp.length <= 64 && Number.isFinite(Date.parse(event.timestamp)) ? event.timestamp : undefined;
+    const parsedTimestamp = typeof event.timestamp === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/.test(event.timestamp)
+      ? Date.parse(event.timestamp) : Number.NaN;
+    const timestamp = Number.isFinite(parsedTimestamp) ? new Date(parsedTimestamp).toISOString() : undefined;
     const metadata = sanitizeMetadata(eventType ?? '', event.event_metadata);
     const eventValue = eventType ? controlledEventValue(eventType, event) : undefined;
     if (!eventType || !path || !timestamp || metadata === undefined || eventValue === undefined) return null;
@@ -155,9 +162,9 @@ export async function emitAcceptedLeadEvent(input: { submissionId: string; sourc
   }
 }
 
-function trackingEndpoint(): string {
+export function trackingEndpoint(): string {
   const candidate = process.env.TEST_ACR_TRACKING_ENDPOINT;
-  if (process.env.ALLOW_LOCAL_ORIGINS !== '1' || !candidate) return TRACKING_API;
+  if (process.env.NODE_ENV === 'production' || process.env.ALLOW_LOCAL_ORIGINS !== '1' || !candidate) return TRACKING_API;
   try {
     const parsed = new URL(candidate);
     if (parsed.protocol === 'http:' && (parsed.hostname === '127.0.0.1' || parsed.hostname === 'localhost')) return parsed.href;

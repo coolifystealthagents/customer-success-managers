@@ -1,6 +1,6 @@
 import { type NextRequest } from 'next/server';
 import { isAllowedBrowserOrigin } from '@/lib/request-origin';
-import { sanitizeBrowserTrackingPayload, TRACKING_API } from '@/lib/lead-tracking';
+import { sanitizeBrowserTrackingPayload, trackingEndpoint } from '@/lib/lead-tracking';
 
 const MAX_BODY_BYTES = 128_000;
 export const runtime = 'nodejs';
@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
     const sanitized = sanitizeBrowserTrackingPayload(payload);
     if (!sanitized) return error('Invalid or disallowed event payload', 400);
     const ip = request.headers.get('cf-connecting-ip') || '0.0.0.0';
-    const upstream = await fetch(TRACKING_API, {
+    const upstream = await fetch(trackingEndpoint(), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -18,17 +18,19 @@ export interface FallbackLeadPayload {
   userAgent?: string;
 }
 
+export type FallbackDeliveryResult = 'acknowledged' | 'rejected' | 'uncertain';
+
 /** Deliver directly to the existing emergency channel. A lead is delivered
  * only when Mattermost acknowledges the request with a 2xx response. */
-export async function sendLeadFallbackToMattermost(lead: FallbackLeadPayload): Promise<boolean> {
+export async function sendLeadFallbackToMattermost(lead: FallbackLeadPayload): Promise<FallbackDeliveryResult> {
   const fallbackWebhook = process.env.SITE_MATTERMOST_FALLBACK_WEBHOOK_URL;
   if (!fallbackWebhook) {
     console.warn('[lead-fallback] SITE_MATTERMOST_FALLBACK_WEBHOOK_URL is missing');
-    return false;
+    return 'rejected';
   }
   if (looksLikeGarbagePiiLead(lead)) {
     console.warn('[lead-fallback] garbage_pii_lead_submit; delivery rejected');
-    return false;
+    return 'rejected';
   }
   const lines = [
     `**[SITE-DIRECT:${SITE_ID}] New lead — ${escapeMd(lead.name || lead.email || lead.phone || 'unknown')}**`,
@@ -59,10 +61,10 @@ export async function sendLeadFallbackToMattermost(lead: FallbackLeadPayload): P
       cache: 'no-store',
     });
     if (!response.ok) console.error('[lead-fallback] Mattermost returned', response.status);
-    return response.ok;
+    return response.ok ? 'acknowledged' : 'rejected';
   } catch (error) {
     console.error('[lead-fallback] fallback failed', error);
-    return false;
+    return 'uncertain';
   }
 }
 

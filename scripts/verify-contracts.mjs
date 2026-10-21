@@ -55,7 +55,7 @@ check(trackerConfig.includes("siteId: 'customer-success-managers'"), 'ACR site I
 check(trackerConfig.includes("endpoint: '/ingest/track'"), 'ACR endpoint changed');
 check(!trackerConfig.includes('thanks-whats-next'), 'Preparation route cannot be classified as confirmed booking');
 const proxy = read('app/ingest/track/route.ts');
-check(proxy.includes('sanitizeBrowserTrackingPayload') && tracking.includes('MAX_EVENTS = 50') && tracking.includes('EXACT_BROWSER_EVENTS') && tracking.includes('sanitizeMetadata'), 'ACR proxy sanitization missing');
+check(proxy.includes('sanitizeBrowserTrackingPayload') && proxy.includes('trackingEndpoint()') && tracking.includes('MAX_EVENTS = 50') && tracking.includes('EXACT_BROWSER_EVENTS') && tracking.includes('sanitizeMetadata'), 'ACR proxy sanitization or guarded transport missing');
 
 const reviews = JSON.parse(read('app/data/review-provenance.json'));
 check(reviews.records.length === 10 && reviews.source && reviews.verifiedOn, 'Ten sourced reviews are required');

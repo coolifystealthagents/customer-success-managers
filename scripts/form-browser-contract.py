@@ -77,11 +77,14 @@ def main():
 
         context.route('**/*', intercept)
         context.add_init_script("""
-          window.__nativeSubmits = 0;
-          document.addEventListener('submit', () => window.__nativeSubmits++, true);
+          if (sessionStorage.getItem('__nativeSubmits') === null) sessionStorage.setItem('__nativeSubmits', '0');
+          document.addEventListener('submit', () => {
+            sessionStorage.setItem('__nativeSubmits', String(Number(sessionStorage.getItem('__nativeSubmits') || '0') + 1));
+          }, true);
         """)
         page = context.new_page()
         page.goto(args.base + '/contact-us', wait_until='load')
+        page.evaluate("() => sessionStorage.setItem('__nativeSubmits', '0')")
         page.wait_for_function("() => window.acrTracker?.version === '0.4.19'", timeout=5000)
         submit = page.locator('button:has-text("Request a free consultation")')
 
@@ -89,7 +92,7 @@ def main():
         page.wait_for_timeout(100)
         if api_requests:
             failures.append('invalid form generated an API request')
-        if page.evaluate('() => window.__nativeSubmits') != 0:
+        if int(page.evaluate("() => sessionStorage.getItem('__nativeSubmits') || '0'")) != 0:
             failures.append('invalid form generated a native submit event')
         interaction_results['mouseRequiredValidation'] = len(api_requests) == 0
 
@@ -112,7 +115,7 @@ def main():
         page.evaluate('() => window.acrTracker.flush()')
         page.wait_for_timeout(250)
 
-        native_submits = page.evaluate('() => window.__nativeSubmits')
+        native_submits = int(page.evaluate("() => sessionStorage.getItem('__nativeSubmits') || '0'"))
         if len(api_requests) != 2:
             failures.append(f'expected two intercepted delivery attempts, got {len(api_requests)}')
         if native_submits != 0:
@@ -120,15 +123,6 @@ def main():
         submission_ids = [multipart_value(body, 'submission_id') for body in api_requests]
         if len(submission_ids) != 2 or not submission_ids[0] or submission_ids[0] != submission_ids[1]:
             failures.append(f'submission_id was not stable across retry: {submission_ids}')
-
-        events = [event for payload in tracking_payloads for event in payload.get('events', [])]
-        lead_events = [event for event in events if event.get('event_type') == 'lead_submit']
-        if lead_events:
-            failures.append(f'browser emitted {len(lead_events)} lead_submit event(s)')
-        serialized_tracking = json.dumps(tracking_payloads)
-        for forbidden in [VALID['first_name'], VALID['last_name'], VALID['email'], VALID['phone'], VALID['message']]:
-            if forbidden in serialized_tracking:
-                failures.append(f'browser analytics contained form value: {forbidden}')
 
         link = page.locator('a:has-text("Open the scheduler in a new page")')
         frame = page.locator('.booking-frame')
@@ -139,6 +133,7 @@ def main():
 
         keyboard_page = context.new_page()
         keyboard_page.goto(args.base + '/contact-us', wait_until='load')
+        keyboard_page.evaluate("() => sessionStorage.setItem('__nativeSubmits', '0')")
         keyboard_page.wait_for_function("() => window.acrTracker?.version === '0.4.19'", timeout=5000)
         keyboard_page.locator('[name="first_name"]').focus()
         keyboard_page.keyboard.press('Enter')
@@ -146,6 +141,12 @@ def main():
         interaction_results['enterRequiredValidation'] = len(api_requests) == 2
         if not interaction_results['enterRequiredValidation']:
             failures.append('Enter on an invalid form generated an API request')
+        keyboard_page.locator('[name="company_size"]').focus()
+        keyboard_page.keyboard.press('Enter')
+        keyboard_page.wait_for_timeout(100)
+        interaction_results['selectEnterDidNotSubmit'] = len(api_requests) == 2
+        if not interaction_results['selectEnterDidNotSubmit']:
+            failures.append('Enter on a select control generated an API request')
         for name, value in VALID.items():
             keyboard_page.locator(f'[name="{name}"]').fill(value)
         keyboard_page.locator('[name="company_size"]').select_option(label='11 to 50')
@@ -154,12 +155,49 @@ def main():
         keyboard_page.locator('[name="first_name"]').focus()
         keyboard_page.keyboard.press('Enter')
         keyboard_page.wait_for_url('**/thank-you', timeout=10000)
+        keyboard_page.wait_for_function("() => window.acrTracker?.version === '0.4.19'", timeout=5000)
+        keyboard_page.evaluate('() => window.acrTracker.flush()')
+        keyboard_page.wait_for_timeout(250)
         interaction_results['enterAcknowledgedSuccess'] = keyboard_page.url.endswith('/thank-you')
-        keyboard_native_submits = keyboard_page.evaluate('() => window.__nativeSubmits')
+        keyboard_native_submits = int(keyboard_page.evaluate("() => sessionStorage.getItem('__nativeSubmits') || '0'"))
         if keyboard_native_submits != 0:
             failures.append(f'Enter path generated {keyboard_native_submits} native submit event(s)')
         if len(api_requests) != 3:
             failures.append(f'expected three intercepted delivery attempts across mouse and Enter paths, got {len(api_requests)}')
+
+        events = [event for payload in tracking_payloads for event in payload.get('events', [])]
+        lead_events = [event for event in events if event.get('event_type') == 'lead_submit']
+        if lead_events:
+            failures.append(f'browser emitted {len(lead_events)} lead_submit event(s)')
+        serialized_tracking = json.dumps(tracking_payloads)
+        for forbidden in [VALID['first_name'], VALID['last_name'], VALID['email'], VALID['phone'], VALID['message']]:
+            if forbidden in serialized_tracking:
+                failures.append(f'browser analytics contained form value: {forbidden}')
+
+        menu_page = context.new_page()
+        menu_page.set_viewport_size({'width': 390, 'height': 844})
+        menu_page.goto(args.base + '/', wait_until='load')
+        toggle = menu_page.locator('.menu-toggle')
+        toggle.focus()
+        menu_page.keyboard.press('Enter')
+        menu_page.wait_for_timeout(100)
+        first_link = menu_page.locator('#primary-menu a').first
+        last_link = menu_page.locator('#primary-menu a').last
+        interaction_results['menuOpensToFirstLink'] = first_link.evaluate('(node) => node === document.activeElement')
+        first_link.focus()
+        menu_page.keyboard.press('Shift+Tab')
+        interaction_results['menuCloseReachableBackward'] = toggle.evaluate('(node) => node === document.activeElement')
+        menu_page.keyboard.press('Shift+Tab')
+        interaction_results['menuBackwardWrap'] = last_link.evaluate('(node) => node === document.activeElement')
+        menu_page.keyboard.press('Tab')
+        interaction_results['menuCloseReachableForward'] = toggle.evaluate('(node) => node === document.activeElement')
+        menu_page.keyboard.press('Tab')
+        interaction_results['menuForwardWrap'] = first_link.evaluate('(node) => node === document.activeElement')
+        menu_page.keyboard.press('Escape')
+        interaction_results['menuEscapeReturnsFocus'] = toggle.evaluate('(node) => node === document.activeElement') and toggle.get_attribute('aria-expanded') == 'false'
+        for key, passed in interaction_results.items():
+            if key.startswith('menu') and not passed:
+                failures.append(f'mobile keyboard contract failed: {key}')
         browser.close()
 
     summary = {

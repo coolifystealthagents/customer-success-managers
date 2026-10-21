@@ -29,7 +29,7 @@ def main():
     route_end = None if args.route_limit is None else args.route_offset + args.route_limit
     routes = all_routes[args.route_offset:route_end]
     output = Path(args.output); output.mkdir(parents=True, exist_ok=True)
-    tracker = Path('/tmp/acr-tracker.js').read_bytes()
+    tracker = (Path(__file__).parent / 'fixtures' / 'acr-tracker-v0.4.19.js').read_bytes()
     failures = []
     widget_limitations = []
     blocked_external = []

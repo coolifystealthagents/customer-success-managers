@@ -140,7 +140,7 @@ def main():
     status, _, _ = request(base + '/api/submit-lead', method='POST', headers={'Origin': 'https://invalid.example', 'X-Requested-With': 'customer-success-contact-form', 'Content-Type': 'multipart/form-data; boundary=x'}, data=b'--x--\r\n')
     if status != 403: failures.append(f'lead cross-origin guard expected 403, got {status}')
     wrong_payload = json.dumps({'site_id': 'wrong-site', 'events': [{'event_type': 'pageview', 'timestamp': '2026-01-01T00:00:00Z'}]}).encode()
-    status, _, _ = request(base + '/ingest/track', method='POST', headers={'Origin': base, 'Content-Type': 'application/json'}, data=wrong_payload)
+    status, _, _ = request(base + '/ingest/track', method='POST', headers={'Origin': f'https://{DOMAIN}', 'Content-Type': 'application/json'}, data=wrong_payload)
     if status != 400: failures.append(f'tracker wrong-site guard expected 400, got {status}')
 
     result = {'routes': len(routes), 'htmlPages': len(pages), 'internalLinks': len(internal_links), 'assets': len(assets), 'sitemapRoutes': len(sitemap_routes), 'failures': failures}
