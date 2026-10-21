@@ -48,6 +48,9 @@ check(leadApi.includes('deliverLead') && leadApi.includes('emitAcceptedLeadEvent
 const delivery = read('lib/lead-delivery.ts');
 check(delivery.includes('ACR_LEAD_ENDPOINT') && delivery.includes('sendLeadFallbackToMattermost'), 'Established primary and fallback delivery paths are required');
 const tracking = read('lib/lead-tracking.ts');
+const trackingRoutes = read('lib/tracking-routes.ts');
+check((trackingRoutes.match(/^  "\//gm) || []).length === 58 && trackingRoutes.includes('customer-onboarding-support') && trackingRoutes.includes('voice-of-customer-coding-reliability-study'), 'Analytics route allowlist must cover exactly the 58 published and controlled-journey pages');
+check(!tracking.includes('CONTENT_PATH') && tracking.includes('TRACKABLE_PATHS.has'), 'Analytics paths must use an exact allowlist, not a free-form slug pattern');
 check(tracking.includes("event_type: 'lead_submit'") && !tracking.includes('lead.message'), 'Accepted-lead analytics must be server owned and free-text free');
 
 const trackerConfig = read('public/acr-config.js');

@@ -1,3 +1,5 @@
+import { TRACKABLE_PATHS } from './tracking-routes.ts';
+
 const SITE_ID = 'customer-success-managers';
 const CANONICAL_ORIGIN = 'https://customersuccessmanagers.com';
 export const TRACKING_API = 'https://acrtracking.stealthagents.us/api/track';
@@ -20,11 +22,6 @@ const FUNNELS: Record<string, { step: number; label: string; path: string }> = {
   funnel_form_page: { step: 1, label: 'Form Page', path: '/contact-us' },
   funnel_form_submitted: { step: 2, label: 'Form Submitted', path: '/thank-you' },
 };
-const STATIC_PATHS = new Set([
-  '/', '/about', '/blog', '/book-a-call', '/contact-us', '/faq', '/privacy',
-  '/research', '/services', '/terms', '/thank-you', '/thanks-whats-next',
-]);
-const CONTENT_PATH = /^\/(?:services|blog|research)\/[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 type JsonRecord = Record<string, unknown>;
 export type SanitizedTrackingPayload = { site_id: typeof SITE_ID; events: JsonRecord[] };
@@ -46,7 +43,7 @@ function safePath(value: unknown): string | undefined {
   try {
     const parsed = new URL(value, CANONICAL_ORIGIN);
     if (parsed.origin !== CANONICAL_ORIGIN || parsed.pathname !== value) return undefined;
-    return STATIC_PATHS.has(parsed.pathname) || CONTENT_PATH.test(parsed.pathname) ? parsed.pathname : undefined;
+    return TRACKABLE_PATHS.has(parsed.pathname) ? parsed.pathname : undefined;
   } catch { return undefined; }
 }
 

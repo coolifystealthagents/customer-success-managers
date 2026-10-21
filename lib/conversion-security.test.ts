@@ -68,6 +68,7 @@ test('browser tracking is a fixed CSM schema that strips mutable text and blocks
   assert.equal(JSON.stringify(sanitized).includes('free text'), false);
   assert.equal(isValidBrowserTrackingPayload({ site_id: 'customer-success-managers', events: [{ ...event(), surprise: 'field' }] }), false);
   assert.equal(isValidBrowserTrackingPayload({ site_id: 'customer-success-managers', events: [{ ...event(), page_path: '/alice@example.com' }] }), false);
+  assert.equal(isValidBrowserTrackingPayload({ site_id: 'customer-success-managers', events: [{ ...event(), page_path: '/blog/alice-smith-private-medical-condition' }] }), false);
   assert.equal(isValidBrowserTrackingPayload({ site_id: 'customer-success-managers', events: [{ ...event(), timestamp: 'Wed, 09 Feb 1994 22:23:32 GMT (Alice Doe)' }] }), false);
 });
 
