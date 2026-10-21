@@ -30,6 +30,7 @@ def main():
     parser.add_argument('--executable', required=True)
     args = parser.parse_args()
     failures, api_requests, tracking_payloads, blocked_external = [], [], [], []
+    interaction_results = {}
     tracker_bytes = TRACKER_FIXTURE.read_bytes()
     fixture_hash = hashlib.sha256(tracker_bytes).hexdigest()
     if fixture_hash != TRACKER_SHA256:
@@ -90,6 +91,7 @@ def main():
             failures.append('invalid form generated an API request')
         if page.evaluate('() => window.__nativeSubmits') != 0:
             failures.append('invalid form generated a native submit event')
+        interaction_results['mouseRequiredValidation'] = len(api_requests) == 0
 
         for name, value in VALID.items():
             page.locator(f'[name="{name}"]').fill(value)
@@ -102,6 +104,7 @@ def main():
         delivery_error.filter(has_text=re.compile(r'^We could not deliver')).wait_for(state='visible', timeout=5000)
         if not page.url.endswith('/contact-us'):
             failures.append('failed operational delivery navigated away from the form')
+        interaction_results['mouseFailureRetention'] = page.url.endswith('/contact-us')
 
         submit.click()
         page.wait_for_url('**/thank-you', timeout=10000)
@@ -133,15 +136,41 @@ def main():
             failures.append('booking fallback or iframe missing')
         elif link.get_attribute('href') != frame.get_attribute('src'):
             failures.append('booking fallback URL differs from iframe URL')
+
+        keyboard_page = context.new_page()
+        keyboard_page.goto(args.base + '/contact-us', wait_until='load')
+        keyboard_page.wait_for_function("() => window.acrTracker?.version === '0.4.19'", timeout=5000)
+        keyboard_page.locator('[name="first_name"]').focus()
+        keyboard_page.keyboard.press('Enter')
+        keyboard_page.wait_for_timeout(100)
+        interaction_results['enterRequiredValidation'] = len(api_requests) == 2
+        if not interaction_results['enterRequiredValidation']:
+            failures.append('Enter on an invalid form generated an API request')
+        for name, value in VALID.items():
+            keyboard_page.locator(f'[name="{name}"]').fill(value)
+        keyboard_page.locator('[name="company_size"]').select_option(label='11 to 50')
+        keyboard_page.locator('[name="positions_to_fill"]').select_option(label='2 to 3')
+        keyboard_page.locator('[name="referral_source"]').select_option(label='Search engine')
+        keyboard_page.locator('[name="first_name"]').focus()
+        keyboard_page.keyboard.press('Enter')
+        keyboard_page.wait_for_url('**/thank-you', timeout=10000)
+        interaction_results['enterAcknowledgedSuccess'] = keyboard_page.url.endswith('/thank-you')
+        keyboard_native_submits = keyboard_page.evaluate('() => window.__nativeSubmits')
+        if keyboard_native_submits != 0:
+            failures.append(f'Enter path generated {keyboard_native_submits} native submit event(s)')
+        if len(api_requests) != 3:
+            failures.append(f'expected three intercepted delivery attempts across mouse and Enter paths, got {len(api_requests)}')
         browser.close()
 
     summary = {
         'trackerFixtureSha256': fixture_hash,
         'trackerVersion': '0.4.19',
         'interceptedApiRequests': len(api_requests),
-        'stableSubmissionId': len(api_requests) == 2 and bool(submission_ids[0]) and len(set(submission_ids)) == 1,
+        'mouseStableSubmissionId': len(submission_ids) >= 2 and bool(submission_ids[0]) and submission_ids[0] == submission_ids[1],
+        'interactionResults': interaction_results,
         'failedDeliveryStayedOnForm': 'failed operational delivery navigated away from the form' not in failures,
         'nativeSubmitEvents': native_submits,
+        'keyboardNativeSubmitEvents': keyboard_native_submits,
         'browserLeadEvents': len(lead_events),
         'browserPayloadsInspected': len(tracking_payloads),
         'freeTextExcluded': VALID['message'] not in serialized_tracking,

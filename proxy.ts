@@ -19,8 +19,9 @@ function visitorScheme(request: NextRequest) {
 }
 
 export function proxy(request: NextRequest) {
-  const forwardedHost = request.headers.get('x-forwarded-host') || request.headers.get('host') || '';
-  const host = forwardedHost.split(',')[0].trim().toLowerCase().split(':')[0];
+  // The framework/server authority drives canonical redirects. An arbitrary
+  // client-supplied X-Forwarded-Host must never become a redirect authority.
+  const host = (request.headers.get('host') || '').trim().toLowerCase().split(':')[0];
   if (!productionHosts.has(host)) return NextResponse.next();
   if (host === apex && visitorScheme(request) === 'https') return NextResponse.next();
   const canonical = new URL(`https://${apex}`);

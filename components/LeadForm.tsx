@@ -40,13 +40,16 @@ export function LeadForm({ source = 'contact-page-consultation' }: { source?: st
       }
       router.push('/thank-you');
     } catch {
-      setError('We could not validate your request. Please try again.'); setBusy(false);
+      setError('We could not deliver your request. Your information was not accepted. Please try again.'); setBusy(false);
       queueMicrotask(() => errorRef.current?.focus());
     }
   }
 
   function handleKeyDown(event: KeyboardEvent<HTMLFormElement>) {
-    if (event.key !== 'Enter' || event.target instanceof HTMLTextAreaElement) return;
+    // Keep the tracker-safe, button-driven flow while preserving native select
+    // and textarea keyboard behavior. Enter in a text input invokes the same
+    // acknowledged-delivery path as the visible button without a submit event.
+    if (event.key !== 'Enter' || !(event.target instanceof HTMLInputElement) || event.target.type === 'hidden') return;
     event.preventDefault(); void submit(event.currentTarget);
   }
 

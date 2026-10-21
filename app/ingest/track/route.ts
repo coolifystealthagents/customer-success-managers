@@ -1,6 +1,6 @@
 import { type NextRequest } from 'next/server';
 import { isAllowedBrowserOrigin } from '@/lib/request-origin';
-import { isValidBrowserTrackingPayload, TRACKING_API } from '@/lib/lead-tracking';
+import { sanitizeBrowserTrackingPayload, TRACKING_API } from '@/lib/lead-tracking';
 
 const MAX_BODY_BYTES = 128_000;
 export const runtime = 'nodejs';
@@ -22,7 +22,8 @@ export async function POST(request: NextRequest) {
     if (new TextEncoder().encode(body).byteLength > MAX_BODY_BYTES) return error('Payload too large', 413);
     let payload: unknown;
     try { payload = JSON.parse(body); } catch { return error('Invalid JSON', 400); }
-    if (!isValidBrowserTrackingPayload(payload)) return error('Invalid or disallowed event payload', 400);
+    const sanitized = sanitizeBrowserTrackingPayload(payload);
+    if (!sanitized) return error('Invalid or disallowed event payload', 400);
     const ip = request.headers.get('cf-connecting-ip') || '0.0.0.0';
     const upstream = await fetch(TRACKING_API, {
       method: 'POST',
@@ -33,7 +34,7 @@ export async function POST(request: NextRequest) {
         'X-Forwarded-For': ip,
         'X-ACR-Client-IP': ip,
       },
-      body,
+      body: JSON.stringify(sanitized),
       cache: 'no-store',
       signal: AbortSignal.timeout(8_000),
     });

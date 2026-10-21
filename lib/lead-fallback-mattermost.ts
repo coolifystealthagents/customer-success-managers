@@ -53,7 +53,7 @@ export async function sendLeadFallbackToMattermost(lead: FallbackLeadPayload): P
   try {
     const response = await fetch(fallbackWebhook, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'Idempotency-Key': lead.submissionId },
       body: JSON.stringify({ text: lines.join('\n'), username: `${SITE_ID} Direct (fallback)`, icon_emoji: ':warning:' }),
       signal: AbortSignal.timeout(5_000),
       cache: 'no-store',

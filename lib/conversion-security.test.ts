@@ -1,8 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { deliverLead } from './lead-delivery.ts';
-import { emitAcceptedLeadEvent, isValidBrowserTrackingPayload, TRACKING_API } from './lead-tracking.ts';
+import { emitAcceptedLeadEvent, isValidBrowserTrackingPayload, sanitizeBrowserTrackingPayload, TRACKING_API } from './lead-tracking.ts';
 import { isAllowedBrowserOrigin } from './request-origin.ts';
+import { claimSubmission, markSubmission, releaseFailedSubmission } from './lead-idempotency.ts';
+import { mkdtemp, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 
 const lead = {
   submissionId: '123e4567-e89b-42d3-a456-426614174000',
@@ -13,7 +17,20 @@ const lead = {
 };
 
 function event(eventType = 'pageview', metadata: Record<string, unknown> = { tracker_version: '0.4.19', language: 'en-US' }) {
-  return { event_type: eventType, timestamp: new Date().toISOString(), event_metadata: JSON.stringify(metadata) };
+  const funnel = eventType === 'funnel_form_page'
+    ? { funnel_step: 1, funnel_label: 'Form Page', funnel_path: '/contact-us' }
+    : eventType === 'funnel_form_submitted'
+      ? { funnel_step: 2, funnel_label: 'Form Submitted', funnel_path: '/thank-you' }
+      : {};
+  const path = eventType === 'funnel_form_submitted' ? '/thank-you' : '/contact-us';
+  return {
+    client_event_id: crypto.randomUUID(), event_type: eventType, timestamp: new Date().toISOString(),
+    page_path: path, page_url: `https://customersuccessmanagers.com${path}?private=discard`,
+    page_title: 'Mutable page title', referrer: 'https://private.example/path', utm_campaign: 'discard-me',
+    screen_width: 1440, screen_height: 800, scroll_depth: eventType === 'scroll_depth' ? 50 : 0,
+    event_value: eventType === 'scroll_depth' ? '50%' : eventType === 'cwv' ? '123.4' : funnel.funnel_step ? `step_${funnel.funnel_step}` : '',
+    event_metadata: JSON.stringify({ ...metadata, ...funnel }),
+  };
 }
 
 test('origin policy is fixed and local access is explicitly gated', () => {
@@ -29,14 +46,44 @@ test('origin policy is fixed and local access is explicitly gated', () => {
   if (previous === undefined) delete process.env.ALLOW_LOCAL_ORIGINS; else process.env.ALLOW_LOCAL_ORIGINS = previous;
 });
 
-test('browser tracking policy accepts normal tracker events and blocks leads, PII, and arbitrary shapes', () => {
-  for (const name of ['pageview', 'scroll_depth', 'cwv', 'cta_click', 'cta_view', 'funnel_form_page', 'funnel_booking_confirmed']) {
-    assert.equal(isValidBrowserTrackingPayload({ site_id: 'customer-success-managers', events: [event(name)] }), true, name);
+test('browser tracking is a fixed CSM schema that strips mutable text and blocks lead or arbitrary events', () => {
+  for (const name of ['pageview', 'scroll_depth', 'cta_click', 'cta_view', 'funnel_form_page', 'funnel_form_submitted']) {
+    const payload = { site_id: 'customer-success-managers', events: [event(name)] };
+    assert.equal(isValidBrowserTrackingPayload(payload), true, name);
+    const serialized = JSON.stringify(sanitizeBrowserTrackingPayload(payload));
+    for (const forbidden of ['private=discard', 'Mutable page title', 'private.example', 'discard-me']) assert.equal(serialized.includes(forbidden), false, `${name}: ${forbidden}`);
   }
+  assert.equal(isValidBrowserTrackingPayload({ site_id: 'customer-success-managers', events: [event('cwv', { tracker_version: '0.4.19', metric_name: 'LCP', metric_value: 123.4 })] }), true);
+  assert.equal(isValidBrowserTrackingPayload({ site_id: 'customer-success-managers', events: [event('funnel_booking_confirmed')] }), false);
   assert.equal(isValidBrowserTrackingPayload({ site_id: 'customer-success-managers', events: [event('lead_submit')] }), false);
-  assert.equal(isValidBrowserTrackingPayload({ site_id: 'customer-success-managers', events: [event('pageview', { lead_email: 'private@example.org' })] }), false);
-  assert.equal(isValidBrowserTrackingPayload({ site_id: 'customer-success-managers', events: [event('pageview', { message: 'free text' })] }), false);
+  const sanitized = sanitizeBrowserTrackingPayload({ site_id: 'customer-success-managers', events: [event('pageview', { message: 'free text', tracker_version: '0.4.19' })] });
+  assert.ok(sanitized);
+  assert.equal(JSON.stringify(sanitized).includes('free text'), false);
   assert.equal(isValidBrowserTrackingPayload({ site_id: 'customer-success-managers', events: [{ ...event(), surprise: 'field' }] }), false);
+});
+
+test('filesystem claim is atomic across workers and preserves delivered replay/conflict state', async () => {
+  const previousRoot = process.env.TEST_LEAD_IDEMPOTENCY_DIR;
+  const previousLocal = process.env.ALLOW_LOCAL_ORIGINS;
+  const root = await mkdtemp(join(tmpdir(), 'csm-idempotency-'));
+  process.env.ALLOW_LOCAL_ORIGINS = '1'; process.env.TEST_LEAD_IDEMPOTENCY_DIR = root;
+  const id = crypto.randomUUID(), fingerprint = 'a'.repeat(64);
+  try {
+    const claims = await Promise.all([claimSubmission(id, fingerprint), claimSubmission(id, fingerprint)]);
+    assert.equal(claims.filter((claim) => claim.kind === 'claimed').length, 1);
+    assert.equal(claims.filter((claim) => claim.kind === 'in_flight').length, 1);
+    await markSubmission(id, fingerprint, 'delivered');
+    assert.equal((await claimSubmission(id, fingerprint)).kind, 'delivered');
+    assert.equal((await claimSubmission(id, 'b'.repeat(64))).kind, 'conflict');
+    const retryId = crypto.randomUUID();
+    assert.equal((await claimSubmission(retryId, fingerprint)).kind, 'claimed');
+    await releaseFailedSubmission(retryId, fingerprint);
+    assert.equal((await claimSubmission(retryId, fingerprint)).kind, 'claimed');
+  } finally {
+    await rm(root, { recursive: true, force: true });
+    if (previousRoot === undefined) delete process.env.TEST_LEAD_IDEMPOTENCY_DIR; else process.env.TEST_LEAD_IDEMPOTENCY_DIR = previousRoot;
+    if (previousLocal === undefined) delete process.env.ALLOW_LOCAL_ORIGINS; else process.env.ALLOW_LOCAL_ORIGINS = previousLocal;
+  }
 });
 
 test('lead delivery uses ACR first and does not invoke fallback after a 2xx', async () => {

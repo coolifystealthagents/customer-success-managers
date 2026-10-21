@@ -9,7 +9,7 @@ function Cards() {
 export function ReviewLane() {
   return <section className="review-panel" aria-labelledby="reviews-title">
     <p className="eyebrow">StealthAgents reviews</p><h2 id="reviews-title">Support trusted by busy teams.</h2><p className="review-scope">{reviews.scope}</p>
-    <div className="review-viewport"><div className="review-track"><Cards /><div className="review-copy" aria-hidden="true"><Cards /></div></div></div>
+    <div className="review-viewport" role="region" tabIndex={0} aria-label="Customer reviews; scroll horizontally to read all reviews"><div className="review-track"><Cards /></div></div>
     <p className="review-source">Five-star reviews reproduced from the <a href={reviews.source} rel="noopener noreferrer">official Stealth Agents homepage</a>. Source verified {reviews.verifiedOn}.</p>
   </section>;
 }

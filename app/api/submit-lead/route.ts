@@ -3,13 +3,13 @@ import { deliverLead } from '@/lib/lead-delivery';
 import type { FallbackLeadPayload } from '@/lib/lead-fallback-mattermost';
 import { isAllowedBrowserOrigin } from '@/lib/request-origin';
 import { emitAcceptedLeadEvent } from '@/lib/lead-tracking';
+import { claimSubmission, markSubmission, releaseFailedSubmission } from '@/lib/lead-idempotency';
 import { createHash } from 'node:crypto';
 
 const MAX_BODY_BYTES = 24_000;
 const RATE_WINDOW_MS = 10 * 60 * 1000;
 const RATE_LIMIT = 6;
-const IDEMPOTENCY_TTL_MS = 15 * 60 * 1000;
-const MAX_IDEMPOTENCY_ENTRIES = 1_000;
+
 const personalDomains = new Set(['gmail.com','yahoo.com','hotmail.com','outlook.com','icloud.com','aol.com','proton.me','protonmail.com']);
 const companySizes = new Set(['1 to 10','11 to 50','51 to 200','201 to 500','501+']);
 const positionCounts = new Set(['1','2 to 3','4 to 10','11+','Not sure yet']);
@@ -17,10 +17,7 @@ const referralSources = new Set(['Search engine','Referral','Customer success co
 const phoneCountries = new Set(['+1','+44','+61','+63','other']);
 const allowedFields = new Set(['first_name','last_name','email','phone_country','phone','company','company_website','company_size','positions_to_fill','referral_source','message','source','website_url','submission_id']);
 const rateBuckets = new Map<string, number[]>();
-type SubmissionRecord = { expires: number; fingerprint: string };
-type InFlightRecord = { fingerprint: string; operation: Promise<boolean> };
-const deliveredSubmissions = new Map<string, SubmissionRecord>();
-const inFlightSubmissions = new Map<string, InFlightRecord>();
+
 
 function json(message: string, status: number) {
   return NextResponse.json({ ok: false, message }, { status, headers: { 'Cache-Control': 'no-store' } });
@@ -38,35 +35,8 @@ function value(form: FormData, name: string, max: number) {
   const entry = form.get(name);
   return typeof entry === 'string' ? entry.trim().slice(0, max + 1) : '';
 }
-function deliveredRecord(submissionId: string): SubmissionRecord | undefined {
-  const now = Date.now();
-  for (const [id, record] of deliveredSubmissions) if (record.expires <= now) deliveredSubmissions.delete(id);
-  return deliveredSubmissions.get(submissionId);
-}
-function rememberDelivered(submissionId: string, fingerprint: string) {
-  while (deliveredSubmissions.size >= MAX_IDEMPOTENCY_ENTRIES) {
-    const oldest = deliveredSubmissions.keys().next().value as string | undefined;
-    if (!oldest) break;
-    deliveredSubmissions.delete(oldest);
-  }
-  deliveredSubmissions.set(submissionId, { expires: Date.now() + IDEMPOTENCY_TTL_MS, fingerprint });
-}
 function leadFingerprint(lead: FallbackLeadPayload): string {
   return createHash('sha256').update(JSON.stringify(lead)).digest('hex');
-}
-async function deliverOnce(submissionId: string, fingerprint: string, lead: FallbackLeadPayload): Promise<boolean> {
-  if (deliveredRecord(submissionId)?.fingerprint === fingerprint) return true;
-  const existing = inFlightSubmissions.get(submissionId);
-  if (existing) return existing.fingerprint === fingerprint ? existing.operation : false;
-  const operation = (async () => {
-    const result = await deliverLead(lead);
-    if (!result.delivered || !result.channel) return false;
-    await emitAcceptedLeadEvent({ submissionId, source: lead.source, channel: result.channel });
-    rememberDelivered(submissionId, fingerprint);
-    return true;
-  })().finally(() => inFlightSubmissions.delete(submissionId));
-  inFlightSubmissions.set(submissionId, { fingerprint, operation });
-  return operation;
 }
 
 export async function POST(request: Request) {
@@ -98,7 +68,7 @@ export async function POST(request: Request) {
   if (!first || !last || !company || !source || !/^\S+@\S+\.\S+$/.test(email)) return json('Please complete every required field.', 400);
   if (first.length > 80 || last.length > 80 || company.length > 120 || email.length > 160 || message.length > 800) return json('One or more fields are too long.', 400);
   if (!/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(submissionId)) return json('The submission identifier was invalid.', 400);
-  if (!/^[a-z0-9-]{1,80}$/.test(source)) return json('The form source was invalid.', 400);
+  if (source !== 'contact-page-consultation') return json('The form source was invalid.', 400);
   if (personalDomains.has(email.split('@')[1])) return json('Please use your business email address.', 400);
   if (!companySizes.has(size) || !positionCounts.has(positions) || !referralSources.has(referral) || !phoneCountries.has(phoneCountry)) return json('Please choose a valid option for every required field.', 400);
   if (website) { try { const parsed = new URL(website); if (!['http:','https:'].includes(parsed.protocol)) throw new Error(); } catch { return json('Please enter a valid company website URL.',400); } }
@@ -111,12 +81,30 @@ export async function POST(request: Request) {
     userAgent: (request.headers.get('user-agent') || '').slice(0, 512),
   };
   const fingerprint = leadFingerprint(lead);
-  const prior = deliveredRecord(submissionId);
-  if (prior && prior.fingerprint !== fingerprint) return json('The submission identifier was already used for different information.', 409);
-  const pending = inFlightSubmissions.get(submissionId);
-  if (pending && pending.fingerprint !== fingerprint) return json('The submission identifier is already in use.', 409);
-  if (prior) return NextResponse.json({ ok: true, status: 'delivered' }, { headers: { 'Cache-Control': 'no-store' } });
-  if (isRateLimited(clientKey(request))) return json('Too many requests. Please wait and try again.',429);
-  if (!await deliverOnce(submissionId, fingerprint, lead)) return json('We could not deliver your request right now. Your information was not accepted. Please try again later.', 503);
+  let claim;
+  try { claim = await claimSubmission(submissionId, fingerprint); }
+  catch { return json('We could not safely begin delivery. Your information was not accepted. Please try again later.', 503); }
+  if (claim.kind === 'conflict') return json('The submission identifier was already used for different information.', 409);
+  if (claim.kind === 'delivered') return NextResponse.json({ ok: true, status: 'delivered' }, { headers: { 'Cache-Control': 'no-store' } });
+  if (claim.kind === 'in_flight') return json('This delivery is already being processed or has an uncertain prior acknowledgement. It was not sent again.', 503);
+  if (isRateLimited(clientKey(request))) {
+    await releaseFailedSubmission(submissionId, fingerprint).catch(() => undefined);
+    return json('Too many requests. Please wait and try again.',429);
+  }
+
+  const result = await deliverLead(lead);
+  if (!result.delivered || !result.channel) {
+    await releaseFailedSubmission(submissionId, fingerprint).catch(() => undefined);
+    return json('We could not deliver your request right now. Your information was not accepted. Please try again later.', 503);
+  }
+  try {
+    await markSubmission(submissionId, fingerprint, 'lead_delivered');
+    // Analytics is attempted once after operational acknowledgement, but it is
+    // never allowed to reverse a confirmed lead delivery.
+    await emitAcceptedLeadEvent({ submissionId, source: lead.source, channel: result.channel });
+    await markSubmission(submissionId, fingerprint, 'delivered');
+  } catch {
+    return json('Your request reached our operations channel, but final confirmation is incomplete. It was not sent again. Please do not resubmit this request.', 503);
+  }
   return NextResponse.json({ ok: true, status: 'delivered' }, { headers: { 'Cache-Control': 'no-store' } });
 }

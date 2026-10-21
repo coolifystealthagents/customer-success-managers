@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 
 const root = process.cwd();
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
@@ -54,7 +55,7 @@ check(trackerConfig.includes("siteId: 'customer-success-managers'"), 'ACR site I
 check(trackerConfig.includes("endpoint: '/ingest/track'"), 'ACR endpoint changed');
 check(!trackerConfig.includes('thanks-whats-next'), 'Preparation route cannot be classified as confirmed booking');
 const proxy = read('app/ingest/track/route.ts');
-check(proxy.includes('isValidBrowserTrackingPayload') && tracking.includes('MAX_EVENTS = 50') && tracking.includes('METADATA_FIELDS'), 'ACR proxy validation missing');
+check(proxy.includes('sanitizeBrowserTrackingPayload') && tracking.includes('MAX_EVENTS = 50') && tracking.includes('EXACT_BROWSER_EVENTS') && tracking.includes('sanitizeMetadata'), 'ACR proxy sanitization missing');
 
 const reviews = JSON.parse(read('app/data/review-provenance.json'));
 check(reviews.records.length === 10 && reviews.source && reviews.verifiedOn, 'Ten sourced reviews are required');
@@ -70,6 +71,9 @@ for (const marker of ['Content-Security-Policy','Strict-Transport-Security','X-C
 const layout = read('app/layout.tsx');
 check(layout.includes('/acr-config.js') && layout.includes('acrtracking.stealthagents.us/v1/tracker.js'), 'ACR scripts missing');
 check(layout.includes('sha384-xngnWvZA3ij7/lg0Hj+D3XolZQoG8dmy71mCBPy4o/cN7GsuYiWDGOUul+ocJ0/+') && layout.includes('crossOrigin="anonymous"'), 'Hosted tracker must be SRI pinned');
+const trackerFixture = fs.readFileSync(path.join(root, 'scripts/fixtures/acr-tracker-v0.4.19.js'));
+const fixtureSri = `sha384-${crypto.createHash('sha384').update(trackerFixture).digest('base64')}`;
+check(fixtureSri === 'sha384-xngnWvZA3ij7/lg0Hj+D3XolZQoG8dmy71mCBPy4o/cN7GsuYiWDGOUul+ocJ0/+' && layout.includes(fixtureSri), 'Tracker fixture and layout SRI must remain identical');
 
 const editorial = read('lib/editorial-enrichment.ts');
 const blogBriefBlock = editorial.match(/const blogBriefs:[\s\S]*?= \{([\s\S]*?)\n\};\n\nfunction sectionsFromBrief/)?.[1] || '';
@@ -77,5 +81,10 @@ check((blogBriefBlock.match(/^  '[^']+': \{/gm) || []).length === 17, 'Every exp
 check(!editorial.includes('trace the conclusion back to ${source}'), 'Contextual citations cannot be presented as customer-case evidence');
 check(!read('app/research/[slug]/page.tsx').includes('Findings and operational implications'), 'Unexecuted protocols cannot be presented as completed findings');
 check(editorial.includes("label: 'Proposed review protocol'"), 'Research protocol disclosure missing');
+check(!editorial.includes('cisa.gov/resources-tools/resources/incident-response-plan-basics'), 'Dead CISA source returned');
+for (const slug of ['escalation-recovery-brief', 'customer-escalation-record']) {
+  const block = editorial.match(new RegExp(`'${slug}': \\{([\\s\\S]*?)\\n  \\},`))?.[1] || '';
+  check(block.includes("service: '/services/escalation-coordination'"), `${slug} must map to escalation coordination`);
+}
 
 console.log(JSON.stringify({ status: 'passed', services: 6, reviews: 10, retainedLeadFields: expected.length, onceHubRoute: schedulerFiles[0] }));

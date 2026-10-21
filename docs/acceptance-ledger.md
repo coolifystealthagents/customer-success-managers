@@ -10,7 +10,9 @@
 | Ten sourced parent-company reviews | `app/data/review-provenance.json` | provenance contract and rendered review lane |
 | Official team credibility section follows first fold | contact page and official assets | DOM order and visual review |
 | Form, then OnceHub, then next-step sequence | contact, thank-you, thanks-whats-next | OnceHub route-location contract and browser journey |
-| Lead acknowledgement is truthful and fail-closed | `LeadForm`, lead API, ACR proxy | API guards, tracker stub, no free-text analytics |
+| Lead acknowledgement is truthful and fail-closed | `LeadForm`, lead API, optional `ACR_LEAD_ENDPOINT`, existing Mattermost fallback | acknowledged 2xx required, stable submission UUID/idempotency propagation, no free-text analytics |
+| Replay safety is explicit about scope | atomic filesystem claim plus upstream `Idempotency-Key`/submission UUID | concurrent workers in one container cannot redeliver; identical completed replay succeeds; changed-payload reuse conflicts; cross-container exactly-once behavior still depends on the established sink honoring the propagated key |
+| Hosted tracker is controlled without weakening CSP | v0.4.19 fixture, root-layout SRI, first-party relay | fixture SHA/SRI must equal the currently hosted CORS artifact before any intentional update; browser gate fulfills that exact fixture under total transport interception |
 | Six substantive service routes | `lib/site.ts`, service templates | content and route crawl |
 | Blog and research use topic media, TOC, sources, related reading | `EditorialArticle` and dynamic routes | heading/anchor/sidebar crawl |
 | Self-referencing canonical metadata | every indexable route | rendered crawl and duplicate report |

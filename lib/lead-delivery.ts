@@ -11,7 +11,7 @@ export async function deliverLead(lead: FallbackLeadPayload): Promise<LeadDelive
     try {
       const response = await fetch(endpoint, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Idempotency-Key': lead.submissionId },
         body: JSON.stringify({
           submission_id: lead.submissionId,
           site_id: 'customer-success-managers',

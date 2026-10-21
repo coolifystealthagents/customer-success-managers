@@ -125,8 +125,8 @@ const blogBriefs: Record<string, BlogBrief> = {
     test: 'Test an incorrect account link, conflicting timestamps, a late material correction, an inaccessible incident source, and a promised update that was prepared but not delivered.',
     closure: 'Close only after the authorized recovery action, customer communication, acknowledgement, correction history, and preventive follow-up are linked.',
     faq: faq('an escalation recovery brief', 'The trigger, verified chronology, affected scope, customer wording, attempted actions, current state, owners, and open decisions.', 'Incident and account leaders decide diagnosis, disclosure, remedy, and commitments; the brief author does not.', 'When approved recovery and communication are acknowledged and corrections and preventive work have owners.'),
-    service: '/services/customer-health-operations',
-    source: { label: 'CISA incident-response basics (context for roles, chronology, and recovery planning)', url: 'https://www.cisa.gov/resources-tools/resources/incident-response-plan-basics' },
+    service: '/services/escalation-coordination',
+    source: { label: 'NIST SP 800-61r3 (context for response roles, chronology, and recovery planning, not evidence about customer outcomes)', url: 'https://csrc.nist.gov/pubs/sp/800/61/r3/final' },
   },
   'voice-of-customer-coding': {
     headings: ['Choose the feedback observation unit', 'Preserve words before assigning codes', 'Adjudicate ambiguous and mixed comments', 'Report themes with counterexamples'],
@@ -221,8 +221,8 @@ const blogBriefs: Record<string, BlogBrief> = {
     test: 'Test an incorrect identity, contradictory timelines, sensitive attachments, an owner change, a failed update delivery, and a case reopened after apparent recovery.',
     closure: 'The record closes only when recovery, communication, acknowledgement, corrections, and preventive actions are linked to accountable owners.',
     faq: faq('a customer escalation record', 'Customer wording, affected scope, fact-and-dispute chronology, attempted actions, current impact, promised updates, owners, and corrections.', 'Qualified incident and account owners decide diagnosis, remedy, disclosure, credits, legal positions, and commitments.', 'When recovery and communication are acknowledged and corrections and preventive actions are linked to owners.'),
-    service: '/services/customer-health-operations',
-    source: { label: 'CISA incident-response basics (context for response roles and a recoverable chronology)', url: 'https://www.cisa.gov/resources-tools/resources/incident-response-plan-basics' },
+    service: '/services/escalation-coordination',
+    source: { label: 'NIST SP 800-61r3 (context for response roles and a recoverable chronology, not evidence about customer outcomes)', url: 'https://csrc.nist.gov/pubs/sp/800/61/r3/final' },
   },
 };
 
@@ -274,7 +274,7 @@ const contextualSources: Record<string, Source> = {
   plain: { label: 'Federal Plain Language Guidelines — informs understandable instructions and review questions; inclusion is not an endorsement', publisher: 'PlainLanguage.gov', url: 'https://www.plainlanguage.gov/guidelines/' },
   privacy: { label: 'Privacy Framework — informs purpose limitation and data-minimization checks; it does not establish protocol effectiveness', publisher: 'National Institute of Standards and Technology', url: 'https://www.nist.gov/privacy-framework' },
   ai: { label: 'AI Risk Management Framework — informs validity, limitation, monitoring, and human-oversight questions for classifications; it reports no result here', publisher: 'National Institute of Standards and Technology', url: 'https://www.nist.gov/itl/ai-risk-management-framework' },
-  incident: { label: 'Incident Response Plan Basics — informs role, chronology, escalation, and recovery controls; it is contextual guidance, not a customer outcome', publisher: 'Cybersecurity and Infrastructure Security Agency', url: 'https://www.cisa.gov/resources-tools/resources/incident-response-plan-basics' },
+  incident: { label: 'NIST SP 800-61r3 — informs response roles, chronology, escalation, and recovery controls; it is contextual guidance, not evidence about customer outcomes', publisher: 'National Institute of Standards and Technology', url: 'https://csrc.nist.gov/pubs/sp/800/61/r3/final' },
   access: { label: 'Digital Identity Guidelines — informs identity, authentication, and access-control questions; it does not certify this workflow', publisher: 'National Institute of Standards and Technology', url: 'https://pages.nist.gov/800-63-4/' },
   communication: { label: 'Effective Communication — informs accessible communication and channel checks; it does not assess this service', publisher: 'U.S. Department of Justice', url: 'https://www.ada.gov/resources/effective-communication/' },
   complaints: { label: 'Consumer Complaint Database — provides a contextual example of structured complaint fields and published caveats; it is not evidence about these customers', publisher: 'Consumer Financial Protection Bureau', url: 'https://www.consumerfinance.gov/data-research/consumer-complaints/' },
