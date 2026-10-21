@@ -1,12 +1,48 @@
-import {createHash} from 'node:crypto';import {existsSync,readFileSync,readdirSync} from 'node:fs';import {resolve} from 'node:path';
-const root=resolve(import.meta.dirname,'../..'),read=p=>readFileSync(resolve(root,p),'utf8'),errors=[],ok=(c,m)=>{if(!c)errors.push(m)};
-function parse(path,name){const m=read(path).match(new RegExp(`export const ${name}[^=]*= (\\[[\\s\\S]*\\]);\\s*$`));ok(Boolean(m),`${path}: export missing`);return m?JSON.parse(m[1]):[]}
-const blogs=parse('lib/october-12/blogPosts.ts','october12BlogPosts'),research=parse('lib/october-12/researchPosts.ts','october12ResearchPosts'),all=[...blogs,...research],manifest=JSON.parse(read('publishing/2026-10-12/manifest.json'));
-ok(blogs.length===12,`expected 12 Blog, found ${blogs.length}`);ok(research.length===5,`expected 5 Research, found ${research.length}`);ok(manifest.articles.length===17&&manifest.counts.thumbnails===17,'manifest count mismatch');ok(new Set(all.map(a=>a.slug)).size===17,'duplicate slugs');ok(new Set(all.map(a=>a.title)).size===17,'duplicate titles');
-for(const a of all){ok(a.publishedAt==='2026-10-12',`${a.slug}: wrong date`);ok(!/2026|oct(?:ober)?\s+12/i.test(a.title),`${a.slug}: date in title`);ok(a.image===`/october-12/${a.slug}.webp`,`${a.slug}: wrong thumbnail map`);ok(existsSync(resolve(root,`public${a.image}`)),`${a.slug}: image missing`)}
-for(const a of blogs){const prose=a.sections.flatMap(s=>s.paragraphs).join(' '),words=prose.match(/[A-Za-z0-9]+(?:['’][A-Za-z]+)?/g)?.length??0;ok(a.sections[0].heading==='Published October 12, 2026',`${a.slug}: visible date missing`);ok(words>=1000,`${a.slug}: only ${words} words`);ok(/^https:\/\//.test(a.source.url),`${a.slug}: authoritative source missing`);ok(a.internalSibling.startsWith('/blog/')&&a.internalService.startsWith('/services/'),`${a.slug}: internal links missing`)}
-for(const a of research){const words=[...(a.methodology??[]),...(a.findings??[])].join(' ').match(/[A-Za-z0-9]+(?:['’][A-Za-z]+)?/g)?.length??0;ok(a.methodology?.length===10,`${a.slug}: methodology depth`);ok(a.findings?.length===6,`${a.slug}: findings depth`);ok(a.sources.length===10&&new Set(a.sources.map(s=>s.url)).size===10,`${a.slug}: source depth/uniqueness`);ok(a.sources.every(s=>/^https:\/\//.test(s.url)&&s.label&&s.publisher&&s.checkedAt==='2026-10-12'),`${a.slug}: source metadata`);ok(words>=900,`${a.slug}: only ${words} words`)}
-const norm=v=>v.toLowerCase().replace(/https?:\/\/\S+/g,' ').replace(/[^a-z0-9]+/g,' ').trim(),paras=[];for(const a of blogs)for(const p of a.sections.flatMap(s=>s.paragraphs))if(norm(p).split(' ').length>=35)paras.push({slug:a.slug,text:norm(p)});for(const a of research)for(const p of [...a.methodology,...a.findings])if(norm(p).split(' ').length>=35)paras.push({slug:a.slug,text:norm(p)});const seen=new Map;for(const p of paras){const prior=seen.get(p.text);ok(!prior||prior===p.slug,`duplicate paragraph ${prior}/${p.slug}`);seen.set(p.text,p.slug)}const old=norm(read('lib/content.ts'));for(const p of paras)ok(!old.includes(p.text),`${p.slug}: duplicates prior corpus`);
-const images=readdirSync(resolve(root,'public/october-12')).filter(n=>n.endsWith('.webp'));ok(images.length===17,`expected 17 images, found ${images.length}`);const hashes=images.map(n=>createHash('sha256').update(readFileSync(resolve(root,'public/october-12',n))).digest('hex'));ok(new Set(hashes).size===17,'images not unique');
-const content=read('lib/content.ts'),bi=read('app/blog/page.tsx'),bd=read('app/blog/[slug]/page.tsx'),ri=read('app/research/page.tsx'),rd=read('app/research/[slug]/page.tsx'),sitemap=read('app/sitemap.ts');ok(content.includes('...october12BlogPosts')&&content.includes('...october12ResearchPosts'),'registry wiring missing');ok(bi.includes('post.publishedAt')&&ri.includes('post.publishedAt'),'index dates missing');ok(bd.includes('Blog sidebar')&&bd.includes('Related articles'),'Blog sidebar/related missing');ok(rd.includes('Research sidebar')&&rd.includes('Related research'),'Research sidebar/related missing');ok(sitemap.includes('blogPosts')&&sitemap.includes('researchPosts'),'sitemap registry wiring missing');ok(/\(1200,630\)/.test(read('publishing/2026-10-12/generate_thumbnails.py')),'dimensions missing');
-if(errors.length){console.error(`Validation failed (${errors.length})`);for(const e of errors)console.error(`- ${e}`);process.exit(1)}console.log('PASS: 12 Blog + 5 Research; date/title/source/image/registry/routes/indexes/sidebars/related/sitemap/duplicate checks passed.');
+import { createHash } from 'node:crypto';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { resolve } from 'node:path';
+
+const root = resolve(import.meta.dirname, '../..');
+const read = (path) => readFileSync(resolve(root, path), 'utf8');
+const errors = [];
+const check = (condition, message) => { if (!condition) errors.push(message); };
+const manifest = JSON.parse(read('publishing/2026-10-12/manifest.json'));
+const blogSource = read('lib/october-12/blogPosts.ts');
+const researchSource = read('lib/october-12/researchPosts.ts');
+const content = read('lib/content.ts');
+const enrichment = read('lib/editorial-enrichment.ts');
+const blogRoute = read('app/blog/[slug]/page.tsx');
+const researchRoute = read('app/research/[slug]/page.tsx');
+const article = read('components/EditorialArticle.tsx');
+
+check(manifest.site === 'CustomerSuccessManagers.com', 'wrong manifest site');
+check(manifest.counts.blog === 17 && manifest.counts.research === 25 && manifest.counts.total === 42, 'manifest count mismatch');
+check(manifest.articles.length === 42, `expected 42 manifest articles, found ${manifest.articles.length}`);
+check(new Set(manifest.articles.map((entry) => entry.slug)).size === 42, 'duplicate manifest slugs');
+check(new Set(manifest.articles.map((entry) => entry.title)).size === 42, 'duplicate manifest titles');
+check(manifest.articles.every((entry) => ['Blog', 'Research'].includes(entry.section)), 'invalid manifest section');
+check(manifest.articles.every((entry) => existsSync(resolve(root, entry.sourcePath))), 'manifest source path missing');
+check(manifest.articles.filter((entry) => entry.thumbnailPath).every((entry) => existsSync(resolve(root, entry.thumbnailPath))), 'manifest thumbnail missing');
+
+check(content.includes('...october12BlogPosts') && content.includes('...october12ResearchPosts'), 'October registries are not wired');
+check(content.includes('rawBlogPosts') && content.includes('rawResearchPosts') && content.includes('.map(enrichBlogPost)') && content.includes('.map(enrichResearchPost)'), 'registry/enrichment wiring missing');
+check(blogRoute.includes('EditorialArticle') && blogRoute.includes('relatedArticles={related}'), 'Blog article presentation missing');
+check(researchRoute.includes('EditorialArticle') && researchRoute.includes('researchPresentation(post)') && researchRoute.includes('relatedArticles={related}'), 'Research article presentation missing');
+check(article.includes('ArticleToc') && article.includes('Sources and context') && article.includes('Continue reading') && article.includes('props.relatedArticles.map'), 'shared article TOC/source/related presentation missing');
+check(enrichment.includes("label: 'Proposed review protocol'") && enrichment.includes('It does not report an observed agreement rate.'), 'research proposed-protocol disclaimer missing');
+check(enrichment.includes('const blogBriefs: Record<string, BlogBrief>') && enrichment.includes('export function enrichBlogPost'), 'blog enrichment coverage is missing');
+check(enrichment.includes('const focusLenses: Record<string') && enrichment.includes('const octoberProtocols: Record<string, ResearchLens>') && enrichment.includes('legacyProtocol(post.slug)'), 'research enrichment coverage is missing');
+
+const images = readdirSync(resolve(root, 'public/october-12')).filter((name) => name.endsWith('.webp'));
+check(images.length === 17, `expected 17 October thumbnails, found ${images.length}`);
+const hashes = images.map((name) => createHash('sha256').update(readFileSync(resolve(root, 'public/october-12', name))).digest('hex'));
+check(new Set(hashes).size === 17, 'October thumbnails are not unique');
+check(/\(1200,630\)/.test(read('publishing/2026-10-12/generate_thumbnails.py')), 'thumbnail dimensions missing');
+check(blogSource.includes('october12BlogPosts') && researchSource.includes('october12ResearchPosts'), 'October source exports missing');
+
+if (errors.length) {
+  console.error(`Validation failed (${errors.length})`);
+  for (const error of errors) console.error(`- ${error}`);
+  process.exit(1);
+}
+console.log('PASS: 42-article CSM manifest, registries, truthful research presentation, related/source UI, and 17 unique thumbnails validated.');
