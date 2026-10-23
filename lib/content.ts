@@ -2,9 +2,12 @@ import { site } from './site';
 import type { BlogPost, ResearchPost } from './types';
 import { october12BlogPosts } from './october-12/blogPosts';
 import { october12ResearchPosts } from './october-12/researchPosts';
+import { october22BlogPosts } from './october-22/blogPosts';
+import { october22ResearchPosts } from './october-22/researchPosts';
 import { enrichBlogPost, enrichResearchPost } from './editorial-enrichment';
 
 const rawBlogPosts: BlogPost[] = [
+  ...october22BlogPosts,
   ...october12BlogPosts,
   {
     "slug": "customer-success-director-vs-csm-va",
@@ -473,6 +476,7 @@ const rawBlogPosts: BlogPost[] = [
   }
 ];
 const rawResearchPosts: ResearchPost[] = [
+  ...october22ResearchPosts,
   ...october12ResearchPosts,
   {
     "slug": "customer-onboarding-support-workflow-boundary-review-1",
@@ -917,7 +921,8 @@ const rawResearchPosts: ResearchPost[] = [
 ];
 
 export const blogPosts: BlogPost[] = rawBlogPosts.map(enrichBlogPost);
-export const researchPosts: ResearchPost[] = rawResearchPosts.map(enrichResearchPost);
+const october22ResearchSlugs = new Set(october22ResearchPosts.map((post) => post.slug));
+export const researchPosts: ResearchPost[] = rawResearchPosts.map((post) => october22ResearchSlugs.has(post.slug) ? post : enrichResearchPost(post));
 
 export const nav = [
   { href: '/', label: 'Home' },
