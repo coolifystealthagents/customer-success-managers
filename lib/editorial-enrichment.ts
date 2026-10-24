@@ -312,6 +312,18 @@ function uniqueSources(keys: string[]): Source[] {
 
 export type ResearchPresentation = { label: string; takeaway: string; sections: ArticleSection[]; methodology: string[] };
 export function researchPresentation(post: ResearchPost): ResearchPresentation {
+  if (post.methodology?.length && post.findings?.length) {
+    return {
+      label: 'Proposed review protocol',
+      takeaway: post.finding,
+      sections: [
+        { heading: 'Purpose and scope', paragraphs: [post.summary] },
+        { heading: 'What the protocol tests', paragraphs: post.findings.slice(0, 3) },
+        { heading: 'Limits and reporting discipline', paragraphs: post.findings.slice(3) },
+      ],
+      methodology: post.methodology,
+    };
+  }
   const legacy = legacyProtocol(post.slug);
   const lens = octoberProtocols[post.slug] ?? legacy?.lens;
   if (!lens) return { label: 'Proposed review protocol', takeaway: `This proposed review protocol requires editorial review before use. It reports no completed study or customer outcome.`, sections: [{ heading: 'Scope awaiting review', paragraphs: [post.summary] }], methodology: [] };
@@ -327,6 +339,7 @@ export function researchPresentation(post: ResearchPost): ResearchPresentation {
 }
 
 export function enrichResearchPost(post: ResearchPost): ResearchPost {
+  if (post.methodology?.length && post.findings?.length) return post;
   const presentation = researchPresentation(post);
   const legacy = legacyProtocol(post.slug);
   const sourceKeys = octoberSourceKeys[post.slug] ?? (legacy ? [...domainSourceKeys[legacy.domain], lensSourceKey[legacy.focus]] : []);

@@ -11,3 +11,25 @@ html{scroll-padding-top:92px}body{overflow-x:hidden}.sr-only{position:absolute;w
 @media (max-width: 900px) {
   .mobile-toc { position: sticky; top: 76px; z-index: 45; max-height: 65vh; overflow: auto; box-shadow: 0 8px 24px #001a3314; }
 }
+
+/* October 22 2026 batch: article contents rail, mobile disclosure, table wrapper */
+.article-rail{max-height:calc(100vh - 120px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#9ccdc7 transparent;padding-right:.2rem}
+.article-rail::-webkit-scrollbar{width:8px}
+.article-rail::-webkit-scrollbar-thumb{background:#9ccdc7;border-radius:999px}
+@media(max-width:900px){
+  .article-rail{position:static;max-height:none;overflow:visible;padding-right:0}
+  .mobile-toc{display:block;position:sticky;top:76px;z-index:60;margin:0 0 2rem;padding:0;max-height:none;overflow:visible;border:1px solid #b8ded9;border-radius:14px;background:color-mix(in srgb,var(--canvas) 96%,white);box-shadow:0 10px 24px #07363114;font-size:.92rem}
+  .mobile-toc summary{display:flex;align-items:center;justify-content:space-between;gap:.75rem;cursor:pointer;padding:.7rem 1rem;font-weight:800;list-style:none}
+  .mobile-toc summary::-webkit-details-marker{display:none}
+  .mobile-toc summary::after{content:"Open";font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--primary)}
+  .mobile-toc[open] summary::after{content:"Close"}
+  .mobile-toc[open] summary{border-bottom:1px solid #b8ded9}
+  .mobile-toc-list{display:grid;gap:.55rem;padding:.85rem 1rem 1rem;max-height:45vh;overflow-y:auto;overscroll-behavior:contain}
+  .mobile-toc-list a{text-decoration:underline;text-underline-offset:3px;padding:.15rem 0}
+}
+.article-prose .table-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;margin:1.6rem 0;border:1px solid #b8ded9;border-radius:14px;background:#fff}
+.article-prose table{width:100%;min-width:620px;border-collapse:collapse;font-size:.95rem}
+.article-prose caption{text-align:left;padding:.8rem 1rem .2rem;font-weight:800}
+.article-prose th,.article-prose td{padding:.6rem .85rem;text-align:left;border-bottom:1px solid #d5ece8;vertical-align:top}
+.article-prose thead th{background:#eef8f6}
+.article-prose tbody tr:last-child td{border-bottom:0}

@@ -47,7 +47,7 @@ export const october22BlogPosts: BlogPost[] = [
       {
         "heading": "Separate verbal agreement from recorded acceptance",
         "paragraphs": [
-          "Customers say yes in meetings for reasons that have nothing to do with readiness. They want to be helpful, the room is friendly, and the launch date is already on a slide. Recorded acceptance is different: the named approver states which criteria are met, which are conditionally met, and which are not met, with every condition written out.",
+          "Customers agree in meetings for reasons unrelated to readiness. They want to be helpful, the room is friendly, and the launch date is already on a slide. Recorded acceptance is different: the named approver states which criteria are met, which are conditionally met, and which are not met, with every condition written out.",
           "The CSM should never paraphrase acceptance into a status field. Quote the approver, link the message, and note the channel and timestamp. When the customer says we are good to go but reporting needs a workaround, that is conditional acceptance of the milestone with an open reporting exception, not a green status."
         ]
       },
@@ -92,7 +92,7 @@ export const october22BlogPosts: BlogPost[] = [
       }
     ],
     "internalService": "/services/customer-onboarding-support",
-    "internalSibling": "/blog/success-plan-assumption-register",
+    "internalSibling": "/blog/success-plan-assumption-review",
     "source": {
       "label": "NARA records management guidance (context for retaining an attributable acceptance record)",
       "url": "https://www.archives.gov/records-mgmt/policy"
@@ -596,13 +596,13 @@ export const october22BlogPosts: BlogPost[] = [
     }
   },
   {
-    "slug": "success-plan-assumption-register",
+    "slug": "success-plan-assumption-review",
     "title": "Keeping a Success Plan Assumption Register",
     "description": "How to record, test, and retire the assumptions behind a customer success plan so forecasts and commitments rest on verified ground.",
     "category": "Success planning",
     "publishedAt": "2026-10-22",
     "readTime": "10 min read",
-    "image": "/october-22/success-plan-assumption-register.webp",
+    "image": "/october-22/success-plan-assumption-review.webp",
     "sections": [
       {
         "heading": "Why plans need visible assumptions",
@@ -965,7 +965,7 @@ export const october22BlogPosts: BlogPost[] = [
         "heading": "Hand off evidence, not a score",
         "paragraphs": [
           "The handoff packet contains the five signal types, the counterevidence, the authority map, the customer quotes, the open questions, and a recommended next step with a rationale. It does not contain a readiness percentage, because a number invites action without reading the evidence.",
-          "The receiving owner acknowledges within one business day and records whether they accept the recommendation or choose a different path. A rejected handoff with a reason is a good outcome. It means the evidence was read and the commercial judgment was made by the person accountable for it."
+          "The receiving owner records acceptance within one business day and states whether they accept the recommendation or choose a different path. A rejected handoff with a reason is a good outcome. It means the evidence was read and the commercial judgment was made by the person accountable for it."
         ]
       },
       {

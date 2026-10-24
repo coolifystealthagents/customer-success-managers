@@ -32,14 +32,25 @@ export function ArticleToc({ items, mobile = false }: { items: Item[]; mobile?: 
     };
   }, [items]);
 
+  const links = items.map((item) => (
+    <a key={item.id} href={`#${item.id}`} onClick={() => setActiveId(item.id)} aria-current={activeId === item.id ? 'location' : undefined}>
+      {item.label}
+    </a>
+  ));
+
+  if (mobile) {
+    return (
+      <details className="mobile-toc" aria-label="Article contents">
+        <summary>In this article</summary>
+        <div className="mobile-toc-list">{links}</div>
+      </details>
+    );
+  }
+
   return (
-    <nav className={mobile ? 'mobile-toc' : 'rail-card'} aria-label={mobile ? 'Article contents' : 'On this page'}>
-      <strong>{mobile ? 'In this article' : 'On this page'}</strong>
-      {items.map((item) => (
-        <a key={item.id} href={`#${item.id}`} onClick={() => setActiveId(item.id)} aria-current={activeId === item.id ? 'location' : undefined}>
-          {item.label}
-        </a>
-      ))}
+    <nav className="rail-card" aria-label="On this page">
+      <strong>On this page</strong>
+      {links}
     </nav>
   );
 }
