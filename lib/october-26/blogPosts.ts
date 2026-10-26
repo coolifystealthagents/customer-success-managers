@@ -13,41 +13,41 @@ export const october26BlogPosts: BlogPost[] = [
         "heading": "The control this onboarding plan needs",
         "paragraphs": [
           "A busy customer success team can look productive while the onboarding plan record is too thin to defend. The control starts with one question: can a second person reconstruct who asked, what source was used, who decided, and what changed?",
-          "If the answer is no, the work is not complete. The team may still be helpful, but it cannot show that the action was authorized or that the destination record was updated.",
+          "If a second CSM cannot reconstruct the account request, the success task is not finished even when the CRM looks clean; the record still lacks authorization or destination evidence.",
           "Write the control as a short operating rule for customer success leaders, not as a general plea for better documentation.",
           "Do not copy a value because it looks familiar. Reopen the source and record what changed. This applies specifically to customersuccessmanagers-build-a-first-week-shadow-plan-for-onboarding-plan.",
           "Use a short reason code for each exception. The code should describe the evidence problem, not the person. This applies specifically to customersuccessmanagers-build-a-first-week-shadow-plan-for-onboarding-plan.",
-          "Record the onboarding plan source and observation time. A later reviewer should be able to tell whether the value was current when the first action was taken."
+          "Record the onboarding-plan source and observation time; a later reviewer should be able to tell whether the value was current when the first success action was taken."
         ]
       },
       {
         "heading": "Map the source before the task",
         "paragraphs": [
-          "Name the system or document that governs onboarding plan. Record the version, the observation time, and the field the source supports.",
-          "Do not treat a screenshot, a forwarded note, or a verbal confirmation as the record itself. These can be leads, but the owner still needs the governing source.",
-          "When sources conflict, keep both and label the conflict. A clean summary that hides a disagreement is worse than an honest exception.",
+          "Name the CRM, product analytics, or contract document that governs the onboarding plan; record its version, observation time, and the field it supports.",
+          "A forwarded customer email or screenshot can start a success request, but the CSM still needs the governing account plan, CRM record, or usage report before changing the customer-facing view.",
+          "When the CRM note and usage report conflict, keep both account records and label the disagreement rather than hiding it in a clean summary.",
           "Close the loop with the requester. Internal completeness without confirmation is only half closed. This applies specifically to customersuccessmanagers-build-a-first-week-shadow-plan-for-onboarding-plan.",
-          "Review one onboarding plan case end to end in the weekly meeting. Check the source, decision, destination record, and confirmation.",
+          "Review one onboarding plan end to end in the weekly success meeting: the source, the decision, the destination record, and the customer confirmation.",
           "Write the next action with an owner and a time. \"Review the exception\" is not a next action; a named person checking a named source by a stated time is. This applies specifically to customersuccessmanagers-build-a-first-week-shadow-plan-for-onboarding-plan."
         ]
       },
       {
         "heading": "Make decision rights explicit",
         "paragraphs": [
-          "The VA can prepare, compare, label, calculate, and route. The named owner decides whether the evidence is enough and what the customer or employee is told.",
-          "Write the boundary into the task, including the systems the VA may touch and the fields they may change.",
-          "A complete packet is not approval. The owner decision should be visible in the record, with a time and a scope.",
+          "Customer success associates can prepare, compare, label, calculate, and route account work; the CSM or account owner decides whether the evidence is sufficient and what the customer is told.",
+          "Write the customer success boundary into the task brief, including the CRM and product systems the associate may touch and the fields they may change.",
+          "A completed QBR packet or renewal brief is still a draft until the customer success manager approves the customer-facing version; record the approver, time, and account scope.",
           "Record the onboarding plan source and observation time. A later reviewer should be able to tell whether the value was current when the first action was taken. This applies specifically to customersuccessmanagers-build-a-first-week-shadow-plan-for-onboarding-plan.",
           "If the rule changes, keep the earlier classification and apply the new rule to later cases. This applies specifically to customersuccessmanagers-build-a-first-week-shadow-plan-for-onboarding-plan.",
-          "Keep the onboarding plan queue separate from the general inbox. A queue without an owner hides the oldest item."
+          "Keep the onboarding plan queue separate from the general customer inbox; an account queue without an owner hides the oldest renewal or escalation item."
         ]
       },
       {
         "heading": "Build a repeatable daily routine",
         "paragraphs": [
-          "Start the day by opening the onboarding plan queue and checking the oldest item. Work from the source, not from the previous summary.",
-          "Record the exception, the next action, the owner, and the due time before moving on. A note without a due time is not a handoff.",
-          "End the day by reconciling the queue. Explain what remains open and who owns the next check.",
+          "Start each day by opening the onboarding plan queue and checking the oldest account; work from the CRM source, not from the previous summary.",
+          "Record the account exception, next action, CSM owner, and due time before moving to the next customer request; a note without a due time is not a handoff.",
+          "End each customer success day by reconciling the account queue and naming what remains open, who owns the next check, and when the customer will hear back.",
           "Write the next action with an owner and a time. \"Review the exception\" is not a next action; a named person checking a named source by a stated time is. This applies specifically to customersuccessmanagers-build-a-first-week-shadow-plan-for-onboarding-plan.",
           "Name a backup owner for leave and time-zone gaps. Coverage should be written into the routine. This applies specifically to customersuccessmanagers-build-a-first-week-shadow-plan-for-onboarding-plan."
         ]
@@ -55,9 +55,9 @@ export const october26BlogPosts: BlogPost[] = [
       {
         "heading": "Recover cleanly when the control fails",
         "paragraphs": [
-          "Define a recovery path for missing sources, wrong owners, stale versions, and partial updates. The path should stop dependent work until the record is safe.",
-          "Preserve the original request and the correction. Do not overwrite the first value to make the history look consistent.",
-          "If the failure affects pay, safety, access, legal, or a customer promise, route it to the owner immediately.",
+          "Write a recovery path for missing account sources, wrong CSM owners, stale health scores, and partial renewal updates; stop dependent customer work until the success manager confirms the record.",
+          "Keep the original customer request and the correction side by side; never overwrite the first version just to make the account history look consistent.",
+          "If a customer success gap affects revenue, security access, legal terms, or a renewal promise, stop the task and route it to the account owner immediately.",
           "Keep the onboarding plan queue separate from the general inbox. A queue without an owner hides the oldest item. This applies specifically to customersuccessmanagers-build-a-first-week-shadow-plan-for-onboarding-plan.",
           "Do not copy a value because it looks familiar. Reopen the source and record what changed. This applies specifically to customersuccessmanagers-build-a-first-week-shadow-plan-for-onboarding-plan."
         ]
@@ -65,9 +65,9 @@ export const october26BlogPosts: BlogPost[] = [
       {
         "heading": "Verify, review, and improve",
         "paragraphs": [
-          "Close onboarding plan only when the destination record shows the approved change. A sent message is not proof that the destination changed.",
-          "Review one case end to end each week. Check the source, the decision, the update, and the confirmation.",
-          "A repeated gap should change the procedure, the field, or the queue design, not only the coaching.",
+          "Close an onboarding plan only when the customer record shows the approved change; a sent welcome email is not proof that the account, entitlement, or success plan changed.",
+          "Review one customer success case end to end each week: the account source, the CSM decision, the CRM or product update, and the customer confirmation.",
+          "When the same missing field appears twice in a renewal risk note or CRM update, change the account checklist or queue design before coaching the CSM again.",
           "When evidence is unavailable, record that state instead of leaving a blank. Missing and confirmed negative are different. This applies specifically to customersuccessmanagers-build-a-first-week-shadow-plan-for-onboarding-plan.",
           "Close the loop with the requester. Internal completeness without confirmation is only half closed. This applies specifically to customersuccessmanagers-build-a-first-week-shadow-plan-for-onboarding-plan."
         ]
