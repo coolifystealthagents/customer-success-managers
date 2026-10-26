@@ -72,7 +72,23 @@ export const october26BlogPosts: BlogPost[] = [
           "Close the loop with the requester. Internal completeness without confirmation is only half closed. This applies specifically to customersuccessmanagers-build-a-first-week-shadow-plan-for-onboarding-plan."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "answer": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
   },
   {
     "slug": "customersuccessmanagers-build-a-two-person-verification-step-for-qbr-packet",
@@ -147,7 +163,23 @@ export const october26BlogPosts: BlogPost[] = [
           "When evidence is unavailable, record that state instead of leaving a blank. Missing and confirmed negative are different. This applies specifically to customersuccessmanagers-build-a-two-person-verification-step-for-qbr-packet."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "answer": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
   },
   {
     "slug": "customersuccessmanagers-create-a-recovery-checklist-for-renewal-risk",
@@ -222,7 +254,23 @@ export const october26BlogPosts: BlogPost[] = [
           "Use a short reason code for each exception. The code should describe the evidence problem, not the person. This applies specifically to customersuccessmanagers-create-a-recovery-checklist-for-renewal-risk."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "answer": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
   },
   {
     "slug": "customersuccessmanagers-define-a-stop-work-trigger-for-churn-signal",
@@ -296,7 +344,23 @@ export const october26BlogPosts: BlogPost[] = [
           "Do not copy a value because it looks familiar. Reopen the source and record what changed. This applies specifically to customersuccessmanagers-define-a-stop-work-trigger-for-churn-signal."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "answer": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
   },
   {
     "slug": "customersuccessmanagers-define-the-minimum-evidence-for-qbr-packet",
@@ -369,7 +433,23 @@ export const october26BlogPosts: BlogPost[] = [
           "Write the next action with an owner and a time. \"Review the exception\" is not a next action; a named person checking a named source by a stated time is. This applies specifically to customersuccessmanagers-define-the-minimum-evidence-for-qbr-packet."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "answer": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
   },
   {
     "slug": "customersuccessmanagers-design-a-daily-control-board-for-onboarding-plan",
@@ -442,7 +522,23 @@ export const october26BlogPosts: BlogPost[] = [
           "Write the next action with an owner and a time. \"Review the exception\" is not a next action; a named person checking a named source by a stated time is. This applies specifically to customersuccessmanagers-design-a-daily-control-board-for-onboarding-plan."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "answer": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
   },
   {
     "slug": "customersuccessmanagers-keep-a-correction-log-for-health-score",
@@ -516,7 +612,23 @@ export const october26BlogPosts: BlogPost[] = [
           "Record the health score source and observation time. A later reviewer should be able to tell whether the value was current when the first action was taken. This applies specifically to customersuccessmanagers-keep-a-correction-log-for-health-score."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "answer": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
   },
   {
     "slug": "customersuccessmanagers-run-a-monthly-control-review-for-renewal-risk",
@@ -590,7 +702,23 @@ export const october26BlogPosts: BlogPost[] = [
           "Keep the renewal risk queue separate from the general inbox. A queue without an owner hides the oldest item. This applies specifically to customersuccessmanagers-run-a-monthly-control-review-for-renewal-risk."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "answer": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
   },
   {
     "slug": "customersuccessmanagers-run-a-surprise-sample-of-crm-note",
@@ -665,7 +793,23 @@ export const october26BlogPosts: BlogPost[] = [
           "If the rule changes, keep the earlier classification and apply the new rule to later cases. This applies specifically to customersuccessmanagers-run-a-surprise-sample-of-crm-note."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "answer": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
   },
   {
     "slug": "customersuccessmanagers-set-a-stale-record-rule-for-escalation-log",
@@ -740,7 +884,23 @@ export const october26BlogPosts: BlogPost[] = [
           "Review one escalation log case end to end in the weekly meeting. Check the source, decision, destination record, and confirmation. This applies specifically to customersuccessmanagers-set-a-stale-record-rule-for-escalation-log."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "answer": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
   },
   {
     "slug": "customersuccessmanagers-write-a-customer-safe-status-note-for-usage-report",
@@ -815,7 +975,23 @@ export const october26BlogPosts: BlogPost[] = [
           "Name a backup owner for leave and time-zone gaps. Coverage should be written into the routine. This applies specifically to customersuccessmanagers-write-a-customer-safe-status-note-for-usage-report."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "answer": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
   },
   {
     "slug": "customersuccessmanagers-write-a-decision-rights-note-for-health-score",
@@ -889,6 +1065,22 @@ export const october26BlogPosts: BlogPost[] = [
           "Keep the health score queue separate from the general inbox. A queue without an owner hides the oldest item. This applies specifically to customersuccessmanagers-write-a-decision-rights-note-for-health-score."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "answer": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
   }
 ];
