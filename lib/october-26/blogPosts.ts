@@ -76,11 +76,11 @@ export const october26BlogPosts: BlogPost[] = [
     "faq": [
       {
         "q": "Who owns the decision?",
-        "answer": "The named customer-success owner keeps the decision and exceptions."
+        "a": "The named customer-success owner keeps the decision and exceptions."
       },
       {
         "q": "What evidence is kept?",
-        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
       }
     ],
     "internalService": "/services",
@@ -167,11 +167,11 @@ export const october26BlogPosts: BlogPost[] = [
     "faq": [
       {
         "q": "Who owns the decision?",
-        "answer": "The named customer-success owner keeps the decision and exceptions."
+        "a": "The named customer-success owner keeps the decision and exceptions."
       },
       {
         "q": "What evidence is kept?",
-        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
       }
     ],
     "internalService": "/services",
@@ -258,11 +258,11 @@ export const october26BlogPosts: BlogPost[] = [
     "faq": [
       {
         "q": "Who owns the decision?",
-        "answer": "The named customer-success owner keeps the decision and exceptions."
+        "a": "The named customer-success owner keeps the decision and exceptions."
       },
       {
         "q": "What evidence is kept?",
-        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
       }
     ],
     "internalService": "/services",
@@ -348,11 +348,11 @@ export const october26BlogPosts: BlogPost[] = [
     "faq": [
       {
         "q": "Who owns the decision?",
-        "answer": "The named customer-success owner keeps the decision and exceptions."
+        "a": "The named customer-success owner keeps the decision and exceptions."
       },
       {
         "q": "What evidence is kept?",
-        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
       }
     ],
     "internalService": "/services",
@@ -437,11 +437,11 @@ export const october26BlogPosts: BlogPost[] = [
     "faq": [
       {
         "q": "Who owns the decision?",
-        "answer": "The named customer-success owner keeps the decision and exceptions."
+        "a": "The named customer-success owner keeps the decision and exceptions."
       },
       {
         "q": "What evidence is kept?",
-        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
       }
     ],
     "internalService": "/services",
@@ -526,11 +526,11 @@ export const october26BlogPosts: BlogPost[] = [
     "faq": [
       {
         "q": "Who owns the decision?",
-        "answer": "The named customer-success owner keeps the decision and exceptions."
+        "a": "The named customer-success owner keeps the decision and exceptions."
       },
       {
         "q": "What evidence is kept?",
-        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
       }
     ],
     "internalService": "/services",
@@ -616,11 +616,11 @@ export const october26BlogPosts: BlogPost[] = [
     "faq": [
       {
         "q": "Who owns the decision?",
-        "answer": "The named customer-success owner keeps the decision and exceptions."
+        "a": "The named customer-success owner keeps the decision and exceptions."
       },
       {
         "q": "What evidence is kept?",
-        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
       }
     ],
     "internalService": "/services",
@@ -706,11 +706,11 @@ export const october26BlogPosts: BlogPost[] = [
     "faq": [
       {
         "q": "Who owns the decision?",
-        "answer": "The named customer-success owner keeps the decision and exceptions."
+        "a": "The named customer-success owner keeps the decision and exceptions."
       },
       {
         "q": "What evidence is kept?",
-        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
       }
     ],
     "internalService": "/services",
@@ -797,11 +797,11 @@ export const october26BlogPosts: BlogPost[] = [
     "faq": [
       {
         "q": "Who owns the decision?",
-        "answer": "The named customer-success owner keeps the decision and exceptions."
+        "a": "The named customer-success owner keeps the decision and exceptions."
       },
       {
         "q": "What evidence is kept?",
-        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
       }
     ],
     "internalService": "/services",
@@ -888,11 +888,11 @@ export const october26BlogPosts: BlogPost[] = [
     "faq": [
       {
         "q": "Who owns the decision?",
-        "answer": "The named customer-success owner keeps the decision and exceptions."
+        "a": "The named customer-success owner keeps the decision and exceptions."
       },
       {
         "q": "What evidence is kept?",
-        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
       }
     ],
     "internalService": "/services",
@@ -979,11 +979,11 @@ export const october26BlogPosts: BlogPost[] = [
     "faq": [
       {
         "q": "Who owns the decision?",
-        "answer": "The named customer-success owner keeps the decision and exceptions."
+        "a": "The named customer-success owner keeps the decision and exceptions."
       },
       {
         "q": "What evidence is kept?",
-        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
       }
     ],
     "internalService": "/services",
@@ -1069,11 +1069,11 @@ export const october26BlogPosts: BlogPost[] = [
     "faq": [
       {
         "q": "Who owns the decision?",
-        "answer": "The named customer-success owner keeps the decision and exceptions."
+        "a": "The named customer-success owner keeps the decision and exceptions."
       },
       {
         "q": "What evidence is kept?",
-        "answer": "Keep the source, observation time, reviewer, correction, and next action."
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
       }
     ],
     "internalService": "/services",
