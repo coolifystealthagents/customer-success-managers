@@ -312,6 +312,9 @@ function uniqueSources(keys: string[]): Source[] {
 
 export type ResearchPresentation = { label: string; takeaway: string; sections: ArticleSection[]; methodology: string[] };
 export function researchPresentation(post: ResearchPost): ResearchPresentation {
+  if (post.sections?.length) {
+    return { label: 'Proposed review protocol', takeaway: post.finding, sections: post.sections, methodology: [] };
+  }
   if (post.methodology?.length && post.findings?.length) {
     return {
       label: 'Proposed review protocol',
@@ -339,6 +342,7 @@ export function researchPresentation(post: ResearchPost): ResearchPresentation {
 }
 
 export function enrichResearchPost(post: ResearchPost): ResearchPost {
+  if (post.sections?.length) return post;
   if (post.methodology?.length && post.findings?.length) return post;
   const presentation = researchPresentation(post);
   const legacy = legacyProtocol(post.slug);

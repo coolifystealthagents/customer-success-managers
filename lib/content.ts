@@ -2,10 +2,12 @@ import { site } from './site';
 import type { BlogPost, ResearchPost } from './types';
 import { october12BlogPosts } from './october-12/blogPosts';
 import { october12ResearchPosts } from './october-12/researchPosts';
+import { october28BlogPosts } from './october-28/blogPosts';
 import { october27BlogPosts } from './october-27/blogPosts';
 import { october26BlogPosts } from './october-26/blogPosts';
 import { october25BlogPosts } from './october-25/blogPosts';
 import { october22BlogPosts } from './october-22/blogPosts';
+import { october28ResearchPosts } from './october-28/researchPosts';
 import { october27ResearchPosts } from './october-27/researchPosts';
 import { october26ResearchPosts } from './october-26/researchPosts';
 import { october25ResearchPosts } from './october-25/researchPosts';
@@ -13,6 +15,7 @@ import { october22ResearchPosts } from './october-22/researchPosts';
 import { enrichBlogPost, enrichResearchPost } from './editorial-enrichment';
 
 const rawBlogPosts: BlogPost[] = [
+  ...october28BlogPosts,
   ...october27BlogPosts,
   ...october26BlogPosts,
   ...october25BlogPosts,
@@ -485,6 +488,7 @@ const rawBlogPosts: BlogPost[] = [
   }
 ];
 const rawResearchPosts: ResearchPost[] = [
+  ...october28ResearchPosts,
   ...october27ResearchPosts,
   ...october26ResearchPosts,
   ...october25ResearchPosts,

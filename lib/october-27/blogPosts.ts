@@ -61,7 +61,23 @@ export const october27BlogPosts: BlogPost[] = [
           "For customer success work, review the oldest open renewal risk and the most recently closed one side by side. Use the correction log to estimate rework, and separate corrections caused by source errors from those caused by judgment. Escalate a repeated high-risk renewal risk gap to customer success leaders with the case evidence, not only a summary count. Choose the sample from the queue export before the meeting so the discussion cannot drift to memorable cases."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "customersuccessmanagers-close-qbr-packet-only-when-the-destination-record-changes",
@@ -124,7 +140,23 @@ export const october27BlogPosts: BlogPost[] = [
           "Pick the sample from the renewal forecast, not from the cases the team remembers, so the review is not biased toward easy work. Use the correction log to estimate rework, and separate corrections caused by source errors from those caused by judgment. Review the action after two cycles and report what moved, what did not, and what remains unknown. If a high-risk gap is found, pause the affected QBR packet work while the action is implemented."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "U.S. Small Business Administration — manage your business",
+      "url": "https://www.sba.gov/business-guide/manage-your-business"
+    }
   },
   {
     "slug": "customersuccessmanagers-create-a-source-preserving-entry-check-for-onboarding-plan",
@@ -187,7 +219,23 @@ export const october27BlogPosts: BlogPost[] = [
           "For customer success work, review the oldest open onboarding plan and the most recently closed one side by side. Report open cases by age and dependency, not only the total, because a stable total can hide an aging tail. If the gap is caused by a missing health score note, simplify the collection step or move it earlier in the workflow. Track the number of sampled cases, the number with missing evidence, and the number reopened after review."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
   },
   {
     "slug": "customersuccessmanagers-design-a-first-week-shadow-plan-for-churn-signal",
@@ -250,7 +298,23 @@ export const october27BlogPosts: BlogPost[] = [
           "A useful sample includes a routine close, a reopened case, a missing escalation record, and a handoff that crossed a shift. Compare escalation age before and after a process change, using the same definitions and observation window. If the gap is caused by a missing escalation record, simplify the collection step or move it earlier in the workflow. Give the review an owner and a follow-up date; a finding without an action is only an observation."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "customersuccessmanagers-handle-missing-evidence-in-escalation-log-without-guessing",
@@ -313,7 +377,23 @@ export const october27BlogPosts: BlogPost[] = [
           "Each week, sample escalation log cases across owners, channels, and risk levels, including at least one unresolved case. A good measure should lead to a decision: change the form, add a reviewer, adjust access, or stop a workaround. If the gap is caused by a missing escalation record, simplify the collection step or move it earlier in the workflow. If a high-risk gap is found, pause the affected escalation log work while the action is implemented."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
   },
   {
     "slug": "customersuccessmanagers-keep-onboarding-plan-moving-through-leave-and-time-zone-gaps",
@@ -376,7 +456,23 @@ export const october27BlogPosts: BlogPost[] = [
           "A useful sample includes a routine close, a reopened case, a missing usage report, and a handoff that crossed a shift. Track renewal risk lead time with a clear denominator and a review owner; a count without context is not a control. When the same gap appears twice, change the intake field, the approval rule, or the support desk permission instead of repeating the coaching. Keep a short action log with the decision, the owner, the due date, and the next sample that will test it."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
   },
   {
     "slug": "customersuccessmanagers-review-access-and-permissions-around-renewal-risk-every-month",
@@ -439,7 +535,23 @@ export const october27BlogPosts: BlogPost[] = [
           "A useful sample includes a routine close, a reopened case, a missing usage report, and a handoff that crossed a shift. A good measure should lead to a decision: change the form, add a reviewer, adjust access, or stop a workaround. Assign one owner and one due date to each review action, and check the action at the next sample. Compare the close evidence with the source rather than trusting the status field."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "customersuccessmanagers-run-a-weekly-quality-sample-on-health-score",
@@ -502,7 +614,23 @@ export const october27BlogPosts: BlogPost[] = [
           "Include a case where the owner said no or asked for more evidence; those decisions show whether the boundary is working. Use the correction log to estimate rework, and separate corrections caused by source errors from those caused by judgment. Assign one owner and one due date to each review action, and check the action at the next sample. Give the review an owner and a follow-up date; a finding without an action is only an observation."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "Federal Trade Commission — business guidance",
+      "url": "https://www.ftc.gov/business-guidance"
+    }
   },
   {
     "slug": "customersuccessmanagers-separate-preparation-from-approval-in-qbr-packet",
@@ -565,7 +693,23 @@ export const october27BlogPosts: BlogPost[] = [
           "Record the sample frame, the reviewer, the criteria, and the result before discussing the cause. Compare renewal risk lead time before and after a process change, using the same definitions and observation window. When the same gap appears twice, change the intake field, the approval rule, or the support desk permission instead of repeating the coaching. Compare the close evidence with the source rather than trusting the status field."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "U.S. Small Business Administration — manage your business",
+      "url": "https://www.sba.gov/business-guide/manage-your-business"
+    }
   },
   {
     "slug": "customersuccessmanagers-set-a-safe-stop-rule-for-crm-note",
@@ -628,7 +772,23 @@ export const october27BlogPosts: BlogPost[] = [
           "Include a case where the owner said no or asked for more evidence; those decisions show whether the boundary is working. Report open cases by age and dependency, not only the total, because a stable total can hide an aging tail. Assign one owner and one due date to each review action, and check the action at the next sample. When a measure improves, check whether the definition, the sample, or the queue mix changed."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "Federal Trade Commission — business guidance",
+      "url": "https://www.ftc.gov/business-guidance"
+    }
   },
   {
     "slug": "customersuccessmanagers-trace-every-health-score-change-to-a-named-owner",
@@ -691,7 +851,23 @@ export const october27BlogPosts: BlogPost[] = [
           "Pick the sample from the onboarding tracker, not from the cases the team remembers, so the review is not biased toward easy work. Use the correction log to estimate rework, and separate corrections caused by source errors from those caused by judgment. Record the decision to accept the risk when the team chooses not to change the process; an explicit acceptance is better than an invisible workaround. Review at least one case handled by a backup owner and one that crossed a time zone."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "Federal Trade Commission — business guidance",
+      "url": "https://www.ftc.gov/business-guidance"
+    }
   },
   {
     "slug": "customersuccessmanagers-write-a-correction-record-for-usage-report-that-survives-review",
@@ -754,6 +930,22 @@ export const october27BlogPosts: BlogPost[] = [
           "For customer success work, review the oldest open usage report and the most recently closed one side by side. Report open cases by age and dependency, not only the total, because a stable total can hide an aging tail. If the gap is caused by an unavailable account executive, add a backup decision path rather than letting the usage report queue wait indefinitely. Compare the close evidence with the source rather than trusting the status field."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The named customer-success owner keeps the decision and exceptions."
+      },
+      {
+        "q": "What evidence is kept?",
+        "a": "Keep the source, observation time, reviewer, correction, and next action."
+      }
+    ],
+    "internalService": "/services",
+    "internalSibling": "/blog",
+    "source": {
+      "label": "U.S. Small Business Administration — manage your business",
+      "url": "https://www.sba.gov/business-guide/manage-your-business"
+    }
   }
 ];
