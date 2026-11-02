@@ -19,6 +19,8 @@ import { october22ResearchPosts } from './october-22/researchPosts';
 import { enrichBlogPost, enrichResearchPost } from './editorial-enrichment';
 
 const rawBlogPosts: BlogPost[] = [
+  ...november02BlogPosts,
+  ...november01BlogPosts,
   ...october28BlogPosts,
   ...october27BlogPosts,
   ...october26BlogPosts,
@@ -492,6 +494,8 @@ const rawBlogPosts: BlogPost[] = [
   }
 ];
 const rawResearchPosts: ResearchPost[] = [
+  ...november02ResearchPosts,
+  ...november01ResearchPosts,
   ...october28ResearchPosts,
   ...october27ResearchPosts,
   ...october26ResearchPosts,
