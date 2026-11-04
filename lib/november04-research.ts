@@ -6,7 +6,7 @@ export const november04ResearchPosts = [
     "cluster": "Quality",
     "publishedAt": "2026-11-04",
     "finding": "The customer onboarding support result should describe a defined population and its evidence gaps, not an industry benchmark. Customer success leaders use the finding to review the account plan and health signal.",
-    "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-customer-onboarding-support-2026-11-04.webp",
+    "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-customer-onboarding-support.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -91,7 +91,7 @@ export const november04ResearchPosts = [
     "cluster": "Quality",
     "publishedAt": "2026-11-04",
     "finding": "The customer health operations result should describe a defined population and its evidence gaps, not an industry benchmark. Customer success leaders use the finding to review the account plan and health signal.",
-    "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-customer-health-operations-2026-11-04.webp",
+    "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-customer-health-operations.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -176,7 +176,7 @@ export const november04ResearchPosts = [
     "cluster": "Quality",
     "publishedAt": "2026-11-04",
     "finding": "The business review preparation result should describe a defined population and its evidence gaps, not an industry benchmark. Customer success leaders use the finding to review the account plan and health signal.",
-    "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-business-review-preparation-2026-11-04.webp",
+    "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-business-review-preparation.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -261,7 +261,7 @@ export const november04ResearchPosts = [
     "cluster": "Quality",
     "publishedAt": "2026-11-04",
     "finding": "The adoption follow up support result should describe a defined population and its evidence gaps, not an industry benchmark. Customer success leaders use the finding to review the account plan and health signal.",
-    "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-adoption-follow-up-support-2026-11-04.webp",
+    "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-adoption-follow-up-support.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -346,7 +346,7 @@ export const november04ResearchPosts = [
     "cluster": "Quality",
     "publishedAt": "2026-11-04",
     "finding": "The knowledge operations result should describe a defined population and its evidence gaps, not an industry benchmark. Customer success leaders use the finding to review the account plan and health signal.",
-    "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-knowledge-operations-2026-11-04.webp",
+    "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-knowledge-operations.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -431,7 +431,7 @@ export const november04ResearchPosts = [
     "cluster": "Quality",
     "publishedAt": "2026-11-04",
     "finding": "The escalation coordination result should describe a defined population and its evidence gaps, not an industry benchmark. Customer success leaders use the finding to review the account plan and health signal.",
-    "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-escalation-coordination-2026-11-04.webp",
+    "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-escalation-coordination.webp",
     "sections": [
       {
         "heading": "Question and scope",
@@ -516,7 +516,7 @@ export const november04ResearchPosts = [
     "cluster": "Measurement",
     "publishedAt": "2026-11-04",
     "finding": "The customer onboarding support result should describe a defined population and its evidence gaps, not an industry benchmark. Customer success leaders use the finding to review the account plan and health signal.",
-    "image": "/thumbnails/november-04/customersuccessmanagers-how-long-does-customer-onboarding-support-take-from-request-to-verified-close-2026-11-04.webp",
+    "image": "/thumbnails/november-04/customersuccessmanagers-how-long-does-customer-onboarding-support-take-from-request-to-verified-close.webp",
     "sections": [
       {
         "heading": "Question and scope",

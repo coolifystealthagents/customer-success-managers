@@ -6,7 +6,7 @@ export const november04BlogPosts = [
     "category": "Workflow",
     "publishedAt": "2026-11-04",
     "readTime": "10 min read",
-    "image": "/thumbnails/november-04/customersuccessmanagers-build-a-customer-onboarding-support-handoff-that-survives-review-2026-11-04.webp",
+    "image": "/thumbnails/november-04/customersuccessmanagers-build-a-customer-onboarding-support-handoff-that-survives-review.webp",
     "sections": [
       {
         "heading": "The control this customer onboarding support needs",
@@ -93,7 +93,7 @@ export const november04BlogPosts = [
     "category": "Workflow",
     "publishedAt": "2026-11-04",
     "readTime": "10 min read",
-    "image": "/thumbnails/november-04/customersuccessmanagers-build-a-customer-health-operations-handoff-that-survives-review-2026-11-04.webp",
+    "image": "/thumbnails/november-04/customersuccessmanagers-build-a-customer-health-operations-handoff-that-survives-review.webp",
     "sections": [
       {
         "heading": "The control this customer health operations needs",
@@ -180,7 +180,7 @@ export const november04BlogPosts = [
     "category": "Workflow",
     "publishedAt": "2026-11-04",
     "readTime": "10 min read",
-    "image": "/thumbnails/november-04/customersuccessmanagers-build-a-business-review-preparation-handoff-that-survives-review-2026-11-04.webp",
+    "image": "/thumbnails/november-04/customersuccessmanagers-build-a-business-review-preparation-handoff-that-survives-review.webp",
     "sections": [
       {
         "heading": "The control this business review preparation needs",
@@ -267,7 +267,7 @@ export const november04BlogPosts = [
     "category": "Workflow",
     "publishedAt": "2026-11-04",
     "readTime": "10 min read",
-    "image": "/thumbnails/november-04/customersuccessmanagers-build-a-adoption-follow-up-support-handoff-that-survives-review-2026-11-04.webp",
+    "image": "/thumbnails/november-04/customersuccessmanagers-build-a-adoption-follow-up-support-handoff-that-survives-review.webp",
     "sections": [
       {
         "heading": "The control this adoption follow up support needs",
@@ -354,7 +354,7 @@ export const november04BlogPosts = [
     "category": "Workflow",
     "publishedAt": "2026-11-04",
     "readTime": "10 min read",
-    "image": "/thumbnails/november-04/customersuccessmanagers-build-a-knowledge-operations-handoff-that-survives-review-2026-11-04.webp",
+    "image": "/thumbnails/november-04/customersuccessmanagers-build-a-knowledge-operations-handoff-that-survives-review.webp",
     "sections": [
       {
         "heading": "The control this knowledge operations needs",
@@ -441,7 +441,7 @@ export const november04BlogPosts = [
     "category": "Workflow",
     "publishedAt": "2026-11-04",
     "readTime": "10 min read",
-    "image": "/thumbnails/november-04/customersuccessmanagers-build-a-escalation-coordination-handoff-that-survives-review-2026-11-04.webp",
+    "image": "/thumbnails/november-04/customersuccessmanagers-build-a-escalation-coordination-handoff-that-survives-review.webp",
     "sections": [
       {
         "heading": "The control this escalation coordination needs",
@@ -528,7 +528,7 @@ export const november04BlogPosts = [
     "category": "Handoff",
     "publishedAt": "2026-11-04",
     "readTime": "10 min read",
-    "image": "/thumbnails/november-04/customersuccessmanagers-keep-customer-onboarding-support-and-customer-health-operations-aligned-at-the-handoff-2026-11-04.webp",
+    "image": "/thumbnails/november-04/customersuccessmanagers-keep-customer-onboarding-support-and-customer-health-operations-aligned-at-the-handoff.webp",
     "sections": [
       {
         "heading": "The control this customer onboarding support and customer health operations needs",
@@ -615,7 +615,7 @@ export const november04BlogPosts = [
     "category": "Review",
     "publishedAt": "2026-11-04",
     "readTime": "10 min read",
-    "image": "/thumbnails/november-04/customersuccessmanagers-run-a-monthly-quality-sample-for-customer-onboarding-support-2026-11-04.webp",
+    "image": "/thumbnails/november-04/customersuccessmanagers-run-a-monthly-quality-sample-for-customer-onboarding-support.webp",
     "sections": [
       {
         "heading": "The control this customer onboarding support quality sample needs",
