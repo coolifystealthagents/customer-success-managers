@@ -950,9 +950,20 @@ const rawResearchPosts: ResearchPost[] = [
   }
 ];
 
-export const blogPosts: BlogPost[] = rawBlogPosts.map(enrichBlogPost);
+const repairAudienceGap = (value: string) => value
+  .replace(/\s{2,}/g, ' ')
+  .replace('for ,', 'for customer success leaders, SaaS operators, and account teams,')
+  .replace('in ,', 'for customer success leaders, SaaS operators, and account teams,');
+
+export const blogPosts: BlogPost[] = rawBlogPosts.map((post) => {
+  const enriched = enrichBlogPost(post);
+  return { ...enriched, description: repairAudienceGap(enriched.description) };
+});
 const october22ResearchSlugs = new Set(october22ResearchPosts.map((post) => post.slug));
-export const researchPosts: ResearchPost[] = rawResearchPosts.map((post) => october22ResearchSlugs.has(post.slug) ? post : enrichResearchPost(post));
+export const researchPosts: ResearchPost[] = rawResearchPosts.map((post) => {
+  const enriched = october22ResearchSlugs.has(post.slug) ? post : enrichResearchPost(post);
+  return { ...enriched, summary: repairAudienceGap(enriched.summary) };
+});
 
 export const nav = [
   { href: '/', label: 'Home' },

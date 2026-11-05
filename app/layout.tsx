@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { Footer, Header } from '@/components/SiteChrome';
+import { SiteMotion } from '@/components/SiteMotion';
 import { site } from '@/lib/site';
 import './globals.css';
 import './v3.css';
@@ -10,13 +11,13 @@ export const metadata: Metadata = {
   title: { default: `${site.name} | Remote customer success support`, template: `%s | ${site.name}` },
   description: site.heroBody,
   icons: { icon: '/logo.svg', shortcut: '/logo.svg', apple: '/logo.svg' },
-  openGraph: { type: 'website', siteName: site.name, title: site.name, description: site.heroBody, images: [{ url: '/hero.png', width: 1200, height: 630, alt: site.heroAlt }] },
-  twitter: { card: 'summary_large_image', title: site.name, description: site.heroBody, images: ['/hero.png'] },
+  openGraph: { type: 'website', siteName: site.name, title: site.name, description: site.heroBody, images: [{ url: site.heroImage, width: 1672, height: 941, alt: site.heroAlt }] },
+  twitter: { card: 'summary_large_image', title: site.name, description: site.heroBody, images: [site.heroImage] },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return <html lang="en" data-design={site.design}><body style={{ '--primary': site.primary, '--secondary': site.secondary, '--accent': site.accent, '--canvas': site.canvas, '--ink': site.ink, '--display': site.displayFont, '--body': site.bodyFont } as React.CSSProperties}>
-    <Header />{children}<Footer />
+    <Header />{children}<Footer /><SiteMotion />
     <Script src="/acr-config.js" strategy="beforeInteractive" />
     <Script src="https://acrtracking.stealthagents.us/v1/tracker.js" strategy="afterInteractive" integrity="sha384-xngnWvZA3ij7/lg0Hj+D3XolZQoG8dmy71mCBPy4o/cN7GsuYiWDGOUul+ocJ0/+" crossOrigin="anonymous" />
   </body></html>;
