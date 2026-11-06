@@ -23,5 +23,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <Header />{children}<Footer /><SiteMotion />
     <Script src="/acr-config.js" strategy="beforeInteractive" />
     <Script src="https://acrtracking.stealthagents.us/v1/tracker.js" strategy="afterInteractive" integrity="sha384-xngnWvZA3ij7/lg0Hj+D3XolZQoG8dmy71mCBPy4o/cN7GsuYiWDGOUul+ocJ0/+" crossOrigin="anonymous" />
+    <Script
+      id="databull-analytics"
+      src="https://databull.stealthagents.us/js/script.js"
+      data-website-id="dc_h5rvncg7e7igx9"
+      data-domain="customersuccessmanagers.com"
+      strategy="afterInteractive"
+    />
   </body></html>;
 }
