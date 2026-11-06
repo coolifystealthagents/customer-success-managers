@@ -7,8 +7,8 @@ const csp = [
   "img-src 'self' data: blob:",
   "font-src 'self' data:",
   "style-src 'self' 'unsafe-inline'",
-  " https://databull.stealthagents.us 'self' 'unsafe-inline' https://acrtracking.stealthagents.us https://static.cloudflareinsights.com",
-  " https://databull.stealthagents.us 'self' https://acrtracking.stealthagents.us https://cloudflareinsights.com",
+  "script-src https://databull.stealthagents.us 'self' 'unsafe-inline' https://acrtracking.stealthagents.us https://static.cloudflareinsights.com",
+  "connect-src https://databull.stealthagents.us 'self' https://acrtracking.stealthagents.us https://cloudflareinsights.com",
   "frame-src 'self' https://go.oncehub.com https://*.oncehub.com",
   "upgrade-insecure-requests",
 ].join('; ');
