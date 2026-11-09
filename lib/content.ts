@@ -1,6 +1,7 @@
 import { site } from './site';
 import type { BlogPost, ResearchPost } from './types';
 import { november02BlogPosts } from './november02-blog';
+import { november09BlogPosts } from './november09-blog';
 import { november08BlogPosts } from './november08-blog';
 import { november07BlogPosts } from './november07-blog';
 import { november06BlogPosts } from './november06-blog';
@@ -9,6 +10,7 @@ import { november04BlogPosts } from './november04-blog';
 import { november03BlogPosts } from './november03-blog';
 import { november01BlogPosts } from './november01-blog';
 import { november02ResearchPosts } from './november02-research';
+import { november09ResearchPosts } from './november09-research';
 import { november08ResearchPosts } from './november08-research';
 import { november07ResearchPosts } from './november07-research';
 import { november06ResearchPosts } from './november06-research';
@@ -31,7 +33,7 @@ import { october22ResearchPosts } from './october-22/researchPosts';
 import { enrichBlogPost, enrichResearchPost } from './editorial-enrichment';
 
 const rawBlogPosts: BlogPost[] = [
-  ...november08BlogPosts, ...november03BlogPosts, ...november04BlogPosts, ...november05BlogPosts, ...november06BlogPosts, ...november07BlogPosts, ...november02BlogPosts,
+  ...november09BlogPosts, ...november08BlogPosts, ...november03BlogPosts, ...november04BlogPosts, ...november05BlogPosts, ...november06BlogPosts, ...november07BlogPosts, ...november02BlogPosts,
   ...november01BlogPosts,
   ...october28BlogPosts,
   ...october27BlogPosts,
@@ -506,7 +508,7 @@ const rawBlogPosts: BlogPost[] = [
   }
 ];
 const rawResearchPosts: ResearchPost[] = [
-  ...november08ResearchPosts, ...november03ResearchPosts, ...november04ResearchPosts, ...november05ResearchPosts, ...november06ResearchPosts, ...november07ResearchPosts, ...november02ResearchPosts,
+  ...november09ResearchPosts, ...november08ResearchPosts, ...november03ResearchPosts, ...november04ResearchPosts, ...november05ResearchPosts, ...november06ResearchPosts, ...november07ResearchPosts, ...november02ResearchPosts,
   ...november01ResearchPosts,
   ...october28ResearchPosts,
   ...october27ResearchPosts,
