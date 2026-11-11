@@ -2,7 +2,6 @@ import { NextResponse } from 'next/server';
 import { deliverLead } from '@/lib/lead-delivery';
 import type { FallbackLeadPayload } from '@/lib/lead-fallback-mattermost';
 import { isAllowedBrowserOrigin } from '@/lib/request-origin';
-import { emitAcceptedLeadEvent } from '@/lib/lead-tracking';
 import { claimSubmission, markSubmission, releaseFailedSubmission } from '@/lib/lead-idempotency';
 import { createHash } from 'node:crypto';
 
@@ -104,7 +103,7 @@ export async function POST(request: Request) {
     await markSubmission(submissionId, fingerprint, 'lead_delivered');
     // Analytics is attempted once after operational acknowledgement, but it is
     // never allowed to reverse a confirmed lead delivery.
-    await emitAcceptedLeadEvent({ submissionId, source: lead.source, channel: result.channel });
+    // deliverLead already emitted the single accepted ACR lead event.
     await markSubmission(submissionId, fingerprint, 'delivered');
   } catch {
     return json('Your request reached our operations channel, but final confirmation is incomplete. It was not sent again. Please do not resubmit this request.', 503);
