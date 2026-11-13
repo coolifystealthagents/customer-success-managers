@@ -518,6 +518,70 @@
   ],
   "blog": [
     {
+      "slug": "customersuccessmanagers-write-a-renewal-readiness-memo-the-account-team-can-defend",
+      "title": "Write a renewal readiness memo the account team can defend",
+      "description": "A bounded operational guide to renewal readiness memo, with explicit evidence, decision rights, and a verified close.",
+      "category": "Renewal",
+      "date": "2026-11-12",
+      "image": "/thumbnails/november-12/customersuccessmanagers-write-a-renewal-readiness-memo-the-account-team-can-defend.png"
+    },
+    {
+      "slug": "customersuccessmanagers-set-a-success-plan-review-cadence-that-survives-a-busy-quarter",
+      "title": "Set a success plan review cadence that survives a busy quarter",
+      "description": "A bounded operational guide to success plan review cadence, with explicit evidence, decision rights, and a verified close.",
+      "category": "Success planning",
+      "date": "2026-11-12",
+      "image": "/thumbnails/november-12/customersuccessmanagers-set-a-success-plan-review-cadence-that-survives-a-busy-quarter.png"
+    },
+    {
+      "slug": "customersuccessmanagers-handle-a-customer-request-for-a-new-success-manager-without-losing-context",
+      "title": "Handle a customer request for a new success manager without losing context",
+      "description": "A bounded operational guide to success manager transition, with explicit evidence, decision rights, and a verified close.",
+      "category": "Account coverage",
+      "date": "2026-11-12",
+      "image": "/thumbnails/november-12/customersuccessmanagers-handle-a-customer-request-for-a-new-success-manager-without-losing-context.png"
+    },
+    {
+      "slug": "customersuccessmanagers-build-an-adoption-risk-note-from-product-usage-evidence",
+      "title": "Build an adoption risk note from product usage evidence",
+      "description": "A bounded operational guide to adoption risk note, with explicit evidence, decision rights, and a verified close.",
+      "category": "Adoption",
+      "date": "2026-11-12",
+      "image": "/thumbnails/november-12/customersuccessmanagers-build-an-adoption-risk-note-from-product-usage-evidence.png"
+    },
+    {
+      "slug": "customersuccessmanagers-record-an-executive-business-review-decision-with-a-named-owner",
+      "title": "Record an executive business review decision with a named owner",
+      "description": "A bounded operational guide to executive business review decision record, with explicit evidence, decision rights, and a verified close.",
+      "category": "Business reviews",
+      "date": "2026-11-12",
+      "image": "/thumbnails/november-12/customersuccessmanagers-record-an-executive-business-review-decision-with-a-named-owner.png"
+    },
+    {
+      "slug": "customersuccessmanagers-prepare-a-customer-reference-request-without-overcommitting-the-account",
+      "title": "Prepare a customer reference request without overcommitting the account",
+      "description": "A bounded operational guide to customer reference request, with explicit evidence, decision rights, and a verified close.",
+      "category": "Advocacy",
+      "date": "2026-11-12",
+      "image": "/thumbnails/november-12/customersuccessmanagers-prepare-a-customer-reference-request-without-overcommitting-the-account.png"
+    },
+    {
+      "slug": "customersuccessmanagers-audit-success-plan-objectives-that-were-never-baselined",
+      "title": "Audit success plan objectives that were never baselined",
+      "description": "A bounded operational guide to success plan objectives without a baseline, with explicit evidence, decision rights, and a verified close.",
+      "category": "Success planning",
+      "date": "2026-11-12",
+      "image": "/thumbnails/november-12/customersuccessmanagers-audit-success-plan-objectives-that-were-never-baselined.png"
+    },
+    {
+      "slug": "customersuccessmanagers-run-a-churn-risk-triage-that-separates-signal-from-complaint-volume",
+      "title": "Run a churn risk triage that separates signal from complaint volume",
+      "description": "A bounded operational guide to churn risk triage, with explicit evidence, decision rights, and a verified close.",
+      "category": "Retention",
+      "date": "2026-11-12",
+      "image": "/thumbnails/november-12/customersuccessmanagers-run-a-churn-risk-triage-that-separates-signal-from-complaint-volume.png"
+    },
+    {
       "slug": "customersuccessmanagers-run-a-quarterly-portfolio-review-when-account-data-is-incomplete",
       "title": "Run a quarterly portfolio review when account data is incomplete",
       "description": "A portfolio review that separates missing data from real account risk instead of letting a blank field look healthy.",
@@ -1903,6 +1967,62 @@
     }
   ],
   "research": [
+    {
+      "slug": "customersuccessmanagers-how-often-does-a-renewal-readiness-memo-cite-the-current-success-plan",
+      "title": "How often does a renewal readiness memo cite the current success plan?",
+      "description": "A measurement protocol for renewal readiness memos citing the current success plan, with a frozen population, an evidence sample, and a dated review.",
+      "category": "Renewal",
+      "date": "2026-11-12",
+      "image": "/thumbnails/november-12/customersuccessmanagers-how-often-does-a-renewal-readiness-memo-cite-the-current-success-plan.png"
+    },
+    {
+      "slug": "customersuccessmanagers-what-share-of-success-plan-reviews-happen-inside-the-stated-cadence",
+      "title": "What share of success plan reviews happen inside the stated cadence?",
+      "description": "A measurement protocol for success plan reviews inside the stated cadence, with a frozen population, an evidence sample, and a dated review.",
+      "category": "Success planning",
+      "date": "2026-11-12",
+      "image": "/thumbnails/november-12/customersuccessmanagers-what-share-of-success-plan-reviews-happen-inside-the-stated-cadence.png"
+    },
+    {
+      "slug": "customersuccessmanagers-how-complete-is-the-account-context-when-a-success-manager-changes",
+      "title": "How complete is the account context when a success manager changes?",
+      "description": "A measurement protocol for account context at a success manager change, with a frozen population, an evidence sample, and a dated review.",
+      "category": "Account coverage",
+      "date": "2026-11-12",
+      "image": "/thumbnails/november-12/customersuccessmanagers-how-complete-is-the-account-context-when-a-success-manager-changes.png"
+    },
+    {
+      "slug": "customersuccessmanagers-where-do-adoption-risk-notes-lose-their-usage-source",
+      "title": "Where do adoption risk notes lose their usage source?",
+      "description": "A measurement protocol for adoption risk notes that lose their usage source, with a frozen population, an evidence sample, and a dated review.",
+      "category": "Adoption",
+      "date": "2026-11-12",
+      "image": "/thumbnails/november-12/customersuccessmanagers-where-do-adoption-risk-notes-lose-their-usage-source.png"
+    },
+    {
+      "slug": "customersuccessmanagers-how-often-do-executive-business-review-decisions-receive-a-named-owner-and-date",
+      "title": "How often do executive business review decisions receive a named owner and date?",
+      "description": "A measurement protocol for executive business review decisions with an owner and date, with a frozen population, an evidence sample, and a dated review.",
+      "category": "Business reviews",
+      "date": "2026-11-12",
+      "image": "/thumbnails/november-12/customersuccessmanagers-how-often-do-executive-business-review-decisions-receive-a-named-owner-and-date.png"
+    },
+    {
+      "slug": "customersuccessmanagers-what-share-of-customer-reference-requests-have-an-approved-scope",
+      "title": "What share of customer reference requests have an approved scope?",
+      "description": "A measurement protocol for customer reference requests with an approved scope, with a frozen population, an evidence sample, and a dated review.",
+      "category": "Advocacy",
+      "date": "2026-11-12",
+      "image": "/thumbnails/november-12/customersuccessmanagers-what-share-of-customer-reference-requests-have-an-approved-scope.png"
+    },
+    {
+      "slug": "customersuccessmanagers-can-a-churn-risk-triage-be-reproduced-from-the-recorded-signals",
+      "title": "Can a churn risk triage be reproduced from the recorded signals?",
+      "description": "A measurement protocol for churn risk triage reproduced from recorded signals, with a frozen population, an evidence sample, and a dated review.",
+      "category": "Retention",
+      "date": "2026-11-12",
+      "image": "/thumbnails/november-12/customersuccessmanagers-can-a-churn-risk-triage-be-reproduced-from-the-recorded-signals.png"
+    },
     {
       "slug": "customersuccessmanagers-how-complete-is-the-portfolio-review-dataset-each-quarter",
       "title": "How complete is the portfolio review dataset each quarter?",
