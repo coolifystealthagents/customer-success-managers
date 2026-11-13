@@ -1,0 +1,181 @@
+{
+  "heading": "Give every customer moment a reliable follow-through.",
+  "intro": "A strong customer relationship depends on more than the meeting itself. Someone needs to prepare the context, track what was promised, find the current resource, and make the next handoff clear. Customer success operations support gives those details a dependable home so your account team can spend more time listening, advising, and building trust.",
+  "chapters": [
+    [
+      "A considered beginning",
+      "Onboarding brings people, access, milestones, and expectations together. Support can maintain the plan, prepare the next conversation, and make blockers visible before they become silent delays. The customer owner still decides priorities and confirms what success means. The assistant keeps the administrative record aligned with those decisions.",
+      "customer-onboarding-support"
+    ],
+    [
+      "Context throughout the relationship",
+      "Health reviews, business reviews, and adoption follow-up need current information. Gather the indicators your team already uses, label their source dates, and preserve the customer’s own words. Missing data should remain visibly different from a negative signal. That distinction gives account owners a more useful starting point for their judgment.",
+      "customer-health-operations"
+    ],
+    [
+      "Care through changes and questions",
+      "When a customer raises a concern or approaches a renewal, the quality of the handoff matters. Support can bring together the timeline, the responsible owner, the outstanding questions, and the agreed next update. Your team keeps control of remedies, commercial terms, and relationship decisions.",
+      "renewal-coordination"
+    ]
+  ],
+  "bundles": [
+    [
+      "Welcoming a new customer",
+      "Pair onboarding support with knowledge operations. Keep the onboarding plan connected to approved resources, current owners, and the customer’s agreed milestones. Prepare a short readiness check before each touchpoint rather than asking the customer to repeat information.",
+      [
+        0,
+        4
+      ]
+    ],
+    [
+      "Supporting an active portfolio",
+      "Connect customer health operations, business review preparation, and adoption follow-up. Compile context from approved systems, distinguish missing inputs from confirmed concerns, and give each follow-up a clear owner and purpose.",
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    [
+      "Keeping important moments connected",
+      "Combine escalation coordination, feedback operations, and renewal coordination. Preserve the original concern, record commitments accurately, and route decisions to the appropriate account owner. A renewal date should never obscure an unresolved customer issue.",
+      [
+        5,
+        7,
+        6
+      ]
+    ]
+  ],
+  "ownership": [
+    "Customer leaders define success measures, account strategy, and the communication standards.",
+    "Support specialists maintain plans, prepare context, coordinate reminders, and organize feedback.",
+    "Account owners approve commitments, commercial terms, remedies, and risk judgments."
+  ],
+  "review": [
+    "Compare the account summary with the original customer conversation and source systems.",
+    "Look for unowned actions, outdated resources, and unanswered customer questions.",
+    "Adjust the role around the moments where preparation or follow-through is regularly missing."
+  ],
+  "services": {
+    "customer-onboarding-support": {
+      "trigger": "When a welcome needs to become an organized working plan",
+      "example": "A new customer has completed the kickoff, but access, training, and internal ownership are moving at different speeds. The assistant reconciles the approved onboarding plan with the latest notes, identifies the blocked milestone, and records who needs to respond. Before the next touchpoint, the account owner receives a concise readiness brief. The customer gets approved reminders that reflect the current plan rather than a sequence that ignores what has already happened.",
+      "fields": [
+        "Agreed milestone and responsible owner",
+        "Customer dependency and latest confirmation",
+        "Approved resource or next meeting",
+        "Blocker, escalation owner, and update date"
+      ],
+      "exception": "A completed internal task does not necessarily mean the customer is ready to progress. Missing access, an unanswered question, or a changed customer priority belongs in the plan. The assistant records the issue; the account owner decides how milestones or expectations should change.",
+      "question": "Can this fit an onboarding process we already use?",
+      "answer": "Yes. Start with your existing milestones, templates, and ownership rules. Support can maintain the plan and prepare exceptions for review. The goal is to keep your process current and connected, not introduce another tracking system that the customer and account team must reconcile.",
+      "pilot": "Choose one onboarding pathway and the plan your team currently uses. Define the milestones, approved resources, customer dependencies, and review owner. Walk through a representative account from kickoff to the next agreed milestone. This gives the support role a practical view of what completion means and when a blocked step needs the account owner rather than another routine reminder.",
+      "review": "Inspect the current plan against the latest customer conversation. Each action should have an owner, a clear status, and a source for its completion. Check that changed expectations are reflected in the plan before the next customer-facing update."
+    },
+    "customer-health-operations": {
+      "trigger": "When an account score needs supporting context",
+      "example": "An account appears to have lower usage, but the latest product export is incomplete and the customer recently changed its internal team. The assistant records the source dates, checks the agreed indicators, and separates the missing export from confirmed account activity. The customer owner receives the supporting context and open questions alongside the health view. This makes the next conversation more informed without treating a single metric as a complete account assessment.",
+      "fields": [
+        "Indicator definition and reporting period",
+        "Source date and completeness status",
+        "Confirmed change and relevant account context",
+        "Account-owner review question"
+      ],
+      "exception": "Missing information should not silently become a zero or a risk label. Follow the agreed treatment for delayed sources, conflicting indicators, and unusual events. Customer health judgments require the account owner’s context, especially when a summary could influence a consequential relationship decision.",
+      "question": "Will this create a new customer health score?",
+      "answer": "The role can maintain and prepare the framework your team approves. Choosing indicators, setting thresholds, and interpreting risk remain with customer leadership. If a definition changes, keep the change visible so earlier and later reviews are not compared as though they used the same rules.",
+      "pilot": "Begin with the indicators and portfolio view your team already trusts. Record the definition, source, refresh timing, and owner for each input. Prepare a small account sample that includes missing data and conflicting signals. Review the resulting summaries together so the support role understands how to preserve uncertainty and route a question without presenting an independent account-risk judgment.",
+      "review": "Check source freshness, completeness, and the accuracy of contextual notes. Review whether missing inputs are clearly separated from confirmed changes. The prepared view should help an account owner ask a better question, not hide the limits of the data behind a score."
+    },
+    "business-review-preparation": {
+      "trigger": "When a customer review needs more than a slide deck",
+      "example": "An account owner is preparing a review with several open commitments from the previous meeting. The assistant gathers the approved usage and outcome context, checks which actions were actually completed, and drafts an agenda around the remaining questions. The review packet links back to the source records. After the meeting, the action log distinguishes confirmed decisions from ideas still under discussion and gives each agreed follow-up an owner.",
+      "fields": [
+        "Review purpose and customer priorities",
+        "Approved measures with source dates",
+        "Previous commitments and current status",
+        "Agenda questions and decision log"
+      ],
+      "exception": "A polished slide should not hide an incomplete source or an unresolved customer concern. Label caveats and preserve the original wording where it matters. Strategic recommendations, success claims, and new commitments need the account owner’s approval before they appear in customer-facing materials.",
+      "question": "Can the assistant prepare customer-facing materials?",
+      "answer": "Preparation can be included using your approved template, sources, and review process. The account owner should verify the narrative, figures, commitments, and audience before distribution. The assistant can then coordinate the approved materials and maintain the follow-up record.",
+      "pilot": "Start with one review format, a named account owner, and an agreed preparation deadline. Collect the approved template, prior commitments, and source list. Prepare a sample agenda and context packet before expanding to more accounts. This establishes which details matter to your team and where a figure, outcome claim, or customer-facing statement needs a separate approval.",
+      "review": "Review the packet for relevance to the customer’s stated priorities and continuity with the previous meeting. Verify that open commitments remain visible and that every proposed next action is clearly distinguished from a decision already agreed with the customer."
+    },
+    "adoption-follow-up": {
+      "trigger": "When a learning resource needs timely follow-through",
+      "example": "A customer agreed to attend a training session, but the attendance record and account notes disagree. The assistant checks the approved sources, updates the follow-up queue, and prepares the appropriate next message for review or authorized sending. A customer who requests additional help is routed to the responsible specialist. The record shows what was shared, what the customer said, and which next action is still outstanding.",
+      "fields": [
+        "Approved follow-up reason and audience",
+        "Current resource version",
+        "Attendance or completion evidence",
+        "Customer response and next responsible owner"
+      ],
+      "exception": "Low activity does not explain why a customer needs help. Avoid assuming a lack of interest from an incomplete attendance record or delayed response. Requests about suitability, accessibility, technical problems, or business priorities should go to the owner equipped to address them.",
+      "question": "How do we avoid repetitive reminders?",
+      "answer": "Keep the queue connected to current responses and completion records. Define when reminders stop, when a different resource is appropriate, and when the account owner should take over. Review the message history before sending another routine follow-up.",
+      "pilot": "Choose one approved learning or engagement pathway and define the event that starts a follow-up. Document current resources, message templates, completion signals, and stop conditions. Review a sample that includes a completed task, a nonresponse, and a request for help. This makes the workflow responsive to what the customer actually did rather than a fixed sequence detached from the account record.",
+      "review": "Compare reminders with the latest response and completion status. Confirm that the resource is current and appropriate to the agreed pathway. Requests for additional help should have a visible owner, not disappear into a routine follow-up count."
+    },
+    "knowledge-operations": {
+      "trigger": "When teams cannot tell which guidance is current",
+      "example": "Two help resources describe different steps for the same task. The assistant records the conflict, identifies the named content owners, and pauses any unapproved replacement. Once the owner confirms the correct guidance, the assistant applies the authorized update, checks the links and presentation, and records the publication version. The inventory shows which resource is current, who approved it, and when it should next be reviewed.",
+      "fields": [
+        "Resource title, location, and owner",
+        "Approved version and review date",
+        "Change request with source context",
+        "Publication check and unresolved issue"
+      ],
+      "exception": "Administrative editing should not become a new product or policy decision. Conflicting instructions, unsupported claims, and unclear technical steps require a subject-matter owner. Retired resources should follow your archive and redirect process so existing links do not strand customers.",
+      "question": "Can we begin with a cleanup of existing resources?",
+      "answer": "Yes. Define the repositories in scope and the ownership rules first. An initial inventory can identify duplicates, missing review dates, broken links, and content requiring a decision. Owners approve substantive changes before the assistant updates or publishes the affected materials.",
+      "pilot": "Choose a bounded collection, such as onboarding resources or a particular help category. Establish the content owners, review statuses, and publication permissions before making edits. The initial assignment can be an inventory and exception list, followed by owner-approved corrections. This gives your team a clear picture of what is current and where substantive decisions are needed before a broader cleanup begins.",
+      "review": "Verify a sample of published changes against the approved request. Check links, version notes, and ownership records. The review should also inspect unresolved conflicts so a tidy inventory does not create the false impression that every resource has been validated."
+    },
+    "escalation-coordination": {
+      "trigger": "When a concern crosses several internal teams",
+      "example": "A customer has reported a problem through support and then raised it again with their account manager. The assistant assembles the original request, relevant timestamps, approved account context, and current internal owner into one escalation record. Updates refer to that shared timeline. The account owner can see what has been acknowledged, what remains unconfirmed, and when the next approved update is due.",
+      "fields": [
+        "Original concern and exact source",
+        "Timeline of acknowledged actions",
+        "Current owner and next update",
+        "Open dependency or unanswered question"
+      ],
+      "exception": "Coordination does not authorize a remedy or guarantee a resolution time. Avoid converting an internal estimate into a customer promise. Urgent or sensitive concerns follow your escalation procedure, and only authorized owners approve explanations, remedies, or commitments.",
+      "question": "How is the customer kept informed?",
+      "answer": "Your team sets the communication owner, approved wording, and update cadence. Support can prepare the status context and coordinate authorized updates. When a milestone slips or information is uncertain, the record should make that visible for the owner rather than filling the gap with reassurance.",
+      "pilot": "Begin with your existing escalation categories and ownership rules. Define what information belongs in the initial handoff, how acknowledgements are recorded, and who approves customer updates. Walk through a representative case with several internal dependencies. The support role should know how to preserve the timeline and identify a missing owner without stepping into technical diagnosis or relationship decisions.",
+      "review": "Check the accuracy of timestamps, original requests, and acknowledged commitments. Confirm that there is one current next action and a responsible owner. An escalation record should make uncertainty visible rather than imply that an unanswered internal request has been resolved."
+    },
+    "renewal-coordination": {
+      "trigger": "When a renewal needs a complete account picture",
+      "example": "An account is approaching its review window with a recent support concern and an unanswered question about usage. The assistant brings together authorized contract references, the renewal calendar, current account context, and open actions. Internal reminders go to the agreed owner. The brief keeps the unresolved concern visible so the commercial discussion does not proceed from an incomplete picture of the relationship.",
+      "fields": [
+        "Authorized renewal date and source",
+        "Account owner and review window",
+        "Current context and unresolved commitments",
+        "Next internal action and decision needed"
+      ],
+      "exception": "Dates, terms, and entitlements must come from the authorized source. Conflicting contract references or uncertain notice requirements go to the responsible commercial or legal owner. The assistant coordinates preparation and records; it does not negotiate, interpret contractual obligations, or approve concessions.",
+      "question": "Will the assistant contact customers about renewal terms?",
+      "answer": "Only within the communication scope your team explicitly approves. Routine scheduling or an approved reminder may be appropriate. Pricing, terms, concessions, and binding statements remain with your authorized account team, with any ambiguity routed before a message is sent.",
+      "pilot": "Start with a defined renewal review window and a trusted source for dates and account ownership. Agree on the preparation checklist, internal reminder route, and material that may be included in the brief. Review a small account sample with different open issues. This establishes how the administrative process handles ordinary renewals and accounts that need additional attention before a commercial conversation.",
+      "review": "Verify date references, ownership, and the visibility of unresolved commitments. Check that the account context is current and that contract questions are assigned to an authorized reviewer. A prepared brief should not imply that a renewal decision or offer has already been approved."
+    },
+    "customer-feedback-operations": {
+      "trigger": "When feedback needs to remain connected to the customer’s words",
+      "example": "Feedback arrives through a survey, a support conversation, and an account review. The assistant records each source, applies your approved categories, and links related entries without erasing their individual context. The summary distinguishes recurring themes from isolated comments and flags items that need a response. Your customer and product owners can review the original wording before deciding what the feedback means or what action to take.",
+      "fields": [
+        "Original wording and source reference",
+        "Approved theme and relevant context",
+        "Related entries without lost attribution",
+        "Response owner and follow-up status"
+      ],
+      "exception": "A theme is an organizational aid, not a finding about every customer. Preserve contradictory comments and avoid presenting a small set of responses as representative of the whole portfolio. Sensitive feedback and requests for commitments should be routed to their accountable owners.",
+      "question": "Can this help close the loop with customers?",
+      "answer": "Yes. Maintain a response ownership log that records what is awaiting review, what was approved, and what was communicated. The assistant can coordinate authorized follow-up, while product priorities, explanations, and commitments remain with the responsible team.",
+      "pilot": "Choose the approved feedback channels and a simple taxonomy your team can apply consistently. Define how related entries are linked, how original wording is preserved, and who receives requests for a response. Review a mixed sample before processing a wider set. Include contradictory feedback so the support role learns to preserve nuance instead of forcing every entry into a single narrative.",
+      "review": "Inspect theme assignments against the source comments and check that duplicates have not inflated a summary. Review response ownership and unresolved sensitive items. The register should make it possible to revisit the original context when a product or account owner needs more detail."
+    }
+  }
+}
