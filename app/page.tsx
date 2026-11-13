@@ -1,3 +1,4 @@
-import type { Metadata } from 'next';import { HomePage } from '@/components/Marketing';
-export const metadata:Metadata={alternates:{canonical:'/'},openGraph:{title:'Customer Success Managers',description:'Remote customer success staffing for visible journeys, owned handoffs, and reviewable follow-through.',images:['/hero.png']}};
-export default function Page(){return <HomePage/>}
+import type {Metadata} from 'next';
+import {HomeExperience} from './experience';
+export const metadata:Metadata={title:"Customer Success Managers",description:"Give your customer success team the operational support to stay present. Organize onboarding, account signals, reviews, and follow-up around the relationships you want to build.",alternates:{canonical:"/"}};
+export default function Page(){return <HomeExperience/>}

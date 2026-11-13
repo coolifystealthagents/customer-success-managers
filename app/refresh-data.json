@@ -1,0 +1,2941 @@
+{
+  "short": "Customer Success Managers",
+  "heading": [
+    "More time for",
+    "the human side."
+  ],
+  "intro": "Give your customer success team the operational support to stay present. Organize onboarding, account signals, reviews, and follow-up around the relationships you want to build.",
+  "serviceHeading": "Support the whole customer relationship.",
+  "storyHeading": "Make the next customer conversation easier.",
+  "story": "Customers experience your team as one relationship, even when the work crosses several systems. A support specialist keeps the record connected: agreed actions, current resources, open questions, and the next accountable owner.",
+  "contact": "Let\u2019s support your customer team.",
+  "footer": "Remote customer success operations support for onboarding, account health, business reviews, adoption, renewals, and customer feedback.",
+  "words": [
+    "Thoughtful onboarding",
+    "Connected account records",
+    "Reliable follow-through"
+  ],
+  "close": "Keep your team closer to your customers.",
+  "theme": "success",
+  "name": "customer-success-managers",
+  "domain": "customersuccessmanagers.com",
+  "root": "/Users/wrayns/Documents/Codex/2026-11-10/hi/work/portfolio-acr/repos/customer-success-managers--main",
+  "app": "/Users/wrayns/Documents/Codex/2026-11-10/hi/work/portfolio-acr/repos/customer-success-managers--main/app",
+  "brand": "Customer Success Managers",
+  "services": [
+    {
+      "slug": "customer-onboarding-support",
+      "title": "Customer onboarding support",
+      "description": "Keep plans, tasks, and approved communication organized.",
+      "intro": "Turn an approved onboarding plan into a visible operating rhythm. A remote specialist can maintain the record, prepare reminders, reconcile task ownership, and surface blocked steps while the account owner leads the relationship.",
+      "audience": "Customer success teams with a defined onboarding plan but inconsistent task updates, reminders, handoffs, or blocker visibility.",
+      "inputs": [
+        "Approved onboarding plan and stage definitions",
+        "Named source systems and required record fields",
+        "Current owner, dependency, and escalation map",
+        "Approved reminder templates and communication rules"
+      ],
+      "work": [
+        "Prepare onboarding records from approved templates",
+        "Maintain task owners, dates, and dependency notes",
+        "Coordinate approved reminders and meeting logistics",
+        "Reconcile completed steps with source systems",
+        "Flag blocked steps to the named account owner"
+      ],
+      "outputs": [
+        "A current onboarding record",
+        "Clear next actions after each touchpoint",
+        "Visible blockers with an accountable owner",
+        "Consistent handoff notes for the account team"
+      ],
+      "controls": [
+        "Required fields are complete before a record advances",
+        "Dates and status changes trace to the named source",
+        "Blocked steps have an owner and documented transfer",
+        "A sample of completed journeys is reviewed for record completeness"
+      ],
+      "boundaries": [
+        "No product, pricing, scope, or delivery promises",
+        "No changes to contract or implementation commitments",
+        "No independent interpretation of security requirements"
+      ],
+      "workflow": [
+        "Receive the approved plan and customer stage",
+        "Check required fields and source freshness",
+        "Prepare the next approved action or reminder",
+        "Record the response and update status",
+        "Transfer exceptions to the accountable owner"
+      ],
+      "scenarios": [
+        "A growing implementation queue needs daily record maintenance",
+        "Kickoff notes are not consistently transferred into the onboarding plan",
+        "Account owners need blockers separated from routine follow up"
+      ],
+      "faqs": [
+        {
+          "question": "Does the specialist own the customer relationship?",
+          "answer": "No. The account owner retains relationship judgment, commitments, and customer-facing decisions. The specialist maintains the approved operating record and routes exceptions."
+        },
+        {
+          "question": "Can support change the onboarding plan?",
+          "answer": "Only approved updates are recorded. Scope, delivery, security, and product decisions return to the authorized owner."
+        }
+      ],
+      "image": "/refresh-20261113/service1.webp",
+      "alt": "Three colleagues engaged in a business meeting, showcasing diversity and collaboration in a contemporary office setting.",
+      "position": "50% 50%"
+    },
+    {
+      "slug": "customer-health-operations",
+      "title": "Customer health operations",
+      "description": "Prepare consistent views from approved health signals.",
+      "intro": "Give customer leaders a review-ready view of the signals they have already approved. Support can reconcile source dates, assemble portfolio summaries, and route threshold exceptions without inventing a score or deciding account strategy.",
+      "audience": "Customer success leaders who already have approved health indicators but need a repeatable way to reconcile, prepare, and review them.",
+      "inputs": [
+        "Approved indicators and definitions",
+        "Named systems, source dates, and refresh cadence",
+        "Portfolio review template and threshold rules",
+        "Review owner and exception route"
+      ],
+      "work": [
+        "Compile approved product, support, and engagement indicators",
+        "Check source dates and missing inputs",
+        "Prepare portfolio and account review summaries",
+        "Maintain risk and opportunity follow-up queues",
+        "Flag threshold exceptions for owner review"
+      ],
+      "outputs": [
+        "Health views with visible source dates",
+        "Missing-data exceptions separated from true risk",
+        "A repeatable portfolio review packet",
+        "A clear queue for account-owner decisions"
+      ],
+      "controls": [
+        "Every signal shows its source date",
+        "Missing data is separated from account risk",
+        "Definitions remain unchanged during preparation",
+        "Threshold exceptions are sampled against source records"
+      ],
+      "boundaries": [
+        "No independent health-score design",
+        "No churn prediction claims or automated account decisions",
+        "No commercial or customer communication without approval"
+      ],
+      "workflow": [
+        "Collect approved indicators from named systems",
+        "Validate freshness and required fields",
+        "Assemble the agreed view without changing definitions",
+        "Mark missing or conflicting inputs",
+        "Route the summary to the review owner"
+      ],
+      "scenarios": [
+        "Weekly portfolio reviews begin with manual source reconciliation",
+        "Missing usage or support data is being mistaken for risk",
+        "Leadership needs a consistent packet without delegating account strategy"
+      ],
+      "faqs": [
+        {
+          "question": "Will support design our health score?",
+          "answer": "No. The team supplies approved definitions and thresholds. Support prepares the view and surfaces missing or conflicting evidence."
+        },
+        {
+          "question": "Does this predict churn?",
+          "answer": "No. The scope organizes approved evidence for accountable review and makes no prediction or guaranteed outcome claim."
+        }
+      ],
+      "image": "/refresh-20261113/service2.webp",
+      "alt": "Two colleagues review documents during a business meeting in a modern office setting.",
+      "position": "50% 50%"
+    },
+    {
+      "slug": "business-review-preparation",
+      "title": "Business review preparation",
+      "description": "Organize context and materials for accountable account owners.",
+      "intro": "Reduce meeting preparation time without outsourcing the customer relationship. A specialist can assemble approved outcomes, open actions, adoption context, and logistics so the account owner can focus on the conversation and decisions.",
+      "audience": "Account teams that spend too much meeting time gathering context, checking action logs, and chasing approved inputs.",
+      "inputs": [
+        "Meeting purpose, participants, date, and approved template",
+        "Current outcomes, adoption context, and open actions",
+        "Decision log and customer-safe language",
+        "Named reviewers and packet cutoff"
+      ],
+      "work": [
+        "Prepare meeting briefs and agenda drafts",
+        "Compile approved outcomes and usage context",
+        "Maintain action and decision logs",
+        "Coordinate invitations and approved follow-up",
+        "Route strategic questions to the right owner"
+      ],
+      "outputs": [
+        "A consistent pre-meeting brief",
+        "Current action and decision records",
+        "Fewer missing inputs before the review",
+        "Prompt follow-through after the meeting"
+      ],
+      "controls": [
+        "Every material statement traces to an approved source",
+        "Open actions show an owner and date",
+        "Missing inputs are visible before the review cutoff",
+        "Follow up records match approved meeting decisions"
+      ],
+      "boundaries": [
+        "No presentation of unapproved claims",
+        "No negotiation of renewal, price, or scope",
+        "No product roadmap or delivery commitments"
+      ],
+      "workflow": [
+        "Confirm meeting purpose, participants, and template",
+        "Collect approved facts from named sources",
+        "Identify gaps for owner review",
+        "Assemble the packet and logistics",
+        "Record approved actions and route follow-up"
+      ],
+      "scenarios": [
+        "Quarterly reviews rely on last-minute document assembly",
+        "Action items are separated across notes and systems",
+        "Account owners need a consistent brief while retaining the conversation"
+      ],
+      "faqs": [
+        {
+          "question": "Can the specialist present the review?",
+          "answer": "The scope prepares materials and logistics. The accountable account owner leads customer decisions, commitments, and the relationship."
+        },
+        {
+          "question": "Can unverified results be included?",
+          "answer": "No. Gaps are flagged for review rather than filled with assumptions or unapproved claims."
+        }
+      ],
+      "image": "/refresh-20261113/service3.webp",
+      "alt": "Customer support agents working together with laptops and headsets in an office setting.",
+      "position": "50% 50%"
+    },
+    {
+      "slug": "adoption-follow-up",
+      "title": "Adoption follow up support",
+      "description": "Coordinate approved education and next steps around product use.",
+      "intro": "Keep approved education and next steps moving after the account owner defines the adoption plan. Support can prepare segmented queues, send approved resources, log responses, and escalate risk signals without giving product advice beyond reviewed materials.",
+      "audience": "Teams with an approved adoption plan whose education, reminders, response capture, and next-step routing are inconsistent.",
+      "inputs": [
+        "Approved audience and follow-up rules",
+        "Current education resources and message templates",
+        "Consent, status, and contact records",
+        "Risk signals and accountable owner route"
+      ],
+      "work": [
+        "Prepare follow-up queues from approved criteria",
+        "Send approved learning resources and reminders",
+        "Record customer responses and requested help",
+        "Maintain attendance and completion records",
+        "Escalate adoption risks or unclear requests"
+      ],
+      "outputs": [
+        "A visible follow-up queue",
+        "Consistent use of current approved resources",
+        "Customer responses captured for the owner",
+        "Risks separated from routine reminders"
+      ],
+      "controls": [
+        "Only current approved resources are used",
+        "Audience and consent rules are checked before outreach",
+        "Responses retain the customer meaning",
+        "Questions and risk signals transfer within the agreed window"
+      ],
+      "boundaries": [
+        "No unapproved advice or custom product commitments",
+        "No independent targeting or pressure tactics",
+        "No security, legal, or commercial interpretation"
+      ],
+      "workflow": [
+        "Receive approved audience and outreach rules",
+        "Check consent, status, and current resource version",
+        "Prepare or send the approved message",
+        "Record delivery and response status",
+        "Route questions or risk signals to the owner"
+      ],
+      "scenarios": [
+        "Education follow up is delayed after training or launch",
+        "Multiple resource versions are being sent",
+        "Customer responses need consistent capture for the account owner"
+      ],
+      "faqs": [
+        {
+          "question": "Can support give custom product advice?",
+          "answer": "No. Support uses approved materials and transfers questions that require product, security, commercial, or strategic judgment."
+        },
+        {
+          "question": "Who defines the follow-up audience?",
+          "answer": "The accountable team defines the audience and approved rules. The specialist prepares and maintains the resulting queue."
+        }
+      ],
+      "image": "/refresh-20261113/service4.webp",
+      "alt": "A group of professionals collaborating in an office setting, engaging in customer support.",
+      "position": "50% 50%"
+    },
+    {
+      "slug": "knowledge-operations",
+      "title": "Knowledge operations",
+      "description": "Maintain accurate, reviewable customer-facing resources.",
+      "intro": "Help teams keep customer-facing guidance findable and current. A specialist can manage the inventory, version records, review queue, and publication checklist while subject-matter owners approve every substantive change.",
+      "audience": "Customer success organizations with growing customer-facing guidance, unclear ownership, or inconsistent review and publication records.",
+      "inputs": [
+        "Knowledge inventory and current source records",
+        "Named subject-matter owners and reviewers",
+        "Version, review, retention, and publication rules",
+        "Approved update request with source evidence"
+      ],
+      "work": [
+        "Maintain the knowledge inventory and ownership record",
+        "Track approved versions and review dates",
+        "Route update requests to subject-matter owners",
+        "Apply approved edits and publication checks",
+        "Flag duplicate, stale, or conflicting guidance"
+      ],
+      "outputs": [
+        "A searchable source of current guidance",
+        "Visible owners and review dates",
+        "A controlled path from request to publication",
+        "Fewer stale or conflicting resources"
+      ],
+      "controls": [
+        "Every published item has a current owner and review date",
+        "Approved source and final version remain traceable",
+        "Superseded material is handled under retention rules",
+        "Publication checklist completion is sampled"
+      ],
+      "boundaries": [
+        "No independent policy or product interpretation",
+        "No publication without the required approval",
+        "No removal of retention or evidence records"
+      ],
+      "workflow": [
+        "Receive an update request with source evidence",
+        "Identify the current approved record and owner",
+        "Prepare the requested change for review",
+        "Publish only after documented approval",
+        "Record version, date, and superseded material"
+      ],
+      "scenarios": [
+        "Customer guidance exists across several repositories",
+        "Update requests lack a visible review owner",
+        "Teams need stale or conflicting resources routed for decision"
+      ],
+      "faqs": [
+        {
+          "question": "Will support write policy or interpret the product?",
+          "answer": "No. Subject-matter owners approve every substantive change. Support manages the inventory, workflow, approved edits, and publication checks."
+        },
+        {
+          "question": "Can old guidance simply be deleted?",
+          "answer": "Only under the approved retention process. Version and evidence records are preserved where required."
+        }
+      ],
+      "image": "/refresh-20261113/service5.webp",
+      "alt": "Customer support representative working diligently at a laptop in a modern office environment.",
+      "position": "50% 50%"
+    },
+    {
+      "slug": "escalation-coordination",
+      "title": "Escalation coordination",
+      "description": "Document context and route issues to the right accountable owner.",
+      "intro": "Create a disciplined record around issues that need accountable judgment. Support can capture the original request, gather approved context, maintain status, and track promised actions while authorized leaders decide severity, response, remedy, and customer commitments.",
+      "audience": "Customer teams that need a complete, current escalation record while authorized leaders decide severity, response, remedy, and commitments.",
+      "inputs": [
+        "Original customer request and source record",
+        "Approved account context and timeline sources",
+        "Escalation matrix, status fields, and update cadence",
+        "Authorized owners for response, remedy, and closure"
+      ],
+      "work": [
+        "Prepare escalation records from the original request",
+        "Gather approved timeline and account context",
+        "Maintain owner, status, and next-action fields",
+        "Coordinate approved internal updates",
+        "Track promised actions and acknowledgements"
+      ],
+      "outputs": [
+        "A complete escalation record",
+        "One visible owner and current next action",
+        "A timestamped handoff trail",
+        "Fewer status gaps during resolution"
+      ],
+      "controls": [
+        "The original customer meaning is preserved",
+        "Required context and source links are present",
+        "Owner acknowledgement and next action are timestamped",
+        "Closure requires documented authorized confirmation"
+      ],
+      "boundaries": [
+        "No independent severity, remedy, or liability decision",
+        "No customer promise without authorized approval",
+        "No alteration of the original complaint or source record"
+      ],
+      "workflow": [
+        "Capture the original issue without rewriting its meaning",
+        "Check required context and source links",
+        "Route by the approved escalation matrix",
+        "Record owner acknowledgement and status",
+        "Close only with documented owner confirmation"
+      ],
+      "scenarios": [
+        "Status updates are spread across chat, tickets, and notes",
+        "Issues move between teams without a visible owner",
+        "Leaders need a reliable timeline before deciding the response"
+      ],
+      "faqs": [
+        {
+          "question": "Does the coordinator decide severity or remedy?",
+          "answer": "No. Authorized leaders keep those decisions. The coordinator prepares the record, routes it through the approved matrix, and tracks acknowledged actions."
+        },
+        {
+          "question": "Can the coordinator promise a resolution date?",
+          "answer": "Only an explicitly approved commitment may be recorded or communicated. Unapproved promises are outside scope."
+        }
+      ],
+      "image": "/refresh-20261113/service6.webp",
+      "alt": "Asian woman using a laptop and headset for customer support in an office environment.",
+      "position": "50% 50%"
+    },
+    {
+      "slug": "renewal-coordination",
+      "title": "Renewal coordination support",
+      "description": "Prepare timelines, source records, and internal handoffs before the renewal conversation.",
+      "intro": "Prepare timelines, source records, and internal handoffs before the renewal conversation. A focused administrative role maintains the agreed record and prepares useful next actions, with exceptions kept visible for the person who has authority to resolve them.",
+      "audience": "customer success leaders, SaaS operators, and account teams",
+      "inputs": [
+        "The current workflow, source systems, and approved access",
+        "Your templates, definitions, and completion criteria",
+        "A named review owner, communication cadence, and escalation rules"
+      ],
+      "work": [
+        "Maintain the approved renewal calendar and account owners",
+        "Collect current contract and usage references from authorized systems",
+        "Prepare internal reminders and meeting context",
+        "Track unanswered questions and agreed next steps"
+      ],
+      "outputs": [
+        "A review-ready renewal brief",
+        "An accountable renewal action queue",
+        "Current records for the account owner"
+      ],
+      "controls": [
+        "Compare each completed item with its approved source.",
+        "Check that the status, owner, and next action agree across records.",
+        "Keep missing or conflicting information visible until the review owner resolves it.",
+        "Review a sample together before expanding the volume or scope."
+      ],
+      "boundaries": [
+        "No pricing, concession, contract acceptance, or renewal commitment",
+        "Your account team leads the commercial relationship"
+      ],
+      "workflow": [
+        "Agree on the first queue, the expected output, and who reviews the work.",
+        "Walk through representative records together and document ambiguous cases.",
+        "Begin with a manageable volume and a regular exception review.",
+        "Use corrections and completion checks to refine the handoff before expanding it."
+      ],
+      "scenarios": [
+        "A recurring renewal coordination support queue needs consistent attention while your manager focuses on decisions.",
+        "Several people contribute information, and the reviewer needs one current record with visible gaps."
+      ],
+      "faqs": [
+        {
+          "question": "What should we prepare for this role?",
+          "answer": "Bring a current example, the approved source systems, the output you need, and the manager who can answer questions. Together we define what complete means and which situations must be escalated."
+        },
+        {
+          "question": "Can we begin with a limited scope?",
+          "answer": "Yes. Start with one repeatable queue, review a sample of completed work, and improve the instructions before adding responsibilities."
+        },
+        {
+          "question": "Who handles exceptions or consequential decisions?",
+          "answer": "Your authorized owner does. Support collects the context and records the question so the decision can be made by the right person, then follows the approved instruction."
+        }
+      ],
+      "image": "/refresh-20261113/service7.webp",
+      "alt": "Two business professionals collaborating at a desk with a laptop, engaged in discussion.",
+      "position": "50% 50%"
+    },
+    {
+      "slug": "customer-feedback-operations",
+      "title": "Customer feedback operations",
+      "description": "Organize feedback so customer and product teams can review the original context.",
+      "intro": "Organize feedback so customer and product teams can review the original context. A focused administrative role maintains the agreed record and prepares useful next actions, with exceptions kept visible for the person who has authority to resolve them.",
+      "audience": "customer success leaders, SaaS operators, and account teams",
+      "inputs": [
+        "The current workflow, source systems, and approved access",
+        "Your templates, definitions, and completion criteria",
+        "A named review owner, communication cadence, and escalation rules"
+      ],
+      "work": [
+        "Collect approved feedback channels into the designated register",
+        "Tag entries using your agreed taxonomy",
+        "Preserve the customer wording and source reference",
+        "Route themes, unresolved responses, and sensitive issues to their owners"
+      ],
+      "outputs": [
+        "A source-linked feedback register",
+        "A review pack organized by approved themes",
+        "A response ownership and status log"
+      ],
+      "controls": [
+        "Compare each completed item with its approved source.",
+        "Check that the status, owner, and next action agree across records.",
+        "Keep missing or conflicting information visible until the review owner resolves it.",
+        "Review a sample together before expanding the volume or scope."
+      ],
+      "boundaries": [
+        "No product-roadmap promises or independent interpretation of customer intent",
+        "Your team decides priorities, responses, and product changes"
+      ],
+      "workflow": [
+        "Agree on the first queue, the expected output, and who reviews the work.",
+        "Walk through representative records together and document ambiguous cases.",
+        "Begin with a manageable volume and a regular exception review.",
+        "Use corrections and completion checks to refine the handoff before expanding it."
+      ],
+      "scenarios": [
+        "A recurring customer feedback operations queue needs consistent attention while your manager focuses on decisions.",
+        "Several people contribute information, and the reviewer needs one current record with visible gaps."
+      ],
+      "faqs": [
+        {
+          "question": "What should we prepare for this role?",
+          "answer": "Bring a current example, the approved source systems, the output you need, and the manager who can answer questions. Together we define what complete means and which situations must be escalated."
+        },
+        {
+          "question": "Can we begin with a limited scope?",
+          "answer": "Yes. Start with one repeatable queue, review a sample of completed work, and improve the instructions before adding responsibilities."
+        },
+        {
+          "question": "Who handles exceptions or consequential decisions?",
+          "answer": "Your authorized owner does. Support collects the context and records the question so the decision can be made by the right person, then follows the approved instruction."
+        }
+      ],
+      "image": "/refresh-20261113/service8.webp",
+      "alt": "Business team working together with laptops in a collaborative office setting.",
+      "position": "50% 50%"
+    }
+  ],
+  "blog": [
+    {
+      "slug": "customersuccessmanagers-run-a-quarterly-portfolio-review-when-account-data-is-incomplete",
+      "title": "Run a quarterly portfolio review when account data is incomplete",
+      "description": "A portfolio review that separates missing data from real account risk instead of letting a blank field look healthy.",
+      "category": "Customer health",
+      "date": "2026-11-11",
+      "image": "/thumbnails/november-11/customersuccessmanagers-run-a-quarterly-portfolio-review-when-account-data-is-incomplete.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-set-a-rule-for-reassigning-accounts-when-a-success-owner-resigns",
+      "title": "Set a rule for reassigning accounts when a success owner resigns",
+      "description": "A reassignment rule that transfers account context, open actions, and risk signals before the departing owner leaves.",
+      "category": "Account planning",
+      "date": "2026-11-11",
+      "image": "/thumbnails/november-11/customersuccessmanagers-set-a-rule-for-reassigning-accounts-when-a-success-owner-resigns.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-prepare-a-renewal-conversation-from-the-usage-and-support-record",
+      "title": "Prepare a renewal conversation from the usage and support record",
+      "description": "A renewal preparation that builds the conversation from supported usage and support facts instead of an optimistic summary.",
+      "category": "Renewal risk",
+      "date": "2026-11-11",
+      "image": "/thumbnails/november-11/customersuccessmanagers-prepare-a-renewal-conversation-from-the-usage-and-support-record.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-record-a-customer-commitment-without-overpromising-the-roadmap",
+      "title": "Record a customer commitment without overpromising the roadmap",
+      "description": "A commitment record that distinguishes a confirmed capability from a roadmap conversation the customer may have misread.",
+      "category": "Escalation",
+      "date": "2026-11-11",
+      "image": "/thumbnails/november-11/customersuccessmanagers-record-a-customer-commitment-without-overpromising-the-roadmap.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-audit-success-plan-actions-that-never-received-an-owner",
+      "title": "Audit success plan actions that never received an owner",
+      "description": "An action audit that finds success plan items with a due date but no accountable owner before the next review.",
+      "category": "Account planning",
+      "date": "2026-11-11",
+      "image": "/thumbnails/november-11/customersuccessmanagers-audit-success-plan-actions-that-never-received-an-owner.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-use-a-pilot-result-without-overstating-the-case-study",
+      "title": "Use a pilot result without overstating the case study",
+      "description": "A pilot write-up that reports what the pilot measured, who participated, and what cannot be generalized.",
+      "category": "Adoption",
+      "date": "2026-11-11",
+      "image": "/thumbnails/november-11/customersuccessmanagers-use-a-pilot-result-without-overstating-the-case-study.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-support-escalations-from-bypassing-the-account-owner",
+      "title": "Keep support escalations from bypassing the account owner",
+      "description": "An escalation path that routes account-risk issues to the owner instead of closing them inside support.",
+      "category": "Escalation",
+      "date": "2026-11-11",
+      "image": "/thumbnails/november-11/customersuccessmanagers-keep-support-escalations-from-bypassing-the-account-owner.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-document-a-customer-s-budget-freeze-without-losing-the-renewal",
+      "title": "Document a customer's budget freeze without losing the renewal",
+      "description": "A budget-freeze record that keeps the renewal path visible while the customer pauses spend.",
+      "category": "Retention",
+      "date": "2026-11-11",
+      "image": "/thumbnails/november-11/customersuccessmanagers-document-a-customer-s-budget-freeze-without-losing-the-renewal.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-turn-a-renewal-post-mortem-into-next-quarter-s-account-actions",
+      "title": "Turn a renewal post-mortem into next quarter's account actions",
+      "description": "A post-mortem routine that converts a renewal outcome into named account actions with sources, owners, and dates.",
+      "category": "Renewal risk",
+      "date": "2026-11-10",
+      "image": "/thumbnails/november-10/customersuccessmanagers-turn-a-renewal-post-mortem-into-next-quarter-s-account-actions.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-customer-success-notes-readable-after-an-ownership-change",
+      "title": "Keep customer success notes readable after an ownership change",
+      "description": "A note standard that lets a new account owner pick up a customer record without a verbal handover.",
+      "category": "Account planning",
+      "date": "2026-11-10",
+      "image": "/thumbnails/november-10/customersuccessmanagers-keep-customer-success-notes-readable-after-an-ownership-change.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-set-a-weekly-review-for-accounts-with-no-executive-contact",
+      "title": "Set a weekly review for accounts with no executive contact",
+      "description": "A coverage review that finds strategic accounts without a recent executive touchpoint and routes them to an owner.",
+      "category": "Account planning",
+      "date": "2026-11-10",
+      "image": "/thumbnails/november-10/customersuccessmanagers-set-a-weekly-review-for-accounts-with-no-executive-contact.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-record-a-product-outage-follow-up-without-owning-the-incident",
+      "title": "Record a product outage follow-up without owning the incident",
+      "description": "An outage follow-up record that separates incident facts from account commitments and routes both to the right owner.",
+      "category": "Escalation",
+      "date": "2026-11-10",
+      "image": "/thumbnails/november-10/customersuccessmanagers-record-a-product-outage-follow-up-without-owning-the-incident.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-triage-expansion-signals-before-the-account-team-commits",
+      "title": "Triage expansion signals before the account team commits",
+      "description": "An expansion triage that tests whether a usage or request signal is real before it becomes a commitment.",
+      "category": "Adoption",
+      "date": "2026-11-10",
+      "image": "/thumbnails/november-10/customersuccessmanagers-triage-expansion-signals-before-the-account-team-commits.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-make-the-onboarding-to-success-handoff-survive-a-busy-launch",
+      "title": "Make the onboarding-to-success handoff survive a busy launch",
+      "description": "A launch handoff that records what the customer received, what remains open, and who owns the first success action.",
+      "category": "Onboarding",
+      "date": "2026-11-10",
+      "image": "/thumbnails/november-10/customersuccessmanagers-make-the-onboarding-to-success-handoff-survive-a-busy-launch.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-document-a-churn-reason-when-the-customer-will-not-say-why",
+      "title": "Document a churn reason when the customer will not say why",
+      "description": "A churn record that preserves the customer's silence as a finding instead of inventing a reason code.",
+      "category": "Retention",
+      "date": "2026-11-10",
+      "image": "/thumbnails/november-10/customersuccessmanagers-document-a-churn-reason-when-the-customer-will-not-say-why.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-rebuild-a-broken-health-score-definition-after-a-merger",
+      "title": "Rebuild a broken health score definition after a merger",
+      "description": "A post-merger health score rebuild that reconciles two definitions before leadership compares accounts across the combined book.",
+      "category": "Customer health",
+      "date": "2026-11-10",
+      "image": "/thumbnails/november-10/customersuccessmanagers-rebuild-a-broken-health-score-definition-after-a-merger.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-rebuild-the-renewal-forecast-after-a-customer-success-platform-migration",
+      "title": "Rebuild the renewal forecast after a customer success platform migration",
+      "description": "A migration recovery plan that reconnects renewal dates, health evidence, and owner notes before the forecast is trusted again.",
+      "category": "Renewal risk",
+      "date": "2026-11-09",
+      "image": "/thumbnails/november-09/customersuccessmanagers-rebuild-the-renewal-forecast-after-a-customer-success-platform-migration.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-executive-sponsor-changes-from-stalling-the-account-plan",
+      "title": "Keep executive sponsor changes from stalling the account plan",
+      "description": "A sponsor-change routine that records the outgoing relationship, the incoming sponsor, and the plan items that need a fresh owner.",
+      "category": "Account planning",
+      "date": "2026-11-09",
+      "image": "/thumbnails/november-09/customersuccessmanagers-keep-executive-sponsor-changes-from-stalling-the-account-plan.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-run-a-save-review-when-a-champion-leaves-the-account",
+      "title": "Run a save review when a champion leaves the account",
+      "description": "A champion-departure review that separates real churn risk from a temporary contact gap, with owners and evidence recorded.",
+      "category": "Retention",
+      "date": "2026-11-09",
+      "image": "/thumbnails/november-09/customersuccessmanagers-run-a-save-review-when-a-champion-leaves-the-account.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-tie-product-adoption-targets-to-the-success-plan-review",
+      "title": "Tie product adoption targets to the success plan review",
+      "description": "A review that connects each adoption target in the success plan to a defined metric, a source, and a review date.",
+      "category": "Adoption",
+      "date": "2026-11-09",
+      "image": "/thumbnails/november-09/customersuccessmanagers-tie-product-adoption-targets-to-the-success-plan-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-audit-customer-health-notes-for-stale-source-dates",
+      "title": "Audit customer health notes for stale source dates",
+      "description": "A health note audit that finds observations older than the approved refresh window before they influence a review.",
+      "category": "Customer health",
+      "date": "2026-11-09",
+      "image": "/thumbnails/november-09/customersuccessmanagers-audit-customer-health-notes-for-stale-source-dates.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-prepare-a-quarterly-account-review-without-recycling-last-quarter-s-deck",
+      "title": "Prepare a quarterly account review without recycling last quarter's deck",
+      "description": "A rebuild-first approach to quarterly reviews that starts from current evidence instead of last quarter's slides.",
+      "category": "Business reviews",
+      "date": "2026-11-09",
+      "image": "/thumbnails/november-09/customersuccessmanagers-prepare-a-quarterly-account-review-without-recycling-last-quarter-s-deck.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-set-a-stop-rule-for-voluntary-churn-reason-codes",
+      "title": "Set a stop rule for voluntary churn reason codes",
+      "description": "A stop rule that prevents a voluntary churn reason from being recorded before the customer's stated reason is documented.",
+      "category": "Retention",
+      "date": "2026-11-09",
+      "image": "/thumbnails/november-09/customersuccessmanagers-set-a-stop-rule-for-voluntary-churn-reason-codes.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-restore-a-broken-handoff-between-support-and-customer-success",
+      "title": "Restore a broken handoff between support and customer success",
+      "description": "A repair plan for a support-to-success handoff that lost ownership, context, or both during a busy period.",
+      "category": "Escalation",
+      "date": "2026-11-09",
+      "image": "/thumbnails/november-09/customersuccessmanagers-restore-a-broken-handoff-between-support-and-customer-success.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-the-renewal-risk-review-tied-to-the-account-plan",
+      "title": "Keep the renewal risk review tied to the account plan",
+      "description": "A renewal risk routine that keeps the account plan, the health evidence, and the owner decision in one reviewable record.",
+      "category": "Renewal risk",
+      "date": "2026-11-08",
+      "image": "/thumbnails/november-08/customersuccessmanagers-keep-the-renewal-risk-review-tied-to-the-account-plan.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-set-a-same-day-rule-for-qbr-follow-up-notes",
+      "title": "Set a same-day rule for QBR follow-up notes",
+      "description": "A practical same-day routine for QBR follow-up notes that records decisions, owners, and due dates before the meeting context fades.",
+      "category": "Business reviews",
+      "date": "2026-11-08",
+      "image": "/thumbnails/november-08/customersuccessmanagers-set-a-same-day-rule-for-qbr-follow-up-notes.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-audit-health-score-overrides-before-the-quarterly-review",
+      "title": "Audit health score overrides before the quarterly review",
+      "description": "An override audit that separates evidence-based corrections from quiet score edits before the quarterly customer review.",
+      "category": "Customer health",
+      "date": "2026-11-08",
+      "image": "/thumbnails/november-08/customersuccessmanagers-audit-health-score-overrides-before-the-quarterly-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-route-escalation-handoffs-with-one-accountable-owner",
+      "title": "Route escalation handoffs with one accountable owner",
+      "description": "An escalation handoff pattern that keeps one owner visible through the transition and records what the receiving team accepted.",
+      "category": "Escalation",
+      "date": "2026-11-08",
+      "image": "/thumbnails/november-08/customersuccessmanagers-route-escalation-handoffs-with-one-accountable-owner.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-clean-up-stale-onboarding-tasks-after-a-crm-migration",
+      "title": "Clean up stale onboarding tasks after a CRM migration",
+      "description": "A migration cleanup plan that retires stale onboarding tasks without losing the evidence the account team still needs.",
+      "category": "Onboarding",
+      "date": "2026-11-08",
+      "image": "/thumbnails/november-08/customersuccessmanagers-clean-up-stale-onboarding-tasks-after-a-crm-migration.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-check-adoption-data-before-drafting-the-customer-success-plan",
+      "title": "Check adoption data before drafting the customer success plan",
+      "description": "A pre-draft adoption data check that keeps stale usage, incomplete seats, and unsupported assumptions out of the customer success plan.",
+      "category": "Adoption",
+      "date": "2026-11-08",
+      "image": "/thumbnails/november-08/customersuccessmanagers-check-adoption-data-before-drafting-the-customer-success-plan.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-write-a-churn-save-note-that-survives-the-next-review",
+      "title": "Write a churn save note that survives the next review",
+      "description": "How to write a churn save note that records the customer signal, the approved response, and the outcome without inventing certainty.",
+      "category": "Retention",
+      "date": "2026-11-08",
+      "image": "/thumbnails/november-08/customersuccessmanagers-write-a-churn-save-note-that-survives-the-next-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-prepare-a-customer-escalation-brief-without-overstepping-the-account-owner",
+      "title": "Prepare a customer escalation brief without overstepping the account owner",
+      "description": "A customer escalation brief that gathers the timeline and evidence while leaving severity, remedy, and customer commitments with the account owner.",
+      "category": "Escalation",
+      "date": "2026-11-08",
+      "image": "/thumbnails/november-08/customersuccessmanagers-prepare-a-customer-escalation-brief-without-overstepping-the-account-owner.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-the-customer-onboarding-support-evidence-trail-reviewable-after-a-customer-escalation",
+      "title": "Keep the customer onboarding support evidence trail reviewable after a customer escalation",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding support with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-07",
+      "image": "/thumbnails/november-07/customersuccessmanagers-keep-the-customer-onboarding-support-evidence-trail-reviewable-after-a-customer-escalation.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-the-customer-health-operations-evidence-trail-reviewable-after-a-customer-escalation",
+      "title": "Keep the customer health operations evidence trail reviewable after a customer escalation",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer health operations with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-07",
+      "image": "/thumbnails/november-07/customersuccessmanagers-keep-the-customer-health-operations-evidence-trail-reviewable-after-a-customer-escalation.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-the-business-review-preparation-evidence-trail-reviewable-after-a-customer-escalation",
+      "title": "Keep the business review preparation evidence trail reviewable after a customer escalation",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on business review preparation with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-07",
+      "image": "/thumbnails/november-07/customersuccessmanagers-keep-the-business-review-preparation-evidence-trail-reviewable-after-a-customer-escalation.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-the-adoption-follow-up-support-evidence-trail-reviewable-after-a-customer-escalation",
+      "title": "Keep the adoption follow up support evidence trail reviewable after a customer escalation",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on adoption follow up support with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-07",
+      "image": "/thumbnails/november-07/customersuccessmanagers-keep-the-adoption-follow-up-support-evidence-trail-reviewable-after-a-customer-escalation.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-the-knowledge-operations-evidence-trail-reviewable-after-a-customer-escalation",
+      "title": "Keep the knowledge operations evidence trail reviewable after a customer escalation",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on knowledge operations with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-07",
+      "image": "/thumbnails/november-07/customersuccessmanagers-keep-the-knowledge-operations-evidence-trail-reviewable-after-a-customer-escalation.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-the-escalation-coordination-evidence-trail-reviewable-after-a-customer-escalation",
+      "title": "Keep the escalation coordination evidence trail reviewable after a customer escalation",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on escalation coordination with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-07",
+      "image": "/thumbnails/november-07/customersuccessmanagers-keep-the-escalation-coordination-evidence-trail-reviewable-after-a-customer-escalation.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-align-customer-onboarding-support-and-customer-health-operations-records-at-the-renewal-handoff",
+      "title": "Align customer onboarding support and customer health operations records at the renewal handoff",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding support and customer health operations with explicit evidence, decision rights, and a verified close.",
+      "category": "Handoff",
+      "date": "2026-11-07",
+      "image": "/thumbnails/november-07/customersuccessmanagers-align-customer-onboarding-support-and-customer-health-operations-records-at-the-renewal-handoff.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-test-customer-onboarding-support-evidence-with-one-deliberate-exception-each-month",
+      "title": "Test customer onboarding support evidence with one deliberate exception each month",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding support exception sample with explicit evidence, decision rights, and a verified close.",
+      "category": "Review",
+      "date": "2026-11-07",
+      "image": "/thumbnails/november-07/customersuccessmanagers-test-customer-onboarding-support-evidence-with-one-deliberate-exception-each-month.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-tighten-the-customer-onboarding-support-evidence-trail-before-the-next-customer-review",
+      "title": "Tighten the customer onboarding support evidence trail before the next customer review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding support with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-06",
+      "image": "/thumbnails/november-06/customersuccessmanagers-tighten-the-customer-onboarding-support-evidence-trail-before-the-next-customer-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-tighten-the-customer-health-operations-evidence-trail-before-the-next-customer-review",
+      "title": "Tighten the customer health operations evidence trail before the next customer review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer health operations with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-06",
+      "image": "/thumbnails/november-06/customersuccessmanagers-tighten-the-customer-health-operations-evidence-trail-before-the-next-customer-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-tighten-the-business-review-preparation-evidence-trail-before-the-next-customer-review",
+      "title": "Tighten the business review preparation evidence trail before the next customer review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on business review preparation with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-06",
+      "image": "/thumbnails/november-06/customersuccessmanagers-tighten-the-business-review-preparation-evidence-trail-before-the-next-customer-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-tighten-the-adoption-follow-up-support-evidence-trail-before-the-next-customer-review",
+      "title": "Tighten the adoption follow up support evidence trail before the next customer review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on adoption follow up support with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-06",
+      "image": "/thumbnails/november-06/customersuccessmanagers-tighten-the-adoption-follow-up-support-evidence-trail-before-the-next-customer-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-tighten-the-knowledge-operations-evidence-trail-before-the-next-customer-review",
+      "title": "Tighten the knowledge operations evidence trail before the next customer review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on knowledge operations with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-06",
+      "image": "/thumbnails/november-06/customersuccessmanagers-tighten-the-knowledge-operations-evidence-trail-before-the-next-customer-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-tighten-the-escalation-coordination-evidence-trail-before-the-next-customer-review",
+      "title": "Tighten the escalation coordination evidence trail before the next customer review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on escalation coordination with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-06",
+      "image": "/thumbnails/november-06/customersuccessmanagers-tighten-the-escalation-coordination-evidence-trail-before-the-next-customer-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-customer-onboarding-support-and-customer-health-operations-aligned-at-the-customer-handoff",
+      "title": "Keep customer onboarding support and customer health operations aligned at the customer handoff",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding support and customer health operations with explicit evidence, decision rights, and a verified close.",
+      "category": "Handoff",
+      "date": "2026-11-06",
+      "image": "/thumbnails/november-06/customersuccessmanagers-keep-customer-onboarding-support-and-customer-health-operations-aligned-at-the-customer-handoff.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-audit-customer-onboarding-support-evidence-with-a-monthly-sample",
+      "title": "Audit customer onboarding support evidence with a monthly sample",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding support quality sample with explicit evidence, decision rights, and a verified close.",
+      "category": "Review",
+      "date": "2026-11-06",
+      "image": "/thumbnails/november-06/customersuccessmanagers-audit-customer-onboarding-support-evidence-with-a-monthly-sample.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-audit-the-customer-onboarding-support-exception-path-before-the-next-review",
+      "title": "Audit the customer onboarding support exception path before the next review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding support with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-05",
+      "image": "/thumbnails/november-05/customersuccessmanagers-audit-the-customer-onboarding-support-exception-path-before-the-next-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-audit-the-customer-health-operations-exception-path-before-the-next-review",
+      "title": "Audit the customer health operations exception path before the next review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer health operations with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-05",
+      "image": "/thumbnails/november-05/customersuccessmanagers-audit-the-customer-health-operations-exception-path-before-the-next-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-audit-the-business-review-preparation-exception-path-before-the-next-review",
+      "title": "Audit the business review preparation exception path before the next review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on business review preparation with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-05",
+      "image": "/thumbnails/november-05/customersuccessmanagers-audit-the-business-review-preparation-exception-path-before-the-next-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-audit-the-adoption-follow-up-support-exception-path-before-the-next-review",
+      "title": "Audit the adoption follow up support exception path before the next review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on adoption follow up support with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-05",
+      "image": "/thumbnails/november-05/customersuccessmanagers-audit-the-adoption-follow-up-support-exception-path-before-the-next-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-audit-the-knowledge-operations-exception-path-before-the-next-review",
+      "title": "Audit the knowledge operations exception path before the next review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on knowledge operations with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-05",
+      "image": "/thumbnails/november-05/customersuccessmanagers-audit-the-knowledge-operations-exception-path-before-the-next-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-audit-the-escalation-coordination-exception-path-before-the-next-review",
+      "title": "Audit the escalation coordination exception path before the next review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on escalation coordination with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-05",
+      "image": "/thumbnails/november-05/customersuccessmanagers-audit-the-escalation-coordination-exception-path-before-the-next-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-customer-onboarding-support-and-customer-health-operations-aligned-at-the-renewal-handoff",
+      "title": "Keep customer onboarding support and customer health operations aligned at the renewal handoff",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding support and customer health operations with explicit evidence, decision rights, and a verified close.",
+      "category": "Handoff",
+      "date": "2026-11-05",
+      "image": "/thumbnails/november-05/customersuccessmanagers-keep-customer-onboarding-support-and-customer-health-operations-aligned-at-the-renewal-handoff.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-run-a-monthly-evidence-audit-for-customer-onboarding-support",
+      "title": "Run a monthly evidence audit for customer onboarding support",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding support quality sample with explicit evidence, decision rights, and a verified close.",
+      "category": "Review",
+      "date": "2026-11-05",
+      "image": "/thumbnails/november-05/customersuccessmanagers-run-a-monthly-evidence-audit-for-customer-onboarding-support.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-customer-onboarding-support-handoff-that-survives-review",
+      "title": "Build a customer onboarding support handoff that survives review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding support with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-04",
+      "image": "/thumbnails/november-04/customersuccessmanagers-build-a-customer-onboarding-support-handoff-that-survives-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-customer-health-operations-handoff-that-survives-review",
+      "title": "Build a customer health operations handoff that survives review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer health operations with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-04",
+      "image": "/thumbnails/november-04/customersuccessmanagers-build-a-customer-health-operations-handoff-that-survives-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-business-review-preparation-handoff-that-survives-review",
+      "title": "Build a business review preparation handoff that survives review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on business review preparation with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-04",
+      "image": "/thumbnails/november-04/customersuccessmanagers-build-a-business-review-preparation-handoff-that-survives-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-adoption-follow-up-support-handoff-that-survives-review",
+      "title": "Build a adoption follow up support handoff that survives review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on adoption follow up support with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-04",
+      "image": "/thumbnails/november-04/customersuccessmanagers-build-a-adoption-follow-up-support-handoff-that-survives-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-knowledge-operations-handoff-that-survives-review",
+      "title": "Build a knowledge operations handoff that survives review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on knowledge operations with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-04",
+      "image": "/thumbnails/november-04/customersuccessmanagers-build-a-knowledge-operations-handoff-that-survives-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-escalation-coordination-handoff-that-survives-review",
+      "title": "Build a escalation coordination handoff that survives review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on escalation coordination with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-04",
+      "image": "/thumbnails/november-04/customersuccessmanagers-build-a-escalation-coordination-handoff-that-survives-review.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-customer-onboarding-support-and-customer-health-operations-aligned-at-the-handoff",
+      "title": "Keep customer onboarding support and customer health operations aligned at the handoff",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding support and customer health operations with explicit evidence, decision rights, and a verified close.",
+      "category": "Handoff",
+      "date": "2026-11-04",
+      "image": "/thumbnails/november-04/customersuccessmanagers-keep-customer-onboarding-support-and-customer-health-operations-aligned-at-the-handoff.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-run-a-monthly-quality-sample-for-customer-onboarding-support",
+      "title": "Run a monthly quality sample for customer onboarding support",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding support quality sample with explicit evidence, decision rights, and a verified close.",
+      "category": "Review",
+      "date": "2026-11-04",
+      "image": "/thumbnails/november-04/customersuccessmanagers-run-a-monthly-quality-sample-for-customer-onboarding-support.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-customer-onboarding-support-handoff-that-survives-review-2026-11-03",
+      "title": "Build a customer onboarding support handoff that survives review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding support with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-03",
+      "image": "/thumbnails/november-03/customersuccessmanagers-build-a-customer-onboarding-support-handoff-that-survives-review-2026-11-03.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-customer-health-operations-handoff-that-survives-review-2026-11-03",
+      "title": "Build a customer health operations handoff that survives review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer health operations with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-03",
+      "image": "/thumbnails/november-03/customersuccessmanagers-build-a-customer-health-operations-handoff-that-survives-review-2026-11-03.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-business-review-preparation-handoff-that-survives-review-2026-11-03",
+      "title": "Build a business review preparation handoff that survives review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on business review preparation with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-03",
+      "image": "/thumbnails/november-03/customersuccessmanagers-build-a-business-review-preparation-handoff-that-survives-review-2026-11-03.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-adoption-follow-up-support-handoff-that-survives-review-2026-11-03",
+      "title": "Build a adoption follow up support handoff that survives review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on adoption follow up support with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-03",
+      "image": "/thumbnails/november-03/customersuccessmanagers-build-a-adoption-follow-up-support-handoff-that-survives-review-2026-11-03.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-knowledge-operations-handoff-that-survives-review-2026-11-03",
+      "title": "Build a knowledge operations handoff that survives review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on knowledge operations with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-03",
+      "image": "/thumbnails/november-03/customersuccessmanagers-build-a-knowledge-operations-handoff-that-survives-review-2026-11-03.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-escalation-coordination-handoff-that-survives-review-2026-11-03",
+      "title": "Build a escalation coordination handoff that survives review",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on escalation coordination with explicit evidence, decision rights, and a verified close.",
+      "category": "Workflow",
+      "date": "2026-11-03",
+      "image": "/thumbnails/november-03/customersuccessmanagers-build-a-escalation-coordination-handoff-that-survives-review-2026-11-03.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-customer-onboarding-support-and-customer-health-operations-aligned-at-the-handoff-2026-11-03",
+      "title": "Keep customer onboarding support and customer health operations aligned at the handoff",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding support and customer health operations with explicit evidence, decision rights, and a verified close.",
+      "category": "Handoff",
+      "date": "2026-11-03",
+      "image": "/thumbnails/november-03/customersuccessmanagers-keep-customer-onboarding-support-and-customer-health-operations-aligned-at-the-handoff-2026-11-03.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-run-a-monthly-quality-sample-for-customer-onboarding-support-2026-11-03",
+      "title": "Run a monthly quality sample for customer onboarding support",
+      "description": "A practical guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding support quality sample with explicit evidence, decision rights, and a verified close.",
+      "category": "Review",
+      "date": "2026-11-03",
+      "image": "/thumbnails/november-03/customersuccessmanagers-run-a-monthly-quality-sample-for-customer-onboarding-support-2026-11-03.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-crm-note-close-that-holds-up-nov-2",
+      "title": "Build a CRM note close that holds up",
+      "description": "A grounded customer success note for customer success leaders: CRM note with explicit evidence, decision rights, and a verified close.",
+      "category": "closeout",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-build-a-crm-note-close-that-holds-up-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-draw-a-source-map-for-health-score-nov-2",
+      "title": "Draw a source map for health score",
+      "description": "A grounded customer success note for customer success leaders: health score with explicit evidence, decision rights, and a verified close.",
+      "category": "source map",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-draw-a-source-map-for-health-score-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-find-the-first-weak-link-in-onboarding-plan-nov-2",
+      "title": "Find the first weak link in onboarding plan",
+      "description": "A grounded customer success note for customer success leaders: onboarding plan with explicit evidence, decision rights, and a verified close.",
+      "category": "weak links",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-find-the-first-weak-link-in-onboarding-plan-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-handle-escalation-log-when-it-does-not-fit-the-rule-nov-2",
+      "title": "Handle escalation log when it does not fit the rule",
+      "description": "A grounded customer success note for customer success leaders: escalation log with explicit evidence, decision rights, and a verified close.",
+      "category": "exceptions",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-handle-escalation-log-when-it-does-not-fit-the-rule-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-churn-signal-evidence-readable-after-a-handoff-nov-2",
+      "title": "Keep churn signal evidence readable after a handoff",
+      "description": "A grounded customer success note for customer success leaders: churn signal with explicit evidence, decision rights, and a verified close.",
+      "category": "handoffs",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-keep-churn-signal-evidence-readable-after-a-handoff-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-make-the-monthly-usage-report-check-useful-nov-2",
+      "title": "Make the monthly usage report check useful",
+      "description": "A grounded customer success note for customer success leaders: usage report with explicit evidence, decision rights, and a verified close.",
+      "category": "monthly check",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-make-the-monthly-usage-report-check-useful-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-recover-health-score-after-a-missed-step-nov-2",
+      "title": "Recover health score after a missed step",
+      "description": "A grounded customer success note for customer success leaders: health score with explicit evidence, decision rights, and a verified close.",
+      "category": "recovery",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-recover-health-score-after-a-missed-step-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-retire-a-renewal-risk-workaround-safely-nov-2",
+      "title": "Retire a renewal risk workaround safely",
+      "description": "A grounded customer success note for customer success leaders: renewal risk with explicit evidence, decision rights, and a verified close.",
+      "category": "retirement",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-retire-a-renewal-risk-workaround-safely-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-run-renewal-risk-across-a-normal-day-nov-2",
+      "title": "Run renewal risk across a normal day",
+      "description": "A grounded customer success note for customer success leaders: renewal risk with explicit evidence, decision rights, and a verified close.",
+      "category": "daily flow",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-run-renewal-risk-across-a-normal-day-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-set-authority-limits-around-qbr-packet-nov-2",
+      "title": "Set authority limits around QBR packet",
+      "description": "A grounded customer success note for customer success leaders: QBR packet with explicit evidence, decision rights, and a verified close.",
+      "category": "authority",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-set-authority-limits-around-qbr-packet-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-test-a-onboarding-plan-shortcut-before-adopting-it-nov-2",
+      "title": "Test a onboarding plan shortcut before adopting it",
+      "description": "A grounded customer success note for customer success leaders: onboarding plan with explicit evidence, decision rights, and a verified close.",
+      "category": "shortcuts",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-test-a-onboarding-plan-shortcut-before-adopting-it-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-write-a-qbr-packet-brief-a-reviewer-can-use-nov-2",
+      "title": "Write a QBR packet brief a reviewer can use",
+      "description": "A grounded customer success note for customer success leaders: QBR packet with explicit evidence, decision rights, and a verified close.",
+      "category": "briefing",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-write-a-qbr-packet-brief-a-reviewer-can-use-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-map-the-customer-onboarding-decision-to-one-accountable-owner-2026-11-01",
+      "title": "Map the customer onboarding decision to one accountable owner",
+      "description": "A customer success teams guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding and bounded by honest evidence Written for the Customer Success Managers desk at customersuccessmanagers.com.",
+      "category": "Owner mapping",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-map-the-customer-onboarding-decision-to-one-accountable-owner-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-write-the-customer-health-operations-intake-note-that-survives-a-later-review-2026-11-01",
+      "title": "Write the customer health operations intake note that survives a later review",
+      "description": "A customer success teams guide for customer success leaders, SaaS operators, and account teams, focused on customer health operations and bounded by honest evidence Written for the Customer Success Managers desk at customersuccessmanagers.com.",
+      "category": "Documentation",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-write-the-customer-health-operations-intake-note-that-survives-a-later-review-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-cut-rework-at-the-business-review-handoff-with-a-two-field-check-2026-11-01",
+      "title": "Cut rework at the business review handoff with a two-field check",
+      "description": "A customer success teams guide for customer success leaders, SaaS operators, and account teams, focused on business review and bounded by honest evidence Written for the Customer Success Managers desk at customersuccessmanagers.com.",
+      "category": "Handoff design",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-cut-rework-at-the-business-review-handoff-with-a-two-field-check-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-resolve-a-conflicting-adoption-follow-up-record-without-erasing-history-2026-11-01",
+      "title": "Resolve a conflicting adoption follow up record without erasing history",
+      "description": "A customer success teams guide for customer success leaders, SaaS operators, and account teams, focused on adoption follow up and bounded by honest evidence Written for the Customer Success Managers desk at customersuccessmanagers.com.",
+      "category": "Record integrity",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-resolve-a-conflicting-adoption-follow-up-record-without-erasing-history-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-sample-knowledge-operations-quality-weekly-not-only-volume-2026-11-01",
+      "title": "Sample knowledge operations quality weekly, not only volume",
+      "description": "A customer success teams guide for customer success leaders, SaaS operators, and account teams, focused on knowledge operations and bounded by honest evidence Written for the Customer Success Managers desk at customersuccessmanagers.com.",
+      "category": "Quality sampling",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-sample-knowledge-operations-quality-weekly-not-only-volume-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-build-an-exception-code-list-the-escalation-coordination-team-will-use-2026-11-01",
+      "title": "Build an exception code list the escalation coordination team will use",
+      "description": "A customer success teams guide for customer success leaders, SaaS operators, and account teams, focused on escalation coordination and bounded by honest evidence Written for the Customer Success Managers desk at customersuccessmanagers.com.",
+      "category": "Exception control",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-build-an-exception-code-list-the-escalation-coordination-team-will-use-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-customer-onboarding-queue-evidence-durable-when-the-systems-change-2026-11-01",
+      "title": "Keep customer onboarding queue evidence durable when the systems change",
+      "description": "A customer success teams guide for customer success leaders, SaaS operators, and account teams, focused on customer onboarding queue and bounded by honest evidence Written for the Customer Success Managers desk at customersuccessmanagers.com.",
+      "category": "Evidence retention",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-keep-customer-onboarding-queue-evidence-durable-when-the-systems-change-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-prepare-customer-health-operations-queue-work-for-month-end-without-a-scramble-2026-11-01",
+      "title": "Prepare customer health operations queue work for month-end without a scramble",
+      "description": "A customer success teams guide for customer success leaders, SaaS operators, and account teams, focused on customer health operations queue and bounded by honest evidence Written for the Customer Success Managers desk at customersuccessmanagers.com.",
+      "category": "Month-end readiness",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-prepare-customer-health-operations-queue-work-for-month-end-without-a-scramble-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-coach-a-specialist-through-a-business-review-queue-near-miss-2026-11-01",
+      "title": "Coach a specialist through a business review queue near miss",
+      "description": "A customer success teams guide for customer success leaders, SaaS operators, and account teams, focused on business review queue and bounded by honest evidence Written for the Customer Success Managers desk at customersuccessmanagers.com.",
+      "category": "Coaching",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-coach-a-specialist-through-a-business-review-queue-near-miss-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-decide-what-a-va-may-send-on-adoption-follow-up-queue-without-a-second-review-2026-11-01",
+      "title": "Decide what a VA may send on adoption follow up queue without a second review",
+      "description": "A customer success teams guide for customer success leaders, SaaS operators, and account teams, focused on adoption follow up queue and bounded by honest evidence Written for the Customer Success Managers desk at customersuccessmanagers.com.",
+      "category": "Delegation boundaries",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-decide-what-a-va-may-send-on-adoption-follow-up-queue-without-a-second-review-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-turn-a-knowledge-operations-queue-backlog-into-a-dated-work-plan-2026-11-01",
+      "title": "Turn a knowledge operations queue backlog into a dated work plan",
+      "description": "A customer success teams guide for customer success leaders, SaaS operators, and account teams, focused on knowledge operations queue and bounded by honest evidence Written for the Customer Success Managers desk at customersuccessmanagers.com.",
+      "category": "Backlog planning",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-turn-a-knowledge-operations-queue-backlog-into-a-dated-work-plan-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-protect-escalation-coordination-queue-coverage-during-leave-and-turnover-2026-11-01",
+      "title": "Protect escalation coordination queue coverage during leave and turnover",
+      "description": "A customer success teams guide for customer success leaders, SaaS operators, and account teams, focused on escalation coordination queue and bounded by honest evidence Written for the Customer Success Managers desk at customersuccessmanagers.com.",
+      "category": "Continuity",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-protect-escalation-coordination-queue-coverage-during-leave-and-turnover-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-audit-a-onboarding-plan-handoff-for-hidden-assumptions",
+      "title": "Audit a onboarding plan handoff for hidden assumptions",
+      "description": "A grounded customer success note for customer success leaders: onboarding plan with explicit evidence, decision rights, and a verified close.",
+      "category": "handoff audit",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-audit-a-onboarding-plan-handoff-for-hidden-assumptions.png"
+    },
+    {
+      "slug": "customersuccessmanagers-design-an-exception-lane-for-health-score-that-stops-safely",
+      "title": "Design an exception lane for health score that stops safely",
+      "description": "A grounded customer success note for customer success leaders: health score with explicit evidence, decision rights, and a verified close.",
+      "category": "exceptions",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-design-an-exception-lane-for-health-score-that-stops-safely.png"
+    },
+    {
+      "slug": "customersuccessmanagers-rebuild-trust-in-qbr-packet-after-a-wrong-update",
+      "title": "Rebuild trust in QBR packet after a wrong update",
+      "description": "A grounded customer success note for customer success leaders: QBR packet with explicit evidence, decision rights, and a verified close.",
+      "category": "corrections",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-rebuild-trust-in-qbr-packet-after-a-wrong-update.png"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-renewal-risk-evidence-usable-across-a-system-migration",
+      "title": "Keep renewal risk evidence usable across a system migration",
+      "description": "A grounded customer success note for customer success leaders: renewal risk with explicit evidence, decision rights, and a verified close.",
+      "category": "migration",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-keep-renewal-risk-evidence-usable-across-a-system-migration.png"
+    },
+    {
+      "slug": "customersuccessmanagers-write-a-backup-owner-plan-for-escalation-log",
+      "title": "Write a backup-owner plan for escalation log",
+      "description": "A grounded customer success note for customer success leaders: escalation log with explicit evidence, decision rights, and a verified close.",
+      "category": "coverage",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-write-a-backup-owner-plan-for-escalation-log.png"
+    },
+    {
+      "slug": "customersuccessmanagers-set-a-same-day-close-rule-for-crm-note",
+      "title": "Set a same-day close rule for CRM note",
+      "description": "A grounded customer success note for customer success leaders: CRM note with explicit evidence, decision rights, and a verified close.",
+      "category": "closeout",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-set-a-same-day-close-rule-for-crm-note.png"
+    },
+    {
+      "slug": "customersuccessmanagers-review-usage-report-permissions-after-a-role-change",
+      "title": "Review usage report permissions after a role change",
+      "description": "A grounded customer success note for customer success leaders: usage report with explicit evidence, decision rights, and a verified close.",
+      "category": "access",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-review-usage-report-permissions-after-a-role-change.png"
+    },
+    {
+      "slug": "customersuccessmanagers-create-a-weekly-churn-signal-evidence-sample",
+      "title": "Create a weekly churn signal evidence sample",
+      "description": "A grounded customer success note for customer success leaders: churn signal with explicit evidence, decision rights, and a verified close.",
+      "category": "quality",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-create-a-weekly-churn-signal-evidence-sample.png"
+    },
+    {
+      "slug": "customersuccessmanagers-document-a-onboarding-plan-decision-without-overstepping",
+      "title": "Document a onboarding plan decision without overstepping",
+      "description": "A grounded customer success note for customer success leaders: onboarding plan with explicit evidence, decision rights, and a verified close.",
+      "category": "decision rights",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-document-a-onboarding-plan-decision-without-overstepping.png"
+    },
+    {
+      "slug": "customersuccessmanagers-handle-a-disputed-health-score-record-without-rewriting-history",
+      "title": "Handle a disputed health score record without rewriting history",
+      "description": "A grounded customer success note for customer success leaders: health score with explicit evidence, decision rights, and a verified close.",
+      "category": "disputes",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-handle-a-disputed-health-score-record-without-rewriting-history.png"
+    },
+    {
+      "slug": "customersuccessmanagers-prepare-qbr-packet-for-an-audit-walkthrough",
+      "title": "Prepare QBR packet for an audit walkthrough",
+      "description": "A grounded customer success note for customer success leaders: QBR packet with explicit evidence, decision rights, and a verified close.",
+      "category": "audit readiness",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-prepare-qbr-packet-for-an-audit-walkthrough.png"
+    },
+    {
+      "slug": "customersuccessmanagers-run-a-monthly-renewal-risk-recovery-drill",
+      "title": "Run a monthly renewal risk recovery drill",
+      "description": "A grounded customer success note for customer success leaders: renewal risk with explicit evidence, decision rights, and a verified close.",
+      "category": "recovery",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-run-a-monthly-renewal-risk-recovery-drill.png"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-daily-queue-review-for-renewal-risk",
+      "title": "Build a daily queue review for renewal risk",
+      "description": "A grounded customer success note for customer success leaders: renewal risk with explicit evidence, decision rights, and a verified close.",
+      "category": "daily control",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-build-a-daily-queue-review-for-renewal-risk.png"
+    },
+    {
+      "slug": "customersuccessmanagers-close-qbr-packet-only-when-the-destination-record-changes",
+      "title": "Close QBR packet only when the destination record changes",
+      "description": "A grounded customer success note for customer success leaders: QBR packet with explicit evidence, decision rights, and a verified close.",
+      "category": "closeout",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-close-qbr-packet-only-when-the-destination-record-changes.png"
+    },
+    {
+      "slug": "customersuccessmanagers-create-a-source-preserving-entry-check-for-onboarding-plan",
+      "title": "Create a source-preserving entry check for onboarding plan",
+      "description": "A grounded customer success note for customer success leaders: onboarding plan with explicit evidence, decision rights, and a verified close.",
+      "category": "intake control",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-create-a-source-preserving-entry-check-for-onboarding-plan.png"
+    },
+    {
+      "slug": "customersuccessmanagers-design-a-first-week-shadow-plan-for-churn-signal",
+      "title": "Design a first-week shadow plan for churn signal",
+      "description": "A grounded customer success note for customer success leaders: churn signal with explicit evidence, decision rights, and a verified close.",
+      "category": "onboarding",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-design-a-first-week-shadow-plan-for-churn-signal.png"
+    },
+    {
+      "slug": "customersuccessmanagers-handle-missing-evidence-in-escalation-log-without-guessing",
+      "title": "Handle missing evidence in escalation log without guessing",
+      "description": "A grounded customer success note for customer success leaders: escalation log with explicit evidence, decision rights, and a verified close.",
+      "category": "evidence",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-handle-missing-evidence-in-escalation-log-without-guessing.png"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-onboarding-plan-moving-through-leave-and-time-zone-gaps",
+      "title": "Keep onboarding plan moving through leave and time-zone gaps",
+      "description": "A grounded customer success note for customer success leaders: onboarding plan with explicit evidence, decision rights, and a verified close.",
+      "category": "coverage",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-keep-onboarding-plan-moving-through-leave-and-time-zone-gaps.png"
+    },
+    {
+      "slug": "customersuccessmanagers-review-access-and-permissions-around-renewal-risk-every-month",
+      "title": "Review access and permissions around renewal risk every month",
+      "description": "A grounded customer success note for customer success leaders: renewal risk with explicit evidence, decision rights, and a verified close.",
+      "category": "access",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-review-access-and-permissions-around-renewal-risk-every-month.png"
+    },
+    {
+      "slug": "customersuccessmanagers-run-a-weekly-quality-sample-on-health-score",
+      "title": "Run a weekly quality sample on health score",
+      "description": "A grounded customer success note for customer success leaders: health score with explicit evidence, decision rights, and a verified close.",
+      "category": "quality",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-run-a-weekly-quality-sample-on-health-score.png"
+    },
+    {
+      "slug": "customersuccessmanagers-separate-preparation-from-approval-in-qbr-packet",
+      "title": "Separate preparation from approval in QBR packet",
+      "description": "A grounded customer success note for customer success leaders: QBR packet with explicit evidence, decision rights, and a verified close.",
+      "category": "decision rights",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-separate-preparation-from-approval-in-qbr-packet.png"
+    },
+    {
+      "slug": "customersuccessmanagers-set-a-safe-stop-rule-for-crm-note",
+      "title": "Set a safe stop rule for CRM note",
+      "description": "A grounded customer success note for customer success leaders: CRM note with explicit evidence, decision rights, and a verified close.",
+      "category": "stop work",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-set-a-safe-stop-rule-for-crm-note.png"
+    },
+    {
+      "slug": "customersuccessmanagers-trace-every-health-score-change-to-a-named-owner",
+      "title": "Trace every health score change to a named owner",
+      "description": "A grounded customer success note for customer success leaders: health score with explicit evidence, decision rights, and a verified close.",
+      "category": "decision rights",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-trace-every-health-score-change-to-a-named-owner.png"
+    },
+    {
+      "slug": "customersuccessmanagers-write-a-correction-record-for-usage-report-that-survives-review",
+      "title": "Write a correction record for usage report that survives review",
+      "description": "A grounded customer success note for customer success leaders: usage report with explicit evidence, decision rights, and a verified close.",
+      "category": "corrections",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-write-a-correction-record-for-usage-report-that-survives-review.png"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-first-week-shadow-plan-for-onboarding-plan",
+      "title": "Build a first-week shadow plan for onboarding plan",
+      "description": "A source-bounded customer success control note for customer success leaders: onboarding plan with clear ownership and evidence.",
+      "category": "onboarding",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-build-a-first-week-shadow-plan-for-onboarding-plan.png"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-two-person-verification-step-for-qbr-packet",
+      "title": "Build a two-person verification step for QBR packet",
+      "description": "A source-bounded customer success control note for customer success leaders: QBR packet with clear ownership and evidence.",
+      "category": "verification",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-build-a-two-person-verification-step-for-qbr-packet.png"
+    },
+    {
+      "slug": "customersuccessmanagers-create-a-recovery-checklist-for-renewal-risk",
+      "title": "Create a recovery checklist for renewal risk",
+      "description": "A source-bounded customer success control note for customer success leaders: renewal risk with clear ownership and evidence.",
+      "category": "recovery",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-create-a-recovery-checklist-for-renewal-risk.png"
+    },
+    {
+      "slug": "customersuccessmanagers-define-a-stop-work-trigger-for-churn-signal",
+      "title": "Define a stop-work trigger for churn signal",
+      "description": "A source-bounded customer success control note for customer success leaders: churn signal with clear ownership and evidence.",
+      "category": "stop work",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-define-a-stop-work-trigger-for-churn-signal.png"
+    },
+    {
+      "slug": "customersuccessmanagers-define-the-minimum-evidence-for-qbr-packet",
+      "title": "Define the minimum evidence for QBR packet",
+      "description": "A source-bounded customer success control note for customer success leaders: QBR packet with clear ownership and evidence.",
+      "category": "evidence",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-define-the-minimum-evidence-for-qbr-packet.png"
+    },
+    {
+      "slug": "customersuccessmanagers-design-a-daily-control-board-for-onboarding-plan",
+      "title": "Design a daily control board for onboarding plan",
+      "description": "A source-bounded customer success control note for customer success leaders: onboarding plan with clear ownership and evidence.",
+      "category": "daily control",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-design-a-daily-control-board-for-onboarding-plan.png"
+    },
+    {
+      "slug": "customersuccessmanagers-keep-a-correction-log-for-health-score",
+      "title": "Keep a correction log for health score",
+      "description": "A source-bounded customer success control note for customer success leaders: health score with clear ownership and evidence.",
+      "category": "corrections",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-keep-a-correction-log-for-health-score.png"
+    },
+    {
+      "slug": "customersuccessmanagers-run-a-monthly-control-review-for-renewal-risk",
+      "title": "Run a monthly control review for renewal risk",
+      "description": "A source-bounded customer success control note for customer success leaders: renewal risk with clear ownership and evidence.",
+      "category": "review",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-run-a-monthly-control-review-for-renewal-risk.png"
+    },
+    {
+      "slug": "customersuccessmanagers-run-a-surprise-sample-of-crm-note",
+      "title": "Run a surprise sample of CRM note",
+      "description": "A source-bounded customer success control note for customer success leaders: CRM note with clear ownership and evidence.",
+      "category": "sampling",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-run-a-surprise-sample-of-crm-note.png"
+    },
+    {
+      "slug": "customersuccessmanagers-set-a-stale-record-rule-for-escalation-log",
+      "title": "Set a stale-record rule for escalation log",
+      "description": "A source-bounded customer success control note for customer success leaders: escalation log with clear ownership and evidence.",
+      "category": "freshness",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-set-a-stale-record-rule-for-escalation-log.png"
+    },
+    {
+      "slug": "customersuccessmanagers-write-a-customer-safe-status-note-for-usage-report",
+      "title": "Write a customer-safe status note for usage report",
+      "description": "A source-bounded customer success control note for customer success leaders: usage report with clear ownership and evidence.",
+      "category": "communication",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-write-a-customer-safe-status-note-for-usage-report.png"
+    },
+    {
+      "slug": "customersuccessmanagers-write-a-decision-rights-note-for-health-score",
+      "title": "Write a decision-rights note for health score",
+      "description": "A source-bounded customer success control note for customer success leaders: health score with clear ownership and evidence.",
+      "category": "decision rights",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-write-a-decision-rights-note-for-health-score.png"
+    },
+    {
+      "slug": "onboarding-acceptance-evidence",
+      "title": "Make Onboarding Acceptance Evidence Explicit",
+      "description": "An acceptance gate that defines the observable customer outcome, verifier, and evidence.",
+      "category": "Customer onboarding",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service5.webp"
+    },
+    {
+      "slug": "qbr-data-lineage",
+      "title": "Trace QBR Data Back to Its Source",
+      "description": "A QBR pack that labels source, period, definition, and owner for every metric.",
+      "category": "QBR operations",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service6.webp"
+    },
+    {
+      "slug": "renewal-risk-register",
+      "title": "Keep a Renewal Risk Register",
+      "description": "A renewal register that records risk, evidence, owner, and next review date.",
+      "category": "Renewals",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service7.webp"
+    },
+    {
+      "slug": "health-score-override-review",
+      "title": "Review Health Score Overrides",
+      "description": "A review process for manual overrides with reason, owner, expiry, and evidence.",
+      "category": "Account health",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service8.webp"
+    },
+    {
+      "slug": "escalation-owner-map",
+      "title": "Map Every Escalation to an Owner",
+      "description": "An escalation map that names severity, route, acknowledgement, and resolution evidence.",
+      "category": "Escalations",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service1.webp"
+    },
+    {
+      "slug": "customer-commitment-log",
+      "title": "Log Customer Commitments Without Overpromising",
+      "description": "A commitment log that records wording, authority, deadline, and evidence.",
+      "category": "Customer communication",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service2.webp"
+    },
+    {
+      "slug": "churn-signal-triage",
+      "title": "Triage Churn Signals Before the Renewal",
+      "description": "A triage method for usage, support, sponsor, and commercial signals.",
+      "category": "Retention",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service3.webp"
+    },
+    {
+      "slug": "account-plan-ownership",
+      "title": "Assign Ownership for Every Account Plan",
+      "description": "An account plan that separates actions, owners, dates, and customer decisions.",
+      "category": "Account planning",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service4.webp"
+    },
+    {
+      "slug": "usage-report-reconciliation",
+      "title": "Reconcile Usage Reports Before a Customer Call",
+      "description": "A pre-call check that matches usage exports, periods, definitions, and anomalies.",
+      "category": "Reporting",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service5.webp"
+    },
+    {
+      "slug": "executive-sponsor-change",
+      "title": "Handle an Executive Sponsor Change",
+      "description": "A transition record for sponsor changes, commitments, and relationship risk.",
+      "category": "Relationship management",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service6.webp"
+    },
+    {
+      "slug": "success-plan-versioning",
+      "title": "Version Customer Success Plans",
+      "description": "A versioned success plan with outcome, milestone, owner, and change reason.",
+      "category": "Success planning",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service7.webp"
+    },
+    {
+      "slug": "expansion-readiness-check",
+      "title": "Run an Expansion Readiness Check",
+      "description": "A readiness review for usage, value evidence, sponsor support, and commercial fit.",
+      "category": "Expansion",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service8.webp"
+    },
+    {
+      "slug": "onboarding-kickoff-evidence-gate",
+      "title": "Running an Onboarding Kickoff as an Evidence Gate",
+      "description": "A practical method for turning the onboarding kickoff into a recorded evidence gate with named owners, dated commitments, and an inspectable acceptance state.",
+      "category": "Customer onboarding",
+      "date": "2026-10-22",
+      "image": "/october-22/onboarding-kickoff-evidence-gate.webp"
+    },
+    {
+      "slug": "health-signal-freshness-review",
+      "title": "Reviewing Health Signals for Freshness Before Weighting",
+      "description": "How customer success teams date every health signal, set source-specific freshness rules, and keep stale evidence visible instead of silently averaging it into a score.",
+      "category": "Health systems",
+      "date": "2026-10-22",
+      "image": "/october-22/health-signal-freshness-review.webp"
+    },
+    {
+      "slug": "qbr-action-log-closure",
+      "title": "Closing the Loop on QBR Action Logs",
+      "description": "A working method for keeping quarterly business review actions traceable from the customer request to verified closure, with owners, dates, and evidence standards.",
+      "category": "Business reviews",
+      "date": "2026-10-22",
+      "image": "/october-22/qbr-action-log-closure.webp"
+    },
+    {
+      "slug": "renewal-risk-routing-sla",
+      "title": "Routing Renewal Risk on a Dated Service Level",
+      "description": "How to move renewal risk from scattered account notes into a named commercial owner with response times, evidence requirements, and a recorded acceptance.",
+      "category": "Renewals",
+      "date": "2026-10-22",
+      "image": "/october-22/renewal-risk-routing-sla.webp"
+    },
+    {
+      "slug": "adoption-followup-segmentation",
+      "title": "Segmenting Adoption Follow-Up by Blocker Type",
+      "description": "A segmentation model that routes adoption follow-up by the actual blocker, so reminders stop repeating and the right owner receives the dependency.",
+      "category": "Adoption operations",
+      "date": "2026-10-22",
+      "image": "/october-22/adoption-followup-segmentation.webp"
+    },
+    {
+      "slug": "escalation-timeline-reconstruction",
+      "title": "Reconstructing an Escalation Timeline That Holds Up",
+      "description": "A chronology method for escalations that keeps customer wording, system events, and corrections in order so accountable leaders can act on verified facts.",
+      "category": "Escalation",
+      "date": "2026-10-22",
+      "image": "/october-22/escalation-timeline-reconstruction.webp"
+    },
+    {
+      "slug": "success-plan-assumption-review",
+      "title": "Keeping a Success Plan Assumption Register",
+      "description": "How to record, test, and retire the assumptions behind a customer success plan so forecasts and commitments rest on verified ground.",
+      "category": "Success planning",
+      "date": "2026-10-22",
+      "image": "/october-22/success-plan-assumption-review.webp"
+    },
+    {
+      "slug": "account-hierarchy-crm-hygiene",
+      "title": "Account Hierarchy Hygiene Before Health Reporting",
+      "description": "The hierarchy checks that keep parent, child, and contract records consistent so health reporting and coverage decisions describe the real customer.",
+      "category": "Data quality",
+      "date": "2026-10-22",
+      "image": "/october-22/account-hierarchy-crm-hygiene.webp"
+    },
+    {
+      "slug": "customer-call-note-standard",
+      "title": "A Call-Note Standard That Survives Handoffs",
+      "description": "A note standard for customer calls that separates statement from interpretation, links commitments, and lets a covering CSM act without a private briefing.",
+      "category": "Knowledge operations",
+      "date": "2026-10-22",
+      "image": "/october-22/customer-call-note-standard.webp"
+    },
+    {
+      "slug": "expansion-signal-verification",
+      "title": "Verifying Expansion Signals Before a Sales Conversation",
+      "description": "A verification routine that separates observed product use from buying intent and gives the commercial team evidence it can defend in a customer meeting.",
+      "category": "Expansion",
+      "date": "2026-10-22",
+      "image": "/october-22/expansion-signal-verification.webp"
+    },
+    {
+      "slug": "customer-education-content-lifecycle",
+      "title": "A Lifecycle for Customer Education Content",
+      "description": "How to version, review, and retire customer education content so enablement material stays accurate as the product, policy, and customer roles change.",
+      "category": "Education",
+      "date": "2026-10-22",
+      "image": "/october-22/customer-education-content-lifecycle.webp"
+    },
+    {
+      "slug": "csm-coverage-handoff-plan",
+      "title": "Planning CSM Coverage Handoffs Before They Are Urgent",
+      "description": "A coverage plan that names the minimum account context, the decision rights of a covering CSM, and the reconciliation required when the owner returns.",
+      "category": "Role design",
+      "date": "2026-10-22",
+      "image": "/october-22/csm-coverage-handoff-plan.webp"
+    },
+    {
+      "slug": "customer-onboarding-acceptance-gate",
+      "title": "Creating an Acceptance Gate for Customer Onboarding",
+      "description": "A practical Customer Success Managers guide to customer onboarding acceptance, accountable escalation, and verified closure.",
+      "category": "Onboarding systems",
+      "date": "2026-10-12",
+      "image": "/october-12/customer-onboarding-acceptance-gate.webp"
+    },
+    {
+      "slug": "success-plan-assumption-register",
+      "title": "Building an Assumption Register for Customer Success Plans",
+      "description": "A practical Customer Success Managers guide to success-plan assumptions, accountable escalation, and verified closure.",
+      "category": "Success planning",
+      "date": "2026-10-12",
+      "image": "/october-12/success-plan-assumption-register.webp"
+    },
+    {
+      "slug": "customer-health-score-evidence-boundary",
+      "title": "Keeping Customer Health Scores Inside Their Evidence Boundary",
+      "description": "A practical Customer Success Managers guide to customer health scoring, accountable escalation, and verified closure.",
+      "category": "Account health",
+      "date": "2026-10-12",
+      "image": "/october-12/customer-health-score-evidence-boundary.webp"
+    },
+    {
+      "slug": "renewal-risk-handoff",
+      "title": "Handing Off Renewal Risk Without Losing Evidence",
+      "description": "A practical Customer Success Managers guide to renewal-risk handoff, accountable escalation, and verified closure.",
+      "category": "Renewal operations",
+      "date": "2026-10-12",
+      "image": "/october-12/renewal-risk-handoff.webp"
+    },
+    {
+      "slug": "executive-business-review-source-pack",
+      "title": "Preparing an Executive Business Review Source Pack",
+      "description": "A practical Customer Success Managers guide to executive business review preparation, accountable escalation, and verified closure.",
+      "category": "Executive alignment",
+      "date": "2026-10-12",
+      "image": "/october-12/executive-business-review-source-pack.webp"
+    },
+    {
+      "slug": "product-adoption-barrier-register",
+      "title": "Maintaining a Product Adoption Barrier Register",
+      "description": "A practical Customer Success Managers guide to adoption barrier tracking, accountable escalation, and verified closure.",
+      "category": "Adoption systems",
+      "date": "2026-10-12",
+      "image": "/october-12/product-adoption-barrier-register.webp"
+    },
+    {
+      "slug": "customer-commitment-ledger",
+      "title": "Running a Customer Commitment Ledger Across Teams",
+      "description": "A practical Customer Success Managers guide to customer commitment tracking, accountable escalation, and verified closure.",
+      "category": "Commitment control",
+      "date": "2026-10-12",
+      "image": "/october-12/customer-commitment-ledger.webp"
+    },
+    {
+      "slug": "champion-transition-continuity",
+      "title": "Preserving Account Continuity When a Customer Champion Leaves",
+      "description": "A practical Customer Success Managers guide to customer champion transition, accountable escalation, and verified closure.",
+      "category": "Stakeholder continuity",
+      "date": "2026-10-12",
+      "image": "/october-12/champion-transition-continuity.webp"
+    },
+    {
+      "slug": "escalation-recovery-brief",
+      "title": "Writing a Customer Escalation Recovery Brief",
+      "description": "A practical Customer Success Managers guide to customer escalation recovery, accountable escalation, and verified closure.",
+      "category": "Escalation recovery",
+      "date": "2026-10-12",
+      "image": "/october-12/escalation-recovery-brief.webp"
+    },
+    {
+      "slug": "voice-of-customer-coding",
+      "title": "Coding Voice-of-Customer Evidence Without Flattening Context",
+      "description": "A practical Customer Success Managers guide to voice-of-customer coding, accountable escalation, and verified closure.",
+      "category": "Customer insight",
+      "date": "2026-10-12",
+      "image": "/october-12/voice-of-customer-coding.webp"
+    },
+    {
+      "slug": "customer-data-access-review",
+      "title": "Reviewing Customer Data Access for Success Teams",
+      "description": "A practical Customer Success Managers guide to customer data access review, accountable escalation, and verified closure.",
+      "category": "Information governance",
+      "date": "2026-10-12",
+      "image": "/october-12/customer-data-access-review.webp"
+    },
+    {
+      "slug": "expansion-readiness-evidence",
+      "title": "Separating Expansion Readiness from Sales Optimism",
+      "description": "A practical Customer Success Managers guide to expansion readiness evidence, accountable escalation, and verified closure.",
+      "category": "Growth governance",
+      "date": "2026-10-12",
+      "image": "/october-12/expansion-readiness-evidence.webp"
+    },
+    {
+      "slug": "customer-escalation-record",
+      "title": "Create a useful customer escalation record",
+      "description": "A practical guide to create a useful customer escalation record for customer success leaders, SaaS operators, and account teams.",
+      "category": "Health systems",
+      "date": "2026-10-08",
+      "image": "/refresh-20261113/service5.webp"
+    },
+    {
+      "slug": "adoption-follow-up-queue",
+      "title": "Design an adoption follow up queue",
+      "description": "A practical guide to design an adoption follow up queue for customer success leaders, SaaS operators, and account teams.",
+      "category": "Adoption operations",
+      "date": "2026-10-07",
+      "image": "/refresh-20261113/service4.webp"
+    },
+    {
+      "slug": "customer-health-review",
+      "title": "A practical customer health review",
+      "description": "A practical guide to a practical customer health review for customer success leaders, SaaS operators, and account teams.",
+      "category": "Health systems",
+      "date": "2026-10-06",
+      "image": "/refresh-20261113/service3.webp"
+    },
+    {
+      "slug": "customer-onboarding-handoff",
+      "title": "Build a customer onboarding handoff",
+      "description": "A practical guide to build a customer onboarding handoff for customer success leaders, SaaS operators, and account teams.",
+      "category": "Customer onboarding",
+      "date": "2026-10-05",
+      "image": "/refresh-20261113/service2.webp"
+    },
+    {
+      "slug": "customer-success-director-vs-csm-va",
+      "title": "Customer success director vs CSM VA",
+      "description": "A practical guide to customer success director vs csm va for customer success leaders, SaaS operators, and account teams.",
+      "category": "Role design",
+      "date": "2026-10-04",
+      "image": "/refresh-20261113/service1.webp"
+    }
+  ],
+  "research": [
+    {
+      "slug": "customersuccessmanagers-how-complete-is-the-portfolio-review-dataset-each-quarter",
+      "title": "How complete is the portfolio review dataset each quarter?",
+      "description": "A protocol for measuring portfolio review data completeness and reporting missing fields instead of scoring them.",
+      "category": "Customer health",
+      "date": "2026-11-11",
+      "image": "/thumbnails/november-11/customersuccessmanagers-how-complete-is-the-portfolio-review-dataset-each-quarter.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measure-account-reassignment-coverage-after-a-success-owner-leaves",
+      "title": "Measure account reassignment coverage after a success owner leaves",
+      "description": "A protocol for testing reassignment coverage across portfolios when a success owner departs.",
+      "category": "Account planning",
+      "date": "2026-11-11",
+      "image": "/thumbnails/november-11/customersuccessmanagers-measure-account-reassignment-coverage-after-a-success-owner-leaves.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-a-protocol-for-testing-renewal-conversation-evidence",
+      "title": "A protocol for testing renewal conversation evidence",
+      "description": "A protocol for matching renewal talking points to the usage and support records behind them.",
+      "category": "Renewal evidence",
+      "date": "2026-11-11",
+      "image": "/thumbnails/november-11/customersuccessmanagers-a-protocol-for-testing-renewal-conversation-evidence.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-test-whether-customer-commitments-have-an-approved-source",
+      "title": "Test whether customer commitments have an approved source",
+      "description": "A protocol for checking customer commitments against a confirmed product position.",
+      "category": "Operations",
+      "date": "2026-11-11",
+      "image": "/thumbnails/november-11/customersuccessmanagers-test-whether-customer-commitments-have-an-approved-source.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-where-do-success-plan-actions-lose-their-owner",
+      "title": "Where do success plan actions lose their owner?",
+      "description": "A protocol that traces a plan action from creation to review and finds where ownership disappears.",
+      "category": "Account planning",
+      "date": "2026-11-11",
+      "image": "/thumbnails/november-11/customersuccessmanagers-where-do-success-plan-actions-lose-their-owner.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-reproducible-are-pilot-result-summaries",
+      "title": "How reproducible are pilot result summaries?",
+      "description": "A protocol for testing whether two readers draw the same bounds from a pilot summary.",
+      "category": "Adoption",
+      "date": "2026-11-11",
+      "image": "/thumbnails/november-11/customersuccessmanagers-how-reproducible-are-pilot-result-summaries.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-a-sampling-method-for-support-escalations-that-bypass-the-account-owner",
+      "title": "A sampling method for support escalations that bypass the account owner",
+      "description": "A protocol for sampling closed support escalations and testing whether account risk reached the owner.",
+      "category": "Operations",
+      "date": "2026-11-11",
+      "image": "/thumbnails/november-11/customersuccessmanagers-a-sampling-method-for-support-escalations-that-bypass-the-account-owner.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-much-renewal-post-mortem-evidence-survives-to-the-next-quarter",
+      "title": "How much renewal post-mortem evidence survives to the next quarter?",
+      "description": "A protocol for testing whether renewal post-mortem conclusions remain linked to a source when the next quarter's actions are planned.",
+      "category": "Renewal evidence",
+      "date": "2026-11-10",
+      "image": "/thumbnails/november-10/customersuccessmanagers-how-much-renewal-post-mortem-evidence-survives-to-the-next-quarter.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measure-note-readability-after-an-account-ownership-change",
+      "title": "Measure note readability after an account ownership change",
+      "description": "A protocol for testing whether an incoming owner can act on an account note without contacting the previous owner.",
+      "category": "Account planning",
+      "date": "2026-11-10",
+      "image": "/thumbnails/november-10/customersuccessmanagers-measure-note-readability-after-an-account-ownership-change.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-a-protocol-for-executive-contact-coverage-in-strategic-accounts",
+      "title": "A protocol for executive contact coverage in strategic accounts",
+      "description": "A measurement method for executive contact coverage that keeps tier rules and waivers visible.",
+      "category": "Account planning",
+      "date": "2026-11-10",
+      "image": "/thumbnails/november-10/customersuccessmanagers-a-protocol-for-executive-contact-coverage-in-strategic-accounts.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-test-outage-follow-up-records-against-the-incident-timeline",
+      "title": "Test outage follow-up records against the incident timeline",
+      "description": "A protocol for matching customer outage follow-ups to the incident record and separating facts from commitments.",
+      "category": "Operations",
+      "date": "2026-11-10",
+      "image": "/thumbnails/november-10/customersuccessmanagers-test-outage-follow-up-records-against-the-incident-timeline.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-where-do-expansion-signals-lose-their-source",
+      "title": "Where do expansion signals lose their source?",
+      "description": "A protocol that traces an expansion signal from first observation to the account plan and finds where evidence disappears.",
+      "category": "Adoption",
+      "date": "2026-11-10",
+      "image": "/thumbnails/november-10/customersuccessmanagers-where-do-expansion-signals-lose-their-source.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-complete-is-the-onboarding-to-success-handoff-at-launch",
+      "title": "How complete is the onboarding-to-success handoff at launch?",
+      "description": "A protocol for testing launch handoffs against delivered scope, open items, and accepted ownership.",
+      "category": "Onboarding",
+      "date": "2026-11-10",
+      "image": "/thumbnails/november-10/customersuccessmanagers-how-complete-is-the-onboarding-to-success-handoff-at-launch.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-a-sampling-method-for-unresolved-churn-reason-codes",
+      "title": "A sampling method for unresolved churn reason codes",
+      "description": "A protocol for sampling churn records that lack a customer-stated reason and reporting them without forcing a code.",
+      "category": "Retention",
+      "date": "2026-11-10",
+      "image": "/thumbnails/november-10/customersuccessmanagers-a-sampling-method-for-unresolved-churn-reason-codes.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-often-do-renewal-forecasts-cite-a-source-older-than-the-account-plan",
+      "title": "How often do renewal forecasts cite a source older than the account plan?",
+      "description": "A measurement protocol for renewal forecast source age, with a defined population and an honest statement of what the result can support.",
+      "category": "Renewal evidence",
+      "date": "2026-11-09",
+      "image": "/thumbnails/november-09/customersuccessmanagers-how-often-do-renewal-forecasts-cite-a-source-older-than-the-account-plan.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measure-sponsor-change-coverage-across-active-accounts",
+      "title": "Measure sponsor-change coverage across active accounts",
+      "description": "A protocol for measuring how many active accounts have a current executive sponsor and a recorded transition.",
+      "category": "Account planning",
+      "date": "2026-11-09",
+      "image": "/thumbnails/november-09/customersuccessmanagers-measure-sponsor-change-coverage-across-active-accounts.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-a-sampling-method-for-champion-departure-save-reviews",
+      "title": "A sampling method for champion-departure save reviews",
+      "description": "A defined sample for champion-departure reviews that separates a completed review from a claimed save.",
+      "category": "Retention",
+      "date": "2026-11-09",
+      "image": "/thumbnails/november-09/customersuccessmanagers-a-sampling-method-for-champion-departure-save-reviews.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-test-whether-adoption-targets-are-linked-to-plan-review-dates",
+      "title": "Test whether adoption targets are linked to plan review dates",
+      "description": "A protocol for checking that each adoption target carries a metric definition and a review date inside the plan cycle.",
+      "category": "Adoption",
+      "date": "2026-11-09",
+      "image": "/thumbnails/november-09/customersuccessmanagers-test-whether-adoption-targets-are-linked-to-plan-review-dates.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-where-does-stale-health-evidence-enter-the-quarterly-packet",
+      "title": "Where does stale health evidence enter the quarterly packet?",
+      "description": "A protocol that locates stale health evidence inside the quarterly packet and names the step where freshness was lost.",
+      "category": "Quality",
+      "date": "2026-11-09",
+      "image": "/thumbnails/november-09/customersuccessmanagers-where-does-stale-health-evidence-enter-the-quarterly-packet.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-reproducible-are-voluntary-churn-reason-codes-across-owners",
+      "title": "How reproducible are voluntary churn reason codes across owners?",
+      "description": "A protocol for testing whether two reviewers assign the same churn reason to the same customer statement.",
+      "category": "Retention",
+      "date": "2026-11-09",
+      "image": "/thumbnails/november-09/customersuccessmanagers-how-reproducible-are-voluntary-churn-reason-codes-across-owners.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-a-protocol-for-auditing-support-to-success-handoff-records",
+      "title": "A protocol for auditing support-to-success handoff records",
+      "description": "A protocol for checking that a support issue reached a named customer success owner with usable context.",
+      "category": "Operations",
+      "date": "2026-11-09",
+      "image": "/thumbnails/november-09/customersuccessmanagers-a-protocol-for-auditing-support-to-success-handoff-records.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-much-renewal-risk-evidence-is-missing-at-the-ninety-day-checkpoint",
+      "title": "How much renewal risk evidence is missing at the ninety-day checkpoint?",
+      "description": "A measurement protocol for renewal risk evidence at the ninety-day checkpoint, with a frozen population and an honest limit statement.",
+      "category": "Renewal evidence",
+      "date": "2026-11-08",
+      "image": "/thumbnails/november-08/customersuccessmanagers-how-much-renewal-risk-evidence-is-missing-at-the-ninety-day-checkpoint.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measure-qbr-follow-up-completion-from-the-account-plan",
+      "title": "Measure QBR follow-up completion from the account plan",
+      "description": "A protocol for measuring whether QBR actions close inside the account plan and what the follow-up rate can honestly claim.",
+      "category": "Business reviews",
+      "date": "2026-11-08",
+      "image": "/thumbnails/november-08/customersuccessmanagers-measure-qbr-follow-up-completion-from-the-account-plan.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-a-sampling-protocol-for-health-score-overrides",
+      "title": "A sampling protocol for health score overrides",
+      "description": "A defined sampling method for manual health score overrides that preserves the before value, the reason, and the approver.",
+      "category": "Quality",
+      "date": "2026-11-08",
+      "image": "/thumbnails/november-08/customersuccessmanagers-a-sampling-protocol-for-health-score-overrides.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-where-does-escalation-handoff-delay-enter-the-queue",
+      "title": "Where does escalation handoff delay enter the queue?",
+      "description": "A protocol that splits escalation handoff delay into waiting for an owner, waiting for context, and waiting for a decision.",
+      "category": "Operations",
+      "date": "2026-11-08",
+      "image": "/thumbnails/november-08/customersuccessmanagers-where-does-escalation-handoff-delay-enter-the-queue.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-test-onboarding-task-completeness-after-a-crm-migration",
+      "title": "Test onboarding task completeness after a CRM migration",
+      "description": "A post-migration test for onboarding task completeness that keeps retired tasks, merged tasks, and lost evidence visible.",
+      "category": "Onboarding",
+      "date": "2026-11-08",
+      "image": "/thumbnails/november-08/customersuccessmanagers-test-onboarding-task-completeness-after-a-crm-migration.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-consistently-are-churn-save-notes-linked-to-a-source-record",
+      "title": "How consistently are churn save notes linked to a source record?",
+      "description": "A protocol for testing churn save notes against the customer signal and the actual customer response.",
+      "category": "Retention",
+      "date": "2026-11-08",
+      "image": "/thumbnails/november-08/customersuccessmanagers-how-consistently-are-churn-save-notes-linked-to-a-source-record.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-a-reproducible-review-of-adoption-data-freshness-before-the-customer-success-plan",
+      "title": "A reproducible review of adoption data freshness before the customer success plan",
+      "description": "A protocol for checking adoption data freshness, definition drift, and missing inputs before a customer success plan is drafted.",
+      "category": "Evidence",
+      "date": "2026-11-08",
+      "image": "/thumbnails/november-08/customersuccessmanagers-a-reproducible-review-of-adoption-data-freshness-before-the-customer-success-plan.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-what-evidence-is-missing-when-the-customer-onboarding-support-record-closes",
+      "title": "What evidence is missing when the customer onboarding support record closes?",
+      "description": "A reproducible measurement protocol for customer onboarding support for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-07",
+      "image": "/thumbnails/november-07/customersuccessmanagers-what-evidence-is-missing-when-the-customer-onboarding-support-record-closes.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-what-evidence-is-missing-when-the-customer-health-operations-record-closes",
+      "title": "What evidence is missing when the customer health operations record closes?",
+      "description": "A reproducible measurement protocol for customer health operations for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-07",
+      "image": "/thumbnails/november-07/customersuccessmanagers-what-evidence-is-missing-when-the-customer-health-operations-record-closes.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-what-evidence-is-missing-when-the-business-review-preparation-record-closes",
+      "title": "What evidence is missing when the business review preparation record closes?",
+      "description": "A reproducible measurement protocol for business review preparation for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-07",
+      "image": "/thumbnails/november-07/customersuccessmanagers-what-evidence-is-missing-when-the-business-review-preparation-record-closes.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-what-evidence-is-missing-when-the-adoption-follow-up-support-record-closes",
+      "title": "What evidence is missing when the adoption follow up support record closes?",
+      "description": "A reproducible measurement protocol for adoption follow up support for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-07",
+      "image": "/thumbnails/november-07/customersuccessmanagers-what-evidence-is-missing-when-the-adoption-follow-up-support-record-closes.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-what-evidence-is-missing-when-the-knowledge-operations-record-closes",
+      "title": "What evidence is missing when the knowledge operations record closes?",
+      "description": "A reproducible measurement protocol for knowledge operations for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-07",
+      "image": "/thumbnails/november-07/customersuccessmanagers-what-evidence-is-missing-when-the-knowledge-operations-record-closes.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-what-evidence-is-missing-when-the-escalation-coordination-record-closes",
+      "title": "What evidence is missing when the escalation coordination record closes?",
+      "description": "A reproducible measurement protocol for escalation coordination for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-07",
+      "image": "/thumbnails/november-07/customersuccessmanagers-what-evidence-is-missing-when-the-escalation-coordination-record-closes.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-quickly-does-the-customer-onboarding-support-request-reach-a-named-owner",
+      "title": "How quickly does the customer onboarding support request reach a named owner?",
+      "description": "A reproducible measurement protocol for customer onboarding support for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Measurement",
+      "date": "2026-11-07",
+      "image": "/thumbnails/november-07/customersuccessmanagers-how-quickly-does-the-customer-onboarding-support-request-reach-a-named-owner.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-often-does-the-customer-onboarding-support-record-close-with-source-evidence",
+      "title": "How often does the customer onboarding support record close with source evidence?",
+      "description": "A reproducible measurement protocol for customer onboarding support for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-06",
+      "image": "/thumbnails/november-06/customersuccessmanagers-how-often-does-the-customer-onboarding-support-record-close-with-source-evidence.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-often-does-the-customer-health-operations-record-close-with-source-evidence",
+      "title": "How often does the customer health operations record close with source evidence?",
+      "description": "A reproducible measurement protocol for customer health operations for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-06",
+      "image": "/thumbnails/november-06/customersuccessmanagers-how-often-does-the-customer-health-operations-record-close-with-source-evidence.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-often-does-the-business-review-preparation-record-close-with-source-evidence",
+      "title": "How often does the business review preparation record close with source evidence?",
+      "description": "A reproducible measurement protocol for business review preparation for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-06",
+      "image": "/thumbnails/november-06/customersuccessmanagers-how-often-does-the-business-review-preparation-record-close-with-source-evidence.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-often-does-the-adoption-follow-up-support-record-close-with-source-evidence",
+      "title": "How often does the adoption follow up support record close with source evidence?",
+      "description": "A reproducible measurement protocol for adoption follow up support for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-06",
+      "image": "/thumbnails/november-06/customersuccessmanagers-how-often-does-the-adoption-follow-up-support-record-close-with-source-evidence.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-often-does-the-knowledge-operations-record-close-with-source-evidence",
+      "title": "How often does the knowledge operations record close with source evidence?",
+      "description": "A reproducible measurement protocol for knowledge operations for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-06",
+      "image": "/thumbnails/november-06/customersuccessmanagers-how-often-does-the-knowledge-operations-record-close-with-source-evidence.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-often-does-the-escalation-coordination-record-close-with-source-evidence",
+      "title": "How often does the escalation coordination record close with source evidence?",
+      "description": "A reproducible measurement protocol for escalation coordination for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-06",
+      "image": "/thumbnails/november-06/customersuccessmanagers-how-often-does-the-escalation-coordination-record-close-with-source-evidence.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-what-delays-the-customer-onboarding-support-request-from-receipt-to-close",
+      "title": "What delays the customer onboarding support request from receipt to close?",
+      "description": "A reproducible measurement protocol for customer onboarding support for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Measurement",
+      "date": "2026-11-06",
+      "image": "/thumbnails/november-06/customersuccessmanagers-what-delays-the-customer-onboarding-support-request-from-receipt-to-close.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-complete-is-the-customer-onboarding-support-record-before-a-customer-commitment",
+      "title": "How complete is the customer onboarding support record before a customer commitment?",
+      "description": "A reproducible measurement protocol for customer onboarding support for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-05",
+      "image": "/thumbnails/november-05/customersuccessmanagers-how-complete-is-the-customer-onboarding-support-record-before-a-customer-commitment.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-complete-is-the-customer-health-operations-record-before-a-customer-commitment",
+      "title": "How complete is the customer health operations record before a customer commitment?",
+      "description": "A reproducible measurement protocol for customer health operations for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-05",
+      "image": "/thumbnails/november-05/customersuccessmanagers-how-complete-is-the-customer-health-operations-record-before-a-customer-commitment.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-complete-is-the-business-review-preparation-record-before-a-customer-commitment",
+      "title": "How complete is the business review preparation record before a customer commitment?",
+      "description": "A reproducible measurement protocol for business review preparation for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-05",
+      "image": "/thumbnails/november-05/customersuccessmanagers-how-complete-is-the-business-review-preparation-record-before-a-customer-commitment.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-complete-is-the-adoption-follow-up-support-record-before-a-customer-commitment",
+      "title": "How complete is the adoption follow up support record before a customer commitment?",
+      "description": "A reproducible measurement protocol for adoption follow up support for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-05",
+      "image": "/thumbnails/november-05/customersuccessmanagers-how-complete-is-the-adoption-follow-up-support-record-before-a-customer-commitment.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-complete-is-the-knowledge-operations-record-before-a-customer-commitment",
+      "title": "How complete is the knowledge operations record before a customer commitment?",
+      "description": "A reproducible measurement protocol for knowledge operations for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-05",
+      "image": "/thumbnails/november-05/customersuccessmanagers-how-complete-is-the-knowledge-operations-record-before-a-customer-commitment.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-complete-is-the-escalation-coordination-record-before-a-customer-commitment",
+      "title": "How complete is the escalation coordination record before a customer commitment?",
+      "description": "A reproducible measurement protocol for escalation coordination for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-05",
+      "image": "/thumbnails/november-05/customersuccessmanagers-how-complete-is-the-escalation-coordination-record-before-a-customer-commitment.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-what-delays-the-customer-onboarding-support-path-from-request-to-verified-close",
+      "title": "What delays the customer onboarding support path from request to verified close?",
+      "description": "A reproducible measurement protocol for customer onboarding support for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Measurement",
+      "date": "2026-11-05",
+      "image": "/thumbnails/november-05/customersuccessmanagers-what-delays-the-customer-onboarding-support-path-from-request-to-verified-close.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measuring-completeness-in-customer-onboarding-support",
+      "title": "Measuring completeness in customer onboarding support",
+      "description": "A reproducible measurement protocol for customer onboarding support for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-04",
+      "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-customer-onboarding-support.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measuring-completeness-in-customer-health-operations",
+      "title": "Measuring completeness in customer health operations",
+      "description": "A reproducible measurement protocol for customer health operations for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-04",
+      "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-customer-health-operations.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measuring-completeness-in-business-review-preparation",
+      "title": "Measuring completeness in business review preparation",
+      "description": "A reproducible measurement protocol for business review preparation for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-04",
+      "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-business-review-preparation.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measuring-completeness-in-adoption-follow-up-support",
+      "title": "Measuring completeness in adoption follow up support",
+      "description": "A reproducible measurement protocol for adoption follow up support for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-04",
+      "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-adoption-follow-up-support.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measuring-completeness-in-knowledge-operations",
+      "title": "Measuring completeness in knowledge operations",
+      "description": "A reproducible measurement protocol for knowledge operations for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-04",
+      "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-knowledge-operations.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measuring-completeness-in-escalation-coordination",
+      "title": "Measuring completeness in escalation coordination",
+      "description": "A reproducible measurement protocol for escalation coordination for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-04",
+      "image": "/thumbnails/november-04/customersuccessmanagers-measuring-completeness-in-escalation-coordination.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-long-does-customer-onboarding-support-take-from-request-to-verified-close",
+      "title": "How long does customer onboarding support take from request to verified close?",
+      "description": "A reproducible measurement protocol for customer onboarding support for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Measurement",
+      "date": "2026-11-04",
+      "image": "/thumbnails/november-04/customersuccessmanagers-how-long-does-customer-onboarding-support-take-from-request-to-verified-close.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measuring-completeness-in-customer-onboarding-support-2026-11-03",
+      "title": "Measuring completeness in customer onboarding support",
+      "description": "A reproducible measurement protocol for customer onboarding support for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-03",
+      "image": "/thumbnails/november-03/customersuccessmanagers-measuring-completeness-in-customer-onboarding-support-2026-11-03.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measuring-completeness-in-customer-health-operations-2026-11-03",
+      "title": "Measuring completeness in customer health operations",
+      "description": "A reproducible measurement protocol for customer health operations for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-03",
+      "image": "/thumbnails/november-03/customersuccessmanagers-measuring-completeness-in-customer-health-operations-2026-11-03.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measuring-completeness-in-business-review-preparation-2026-11-03",
+      "title": "Measuring completeness in business review preparation",
+      "description": "A reproducible measurement protocol for business review preparation for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-03",
+      "image": "/thumbnails/november-03/customersuccessmanagers-measuring-completeness-in-business-review-preparation-2026-11-03.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measuring-completeness-in-adoption-follow-up-support-2026-11-03",
+      "title": "Measuring completeness in adoption follow up support",
+      "description": "A reproducible measurement protocol for adoption follow up support for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-03",
+      "image": "/thumbnails/november-03/customersuccessmanagers-measuring-completeness-in-adoption-follow-up-support-2026-11-03.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measuring-completeness-in-knowledge-operations-2026-11-03",
+      "title": "Measuring completeness in knowledge operations",
+      "description": "A reproducible measurement protocol for knowledge operations for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-03",
+      "image": "/thumbnails/november-03/customersuccessmanagers-measuring-completeness-in-knowledge-operations-2026-11-03.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measuring-completeness-in-escalation-coordination-2026-11-03",
+      "title": "Measuring completeness in escalation coordination",
+      "description": "A reproducible measurement protocol for escalation coordination for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Quality",
+      "date": "2026-11-03",
+      "image": "/thumbnails/november-03/customersuccessmanagers-measuring-completeness-in-escalation-coordination-2026-11-03.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-long-does-customer-onboarding-support-take-from-request-to-verified-close-2026-11-03",
+      "title": "How long does customer onboarding support take from request to verified close?",
+      "description": "A reproducible measurement protocol for customer onboarding support for customer success leaders, SaaS operators, and account teams, with a frozen population, a defined sample, and explicit limits.",
+      "category": "Measurement",
+      "date": "2026-11-03",
+      "image": "/thumbnails/november-03/customersuccessmanagers-how-long-does-customer-onboarding-support-take-from-request-to-verified-close-2026-11-03.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-build-a-data-dictionary-for-renewal-risk-evidence-nov-2",
+      "title": "Build a data dictionary for renewal risk evidence",
+      "description": "A grounded customer success note for customer success leaders: renewal risk with explicit evidence, decision rights, and a verified close.",
+      "category": "dictionary",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-build-a-data-dictionary-for-renewal-risk-evidence-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-choose-qbr-packet-measures-that-can-be-defended-nov-2",
+      "title": "Choose QBR packet measures that can be defended",
+      "description": "A grounded customer success note for customer success leaders: QBR packet with explicit evidence, decision rights, and a verified close.",
+      "category": "measures",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-choose-qbr-packet-measures-that-can-be-defended-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-decide-who-belongs-in-the-health-score-frame-nov-2",
+      "title": "Decide who belongs in the health score frame",
+      "description": "A grounded customer success note for customer success leaders: health score with explicit evidence, decision rights, and a verified close.",
+      "category": "population",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-decide-who-belongs-in-the-health-score-frame-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-draw-a-escalation-log-sample-that-can-be-repeated-nov-2",
+      "title": "Draw a escalation log sample that can be repeated",
+      "description": "A grounded customer success note for customer success leaders: escalation log with explicit evidence, decision rights, and a verified close.",
+      "category": "sampling",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-draw-a-escalation-log-sample-that-can-be-repeated-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-frame-the-onboarding-plan-question-before-collecting-data-nov-2",
+      "title": "Frame the onboarding plan question before collecting data",
+      "description": "A grounded customer success note for customer success leaders: onboarding plan with explicit evidence, decision rights, and a verified close.",
+      "category": "framing",
+      "date": "2026-11-02",
+      "image": "/thumbnails/november-02/customersuccessmanagers-frame-the-onboarding-plan-question-before-collecting-data-nov-2.png"
+    },
+    {
+      "slug": "customersuccessmanagers-how-complete-is-the-evidence-in-the-customer-onboarding-record-2026-11-01",
+      "title": "How complete is the evidence in the customer onboarding record?",
+      "description": "A repeatable measurement protocol for customer onboarding in customer success teams, with definitions, sampling, limits, and reporting Prepared for the Customer Success Managers record at customersuccessmanagers.com.",
+      "category": "Evidence Quality",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-how-complete-is-the-evidence-in-the-customer-onboarding-record-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-where-does-delay-accumulate-in-the-customer-health-operations-handoff-2026-11-01",
+      "title": "Where does delay accumulate in the customer health operations handoff?",
+      "description": "A repeatable measurement protocol for customer health operations in customer success teams, with definitions, sampling, limits, and reporting Prepared for the Customer Success Managers record at customersuccessmanagers.com.",
+      "category": "Timing",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-where-does-delay-accumulate-in-the-customer-health-operations-handoff-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-how-old-are-the-exceptions-in-the-business-review-queue-2026-11-01",
+      "title": "How old are the exceptions in the business review queue?",
+      "description": "A repeatable measurement protocol for business review in customer success teams, with definitions, sampling, limits, and reporting Prepared for the Customer Success Managers record at customersuccessmanagers.com.",
+      "category": "Queue Health",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-how-old-are-the-exceptions-in-the-business-review-queue-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-what-happens-to-adoption-follow-up-coverage-when-the-owner-is-away-2026-11-01",
+      "title": "What happens to adoption follow up coverage when the owner is away?",
+      "description": "A repeatable measurement protocol for adoption follow up in customer success teams, with definitions, sampling, limits, and reporting Prepared for the Customer Success Managers record at customersuccessmanagers.com.",
+      "category": "Capacity",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-what-happens-to-adoption-follow-up-coverage-when-the-owner-is-away-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-can-the-knowledge-operations-report-be-reproduced-from-its-sources-2026-11-01",
+      "title": "Can the knowledge operations report be reproduced from its sources?",
+      "description": "A repeatable measurement protocol for knowledge operations in customer success teams, with definitions, sampling, limits, and reporting Prepared for the Customer Success Managers record at customersuccessmanagers.com.",
+      "category": "Measurement",
+      "date": "2026-11-01",
+      "image": "/thumbnails/november-01/customersuccessmanagers-can-the-knowledge-operations-report-be-reproduced-from-its-sources-2026-11-01.webp"
+    },
+    {
+      "slug": "customersuccessmanagers-measuring-decision-latency-in-onboarding-plan",
+      "title": "Measuring decision latency in onboarding plan",
+      "description": "A grounded customer success note for customer success leaders: onboarding plan with explicit evidence, decision rights, and a verified close.",
+      "category": "measurement",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-measuring-decision-latency-in-onboarding-plan.png"
+    },
+    {
+      "slug": "customersuccessmanagers-testing-evidence-retention-across-health-score-corrections",
+      "title": "Testing evidence retention across health score corrections",
+      "description": "A grounded customer success note for customer success leaders: health score with explicit evidence, decision rights, and a verified close.",
+      "category": "quality",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-testing-evidence-retention-across-health-score-corrections.png"
+    },
+    {
+      "slug": "customersuccessmanagers-estimating-exception-spillover-in-qbr-packet",
+      "title": "Estimating exception spillover in QBR packet",
+      "description": "A grounded customer success note for customer success leaders: QBR packet with explicit evidence, decision rights, and a verified close.",
+      "category": "cost",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-estimating-exception-spillover-in-qbr-packet.png"
+    },
+    {
+      "slug": "customersuccessmanagers-auditing-backup-owner-coverage-for-renewal-risk",
+      "title": "Auditing backup-owner coverage for renewal risk",
+      "description": "A grounded customer success note for customer success leaders: renewal risk with explicit evidence, decision rights, and a verified close.",
+      "category": "coverage",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-auditing-backup-owner-coverage-for-renewal-risk.png"
+    },
+    {
+      "slug": "customersuccessmanagers-testing-whether-escalation-log-audit-samples-detect-silent-gaps",
+      "title": "Testing whether escalation log audit samples detect silent gaps",
+      "description": "A grounded customer success note for customer success leaders: escalation log with explicit evidence, decision rights, and a verified close.",
+      "category": "monitoring",
+      "date": "2026-10-28",
+      "image": "/october-28/customersuccessmanagers-testing-whether-escalation-log-audit-samples-detect-silent-gaps.png"
+    },
+    {
+      "slug": "customersuccessmanagers-auditing-access-changes-around-renewal-risk",
+      "title": "Auditing access changes around renewal risk",
+      "description": "A grounded customer success note for customer success leaders: renewal risk with explicit evidence, decision rights, and a verified close.",
+      "category": "access",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-auditing-access-changes-around-renewal-risk.png"
+    },
+    {
+      "slug": "customersuccessmanagers-estimating-rework-in-qbr-packet-from-correction-and-reopen-records",
+      "title": "Estimating rework in QBR packet from correction and reopen records",
+      "description": "A grounded customer success note for customer success leaders: QBR packet with explicit evidence, decision rights, and a verified close.",
+      "category": "cost",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-estimating-rework-in-qbr-packet-from-correction-and-reopen-records.png"
+    },
+    {
+      "slug": "customersuccessmanagers-measuring-cycle-time-for-onboarding-plan-from-request-to-verified-close",
+      "title": "Measuring cycle time for onboarding plan from request to verified close",
+      "description": "A grounded customer success note for customer success leaders: onboarding plan with explicit evidence, decision rights, and a verified close.",
+      "category": "measurement",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-measuring-cycle-time-for-onboarding-plan-from-request-to-verified-close.png"
+    },
+    {
+      "slug": "customersuccessmanagers-testing-evidence-completeness-in-health-score-without-a-convenience-sample",
+      "title": "Testing evidence completeness in health score without a convenience sample",
+      "description": "A grounded customer success note for customer success leaders: health score with explicit evidence, decision rights, and a verified close.",
+      "category": "quality",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-testing-evidence-completeness-in-health-score-without-a-convenience-sample.png"
+    },
+    {
+      "slug": "customersuccessmanagers-testing-whether-escalation-log-monitoring-catches-silent-failures",
+      "title": "Testing whether escalation log monitoring catches silent failures",
+      "description": "A grounded customer success note for customer success leaders: escalation log with explicit evidence, decision rights, and a verified close.",
+      "category": "monitoring",
+      "date": "2026-10-27",
+      "image": "/october-27/customersuccessmanagers-testing-whether-escalation-log-monitoring-catches-silent-failures.png"
+    },
+    {
+      "slug": "customersuccessmanagers-auditing-access-changes-around-crm-note",
+      "title": "Auditing access changes around CRM note",
+      "description": "A source-bounded customer success control note for customer success leaders: CRM note with clear ownership and evidence.",
+      "category": "access",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-auditing-access-changes-around-crm-note.png"
+    },
+    {
+      "slug": "customersuccessmanagers-estimating-rework-cost-in-escalation-log",
+      "title": "Estimating rework cost in escalation log",
+      "description": "A source-bounded customer success control note for customer success leaders: escalation log with clear ownership and evidence.",
+      "category": "cost",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-estimating-rework-cost-in-escalation-log.png"
+    },
+    {
+      "slug": "customersuccessmanagers-measuring-backlog-age-in-qbr-packet",
+      "title": "Measuring backlog age in QBR packet",
+      "description": "A source-bounded customer success control note for customer success leaders: QBR packet with clear ownership and evidence.",
+      "category": "measurement",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-measuring-backlog-age-in-qbr-packet.png"
+    },
+    {
+      "slug": "customersuccessmanagers-testing-handoff-completeness-in-renewal-risk",
+      "title": "Testing handoff completeness in renewal risk",
+      "description": "A source-bounded customer success control note for customer success leaders: renewal risk with clear ownership and evidence.",
+      "category": "quality",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-testing-handoff-completeness-in-renewal-risk.png"
+    },
+    {
+      "slug": "customersuccessmanagers-testing-monitoring-coverage-for-usage-report",
+      "title": "Testing monitoring coverage for usage report",
+      "description": "A source-bounded customer success control note for customer success leaders: usage report with clear ownership and evidence.",
+      "category": "monitoring",
+      "date": "2026-10-26",
+      "image": "/october-26/customersuccessmanagers-testing-monitoring-coverage-for-usage-report.png"
+    },
+    {
+      "slug": "onboarding-acceptance-consistency",
+      "title": "Measuring Onboarding Acceptance Consistency",
+      "description": "A method for testing whether two reviewers agree that an onboarding acceptance record is complete.",
+      "category": "Onboarding research",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service1.webp"
+    },
+    {
+      "slug": "health-score-freshness",
+      "title": "Measuring Health Score Input Freshness",
+      "description": "A protocol for coding whether each health input was current at the review timestamp.",
+      "category": "Account health research",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service2.webp"
+    },
+    {
+      "slug": "renewal-risk-evidence",
+      "title": "Measuring Renewal Risk Evidence Completeness",
+      "description": "A method for testing whether a renewal risk record supports the owner decision.",
+      "category": "Renewal research",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service3.webp"
+    },
+    {
+      "slug": "qbr-lineage-completeness",
+      "title": "Measuring QBR Metric Lineage",
+      "description": "A method for tracing every QBR metric to source, period, definition, and owner.",
+      "category": "QBR research",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service4.webp"
+    },
+    {
+      "slug": "escalation-acknowledgement",
+      "title": "Measuring Escalation Acknowledgement",
+      "description": "A method for separating detection, owner acknowledgement, and resolution time.",
+      "category": "Escalation research",
+      "date": "2026-10-25",
+      "image": "/refresh-20261113/service5.webp"
+    },
+    {
+      "slug": "health-signal-freshness-observation-protocol",
+      "title": "Observing Health Signal Freshness in Account Reviews",
+      "description": "A proposed observation protocol for recording whether each health signal used in an account review was current at the moment of decision, with source-specific age rules, a frozen evidence set, and a reproducible currency code. It defines a method and reports no completed study, no agreement rate, and no claim about any customer portfolio.",
+      "category": "Account health",
+      "date": "2026-10-22",
+      "image": "/october-22/health-signal-freshness-observation-protocol.webp"
+    },
+    {
+      "slug": "qbr-action-closure-evidence-study",
+      "title": "Evidence for QBR Action Closure",
+      "description": "A proposed review protocol for quarterly business review actions that treats closure as a linked artifact plus customer acknowledgement rather than a status field. It specifies the observation unit, evidence classes, adverse cases, and reporting limits. No closure rate is measured here and no customer sample is claimed. The instrument is written for internal review of record quality, not for evaluating customer outcomes.",
+      "category": "Business reviews",
+      "date": "2026-10-22",
+      "image": "/october-22/qbr-action-closure-evidence-study.webp"
+    },
+    {
+      "slug": "onboarding-acceptance-agreement-study",
+      "title": "Reviewer Agreement on Onboarding Acceptance",
+      "description": "A proposed agreement study for onboarding acceptance decisions. Two reviewers receive the same frozen milestone packet and independently rate each acceptance criterion before assigning accepted, conditionally accepted, or returned. The protocol reports no agreement statistic here, makes no claim about implementation quality, and does not assert that any customer accepted a milestone.",
+      "category": "Onboarding",
+      "date": "2026-10-22",
+      "image": "/october-22/onboarding-acceptance-agreement-study.webp"
+    },
+    {
+      "slug": "renewal-signal-lead-time-method",
+      "title": "A Method for Dating Renewal Signals",
+      "description": "A proposed method for dating renewal signals and measuring lead time from the first verified signal to a fixed renewal decision point. It defines signal classes, verification states, and the observation window, and reports no measured lead time for any portfolio. The method is a measurement design, not a forecast of renewal outcomes.",
+      "category": "Renewals",
+      "date": "2026-10-22",
+      "image": "/october-22/renewal-signal-lead-time-method.webp"
+    },
+    {
+      "slug": "customer-note-coding-reliability-study",
+      "title": "Coding Reliability in Customer Call Notes",
+      "description": "A proposed reliability study for coding customer call notes. Notes are segmented into codeable units before any theme is assigned, then coded independently against a frozen codebook with field-level agreement reporting. No reliability coefficient is reported here and no coding exercise has been completed.",
+      "category": "Knowledge operations",
+      "date": "2026-10-22",
+      "image": "/october-22/customer-note-coding-reliability-study.webp"
+    },
+    {
+      "slug": "customer-health-classification-agreement-study",
+      "title": "Agreement in Customer Health Classification",
+      "description": "A source-bounded Customer Success Managers study of customer health classification, adverse controls, and accountable decisions.",
+      "category": "Account health",
+      "date": "2026-10-12",
+      "image": "/october-12/customer-health-classification-agreement-study.webp"
+    },
+    {
+      "slug": "onboarding-acceptance-evidence-study",
+      "title": "Completeness of Customer Onboarding Acceptance Evidence",
+      "description": "A source-bounded Customer Success Managers study of onboarding acceptance evidence, adverse controls, and accountable decisions.",
+      "category": "Onboarding systems",
+      "date": "2026-10-12",
+      "image": "/october-12/onboarding-acceptance-evidence-study.webp"
+    },
+    {
+      "slug": "renewal-risk-signal-freshness-study",
+      "title": "Freshness of Evidence Used in Renewal Risk Reviews",
+      "description": "A source-bounded Customer Success Managers study of renewal-risk evidence freshness, adverse controls, and accountable decisions.",
+      "category": "Renewal operations",
+      "date": "2026-10-12",
+      "image": "/october-12/renewal-risk-signal-freshness-study.webp"
+    },
+    {
+      "slug": "customer-commitment-closure-study",
+      "title": "Reproducibility of Customer Commitment Closure",
+      "description": "A source-bounded Customer Success Managers study of customer commitment closure, adverse controls, and accountable decisions.",
+      "category": "Commitment control",
+      "date": "2026-10-12",
+      "image": "/october-12/customer-commitment-closure-study.webp"
+    },
+    {
+      "slug": "voice-of-customer-coding-reliability-study",
+      "title": "Reliability of Voice-of-Customer Evidence Coding",
+      "description": "A source-bounded Customer Success Managers study of voice-of-customer coding reliability, adverse controls, and accountable decisions.",
+      "category": "Customer insight",
+      "date": "2026-10-12",
+      "image": "/october-12/voice-of-customer-coding-reliability-study.webp"
+    },
+    {
+      "slug": "customer-health-operations-exception-pattern-study-8",
+      "title": "Customer health operations: exception pattern study",
+      "description": "This proposed review protocol is designed to classify exceptions in customer health operations without turning anecdotes into frequency claims. No exception rate or pattern is asserted until a bounded cohort is analyzed.",
+      "category": "Role design",
+      "date": "2026-10-08",
+      "image": "/refresh-20261113/service7.webp"
+    },
+    {
+      "slug": "adoption-follow-up-workflow-boundary-review-16",
+      "title": "Adoption follow up support: workflow boundary review",
+      "description": "This proposed review protocol examines where routine preparation in adoption follow up must stop and an accountable owner must decide. It is a design for review, not evidence that a review has been completed.",
+      "category": "Role design",
+      "date": "2026-10-08",
+      "image": "/refresh-20261113/service7.webp"
+    },
+    {
+      "slug": "customer-onboarding-support-source-quality-audit-7",
+      "title": "Customer onboarding support: source quality audit",
+      "description": "This proposed review protocol tests whether customer onboarding support decisions can be reconstructed from current, correctly scoped sources. It defines an audit method and does not report completed audit results.",
+      "category": "Adoption operations",
+      "date": "2026-10-07",
+      "image": "/refresh-20261113/service6.webp"
+    },
+    {
+      "slug": "business-review-preparation-review-consistency-report-15",
+      "title": "Business review preparation: review consistency report",
+      "description": "This proposed review protocol tests whether independent reviewers apply the same rules to business review preparation records. It is not a report of measured agreement.",
+      "category": "Adoption operations",
+      "date": "2026-10-07",
+      "image": "/refresh-20261113/service6.webp"
+    },
+    {
+      "slug": "escalation-coordination-workflow-boundary-review-6",
+      "title": "Escalation coordination: workflow boundary review",
+      "description": "This proposed review protocol examines where routine preparation in escalation coordination must stop and an accountable owner must decide. It is a design for review, not evidence that a review has been completed.",
+      "category": "Health systems",
+      "date": "2026-10-06",
+      "image": "/refresh-20261113/service5.webp"
+    },
+    {
+      "slug": "customer-health-operations-handoff-reliability-brief-14",
+      "title": "Customer health operations: handoff reliability brief",
+      "description": "This proposed review protocol evaluates whether customer health operations work reaches the next owner with enough context to act. It proposes reliability checks rather than claiming measured handoff performance.",
+      "category": "Health systems",
+      "date": "2026-10-06",
+      "image": "/refresh-20261113/service5.webp"
+    },
+    {
+      "slug": "knowledge-operations-review-consistency-report-5",
+      "title": "Knowledge operations: review consistency report",
+      "description": "This proposed review protocol tests whether independent reviewers apply the same rules to knowledge operations records. It is not a report of measured agreement.",
+      "category": "Customer onboarding",
+      "date": "2026-10-05",
+      "image": "/refresh-20261113/service4.webp"
+    },
+    {
+      "slug": "customer-onboarding-support-exception-pattern-study-13",
+      "title": "Customer onboarding support: exception pattern study",
+      "description": "This proposed review protocol is designed to classify exceptions in customer onboarding support without turning anecdotes into frequency claims. No exception rate or pattern is asserted until a bounded cohort is analyzed.",
+      "category": "Customer onboarding",
+      "date": "2026-10-05",
+      "image": "/refresh-20261113/service4.webp"
+    },
+    {
+      "slug": "adoption-follow-up-handoff-reliability-brief-4",
+      "title": "Adoption follow up support: handoff reliability brief",
+      "description": "This proposed review protocol evaluates whether adoption follow up work reaches the next owner with enough context to act. It proposes reliability checks rather than claiming measured handoff performance.",
+      "category": "Role design",
+      "date": "2026-10-04",
+      "image": "/refresh-20261113/service3.webp"
+    },
+    {
+      "slug": "escalation-coordination-source-quality-audit-12",
+      "title": "Escalation coordination: source quality audit",
+      "description": "This proposed review protocol tests whether escalation coordination decisions can be reconstructed from current, correctly scoped sources. It defines an audit method and does not report completed audit results.",
+      "category": "Role design",
+      "date": "2026-10-04",
+      "image": "/refresh-20261113/service3.webp"
+    },
+    {
+      "slug": "customer-health-operations-review-consistency-report-20",
+      "title": "Customer health operations: review consistency report",
+      "description": "This proposed review protocol tests whether independent reviewers apply the same rules to customer health operations records. It is not a report of measured agreement.",
+      "category": "Role design",
+      "date": "2026-10-04",
+      "image": "/refresh-20261113/service3.webp"
+    },
+    {
+      "slug": "business-review-preparation-exception-pattern-study-3",
+      "title": "Business review preparation: exception pattern study",
+      "description": "This proposed review protocol is designed to classify exceptions in business review preparation without turning anecdotes into frequency claims. No exception rate or pattern is asserted until a bounded cohort is analyzed.",
+      "category": "Adoption operations",
+      "date": "2026-10-03",
+      "image": "/refresh-20261113/service2.webp"
+    },
+    {
+      "slug": "knowledge-operations-workflow-boundary-review-11",
+      "title": "Knowledge operations: workflow boundary review",
+      "description": "This proposed review protocol examines where routine preparation in knowledge operations must stop and an accountable owner must decide. It is a design for review, not evidence that a review has been completed.",
+      "category": "Adoption operations",
+      "date": "2026-10-03",
+      "image": "/refresh-20261113/service2.webp"
+    },
+    {
+      "slug": "customer-onboarding-support-handoff-reliability-brief-19",
+      "title": "Customer onboarding support: handoff reliability brief",
+      "description": "This proposed review protocol evaluates whether customer onboarding support work reaches the next owner with enough context to act. It proposes reliability checks rather than claiming measured handoff performance.",
+      "category": "Adoption operations",
+      "date": "2026-10-03",
+      "image": "/refresh-20261113/service2.webp"
+    },
+    {
+      "slug": "customer-health-operations-source-quality-audit-2",
+      "title": "Customer health operations: source quality audit",
+      "description": "This proposed review protocol tests whether customer health operations decisions can be reconstructed from current, correctly scoped sources. It defines an audit method and does not report completed audit results.",
+      "category": "Health systems",
+      "date": "2026-10-02",
+      "image": "/refresh-20261113/service1.webp"
+    },
+    {
+      "slug": "adoption-follow-up-review-consistency-report-10",
+      "title": "Adoption follow up support: review consistency report",
+      "description": "This proposed review protocol tests whether independent reviewers apply the same rules to adoption follow up records. It is not a report of measured agreement.",
+      "category": "Health systems",
+      "date": "2026-10-02",
+      "image": "/refresh-20261113/service1.webp"
+    },
+    {
+      "slug": "escalation-coordination-exception-pattern-study-18",
+      "title": "Escalation coordination: exception pattern study",
+      "description": "This proposed review protocol is designed to classify exceptions in escalation coordination without turning anecdotes into frequency claims. No exception rate or pattern is asserted until a bounded cohort is analyzed.",
+      "category": "Health systems",
+      "date": "2026-10-02",
+      "image": "/refresh-20261113/service1.webp"
+    },
+    {
+      "slug": "customer-onboarding-support-workflow-boundary-review-1",
+      "title": "Customer onboarding support: workflow boundary review",
+      "description": "This proposed review protocol examines where routine preparation in customer onboarding support must stop and an accountable owner must decide. It is a design for review, not evidence that a review has been completed.",
+      "category": "Customer onboarding",
+      "date": "2026-10-01",
+      "image": "/refresh-20261113/service8.webp"
+    },
+    {
+      "slug": "business-review-preparation-handoff-reliability-brief-9",
+      "title": "Business review preparation: handoff reliability brief",
+      "description": "This proposed review protocol evaluates whether business review preparation work reaches the next owner with enough context to act. It proposes reliability checks rather than claiming measured handoff performance.",
+      "category": "Customer onboarding",
+      "date": "2026-10-01",
+      "image": "/refresh-20261113/service8.webp"
+    },
+    {
+      "slug": "knowledge-operations-source-quality-audit-17",
+      "title": "Knowledge operations: source quality audit",
+      "description": "This proposed review protocol tests whether knowledge operations decisions can be reconstructed from current, correctly scoped sources. It defines an audit method and does not report completed audit results.",
+      "category": "Customer onboarding",
+      "date": "2026-10-01",
+      "image": "/refresh-20261113/service8.webp"
+    }
+  ],
+  "photos": {
+    "home": {
+      "alt": "Team discussing ideas at a business meeting with a presentation in the office.",
+      "position": "50% 50%"
+    },
+    "services": {
+      "alt": "Team of business professionals collaborating in a modern office setting. Engaged in discussion and document review.",
+      "position": "50% 50%"
+    },
+    "blog": {
+      "alt": "Consulting agent discussing documents with senior couple indoors during a business meeting.",
+      "position": "50% 35%"
+    },
+    "research": {
+      "alt": "Team of professionals collaborating in an office with digital interface on background screen.",
+      "position": "50% 50%"
+    },
+    "service1": {
+      "alt": "Three colleagues engaged in a business meeting, showcasing diversity and collaboration in a contemporary office setting.",
+      "position": "50% 50%"
+    },
+    "service2": {
+      "alt": "Two colleagues review documents during a business meeting in a modern office setting.",
+      "position": "50% 50%"
+    },
+    "service3": {
+      "alt": "Customer support agents working together with laptops and headsets in an office setting.",
+      "position": "50% 50%"
+    },
+    "service4": {
+      "alt": "A group of professionals collaborating in an office setting, engaging in customer support.",
+      "position": "50% 50%"
+    },
+    "service5": {
+      "alt": "Customer support representative working diligently at a laptop in a modern office environment.",
+      "position": "50% 50%"
+    },
+    "service6": {
+      "alt": "Asian woman using a laptop and headset for customer support in an office environment.",
+      "position": "50% 50%"
+    },
+    "service7": {
+      "alt": "Two business professionals collaborating at a desk with a laptop, engaged in discussion.",
+      "position": "50% 50%"
+    },
+    "service8": {
+      "alt": "Business team working together with laptops in a collaborative office setting.",
+      "position": "50% 50%"
+    }
+  }
+}

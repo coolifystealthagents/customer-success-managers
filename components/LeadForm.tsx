@@ -53,15 +53,14 @@ export function LeadForm({ source = 'contact-page-consultation' }: { source?: st
     event.preventDefault(); void submit(event.currentTarget);
   }
 
-  return <form id="customer-success-contact" className="lead-form" onKeyDown={handleKeyDown}>
+  return <form data-acr-lead-mode="manual" id="customer-success-contact" className="lead-form" onKeyDown={handleKeyDown}>
     <label>First Name <span aria-hidden="true">*</span><input name="first_name" autoComplete="given-name" maxLength={80} required /></label>
     <label>Last Name <span aria-hidden="true">*</span><input name="last_name" autoComplete="family-name" maxLength={80} required /></label>
-    <label className="form-wide">Business Email <span aria-hidden="true">*</span><input ref={emailRef} name="email" type="email" autoComplete="email" maxLength={160} aria-invalid={Boolean(emailError)} aria-describedby="email-help email-error" onChange={(e) => validateBusinessEmail(e.currentTarget)} required /></label>
-    <p id="email-help" className="form-help form-wide">Use your organization email. Personal email providers are not accepted.</p>
+    <label className="form-wide">Business Email <span aria-hidden="true">*</span><input ref={emailRef} name="email" type="email" autoComplete="email" maxLength={160} aria-invalid={Boolean(emailError)} aria-describedby={emailError ? "email-error" : undefined} onChange={(e) => validateBusinessEmail(e.currentTarget)} required /></label><label>Company Name <span aria-hidden="true">*</span><input name="company" autoComplete="organization" maxLength={120} required /></label>
+
     {emailError && <p id="email-error" className="form-error form-wide" role="alert">{emailError}</p>}
-    <label>Country code<select name="phone_country" defaultValue="+1" aria-label="Phone country code"><option value="+1">US/CA +1</option><option value="+44">UK +44</option><option value="+61">AU +61</option><option value="+63">PH +63</option><option value="other">Other</option></select></label>
-    <label>Phone Number<input name="phone" type="tel" autoComplete="tel-national" inputMode="tel" maxLength={32} pattern="[0-9 ()+.-]{5,32}" /></label>
-    <label>Company Name <span aria-hidden="true">*</span><input name="company" autoComplete="organization" maxLength={120} required /></label>
+    <label>Phone Number<span className="sa-phone"><select name="phone_country" defaultValue="+1" aria-label="Phone country code"><option value="+1">US/CA +1</option><option value="+44">UK +44</option><option value="+61">AU +61</option><option value="+63">PH +63</option><option value="other">Other</option></select><input name="phone" type="tel" autoComplete="tel-national" inputMode="tel" maxLength={32} pattern="[0-9 ()+.-]{5,32}" /></span></label>
+
     <label>Website / URL<input name="company_website" type="url" autoComplete="url" maxLength={240} placeholder="https://" /></label>
     <label>Company Size <span aria-hidden="true">*</span><select name="company_size" defaultValue="" required><option value="" disabled>Select size</option>{companySizes.map((v) => <option key={v}>{v}</option>)}</select></label>
     <label>Positions to Fill <span aria-hidden="true">*</span><select name="positions_to_fill" defaultValue="" required><option value="" disabled>Select positions</option>{positionCounts.map((v) => <option key={v}>{v}</option>)}</select></label>

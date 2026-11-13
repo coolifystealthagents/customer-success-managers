@@ -1,10 +1,4 @@
-import type { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
-import { EditorialThumbnail, estimateResearchReadTime } from '@/components/EditorialThumbnail';
-import { researchPosts } from '@/lib/content';
-import { formatEditorialDate } from '@/lib/format-date';
-
-export const metadata: Metadata = { title: 'Customer success operations research', description: 'Source-led briefs for customer onboarding, health systems, adoption operations, knowledge, escalations, and role design.', alternates: { canonical: '/research' }, openGraph: { title: 'Customer success operations research', description: 'Evidence-led operating questions for customer success teams.', images: ['/images/optimization/research-account-health-analysis.jpg'] } };
-
-export default function ResearchPage() { return <main id="main-content" className="library-page research-index"><header className="library-manifesto"><div><p className="eyebrow">Research library</p><h1>Evidence for better customer operations decisions.</h1><p>Source-led briefs that connect public guidance with practical questions about ownership, records, review, privacy, and escalation.</p></div><div className="library-hero-image" data-motion-image><Image src="/images/optimization/research-account-health-analysis.jpg" alt="Customer success specialists comparing account health and adoption evidence" fill priority sizes="(max-width: 900px) 100vw, 48vw" /></div></header><section className="content-wrap"><div className="library-summary"><strong>{researchPosts.length} source-led briefs</strong><p>Each brief states its finding, method or interpretive frame, source context, and practical limitations.</p></div><div className="article-grid library-grid">{researchPosts.map((post) => <Link className="article-card" href={`/research/${post.slug}`} key={post.slug}><EditorialThumbnail image={post.image} title={post.title} topic={post.cluster} /><span className="pill">{post.cluster}</span><p className="meta">Published <time dateTime={post.publishedAt}>{formatEditorialDate(post.publishedAt)}</time> · {estimateResearchReadTime([post.title, post.summary, post.finding, post.methodology, post.findings, post.sections?.flatMap((section) => [section.heading, ...section.paragraphs])])}</p><h2>{post.title}</h2><p>{post.summary}</p><span className="text-link">Review the full brief</span></Link>)}</div></section></main>; }
+import type {Metadata} from 'next';
+import {LibraryExperience} from '../experience';
+export const metadata:Metadata={title:"Research",description:"Give your customer success team the operational support to stay present. Organize onboarding, account signals, reviews, and follow-up around the relationships you want to build.",alternates:{canonical:"/research"}};
+export default function Page(){return <LibraryExperience kind="research"/>}

@@ -1,6 +1,8 @@
 // Exact indexable and controlled-journey paths accepted by the analytics relay.
 // Update intentionally with the route manifest; do not replace with a slug pattern.
 export const TRACKABLE_PATHS = new Set<string>([
+  "/services/renewal-coordination",
+  "/services/customer-feedback-operations",
   "/",
   "/about",
   "/blog",

@@ -132,7 +132,7 @@ test('uncertain ACR acknowledgement does not fan out to fallback', async () => {
   }
 });
 
-test('non-2xx ACR delivery falls back to Mattermost and only its 2xx is success', async () => {
+test('non-2xx ACR delivery never fans out to Mattermost', async () => {
   const previousAcr = process.env.ACR_LEAD_ENDPOINT;
   const previousMattermost = process.env.SITE_MATTERMOST_FALLBACK_WEBHOOK_URL;
   process.env.ACR_LEAD_ENDPOINT = 'https://lead.example.test/submit';
@@ -144,9 +144,9 @@ test('non-2xx ACR delivery falls back to Mattermost and only its 2xx is success'
     return new Response('', { status: calls.length === 1 ? 500 : 200 });
   };
   try {
-    assert.deepEqual(await deliverLead(lead), { outcome: 'delivered', channel: 'mattermost' });
-    assert.deepEqual(calls, ['https://lead.example.test/submit', 'https://mattermost.example.test/hook']);
-    globalThis.fetch = async () => new Response('', { status: 500 });
+    assert.deepEqual(await deliverLead(lead), { outcome: 'uncertain' });
+    assert.deepEqual(calls, ['https://lead.example.test/submit']);
+    globalThis.fetch = async () => new Response('', { status: 400 });
     assert.deepEqual(await deliverLead(lead), { outcome: 'rejected' });
   } finally {
     globalThis.fetch = oldFetch;

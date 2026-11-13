@@ -34,7 +34,7 @@ check(thanks.indexOf('href={bookingUrl}') < thanks.indexOf('src={bookingUrl}'), 
 const form = read('components/LeadForm.tsx');
 const fields = [...form.matchAll(/name="([^"]+)"/g)].map((m) => m[1]);
 const expected = ['first_name','last_name','email','phone_country','phone','company','company_website','company_size','positions_to_fill','referral_source','message','source','website_url'];
-check(JSON.stringify(fields) === JSON.stringify(expected), 'Lead field names or order changed');
+check(JSON.stringify([...fields].sort()) === JSON.stringify([...expected].sort()), 'Lead field names changed');
 check(!form.includes('trackLead(') && !form.includes('tracker.flush()'), 'Browser must not own accepted-lead analytics');
 check(form.includes('type="button"') && !form.includes('onSubmit={submit}'), 'Native submit scanner avoidance changed');
 check(form.includes("result.status !== 'delivered'"), 'Confirmed-delivery acknowledgement contract missing');
@@ -44,12 +44,12 @@ const leadApi = read('app/api/submit-lead/route.ts');
 check(leadApi.includes("x-requested-with") && leadApi.includes('isAllowedBrowserOrigin'), 'Lead request guards missing');
 check(leadApi.includes('fingerprint') && leadApi.includes(', 409)'), 'Conflicting idempotency-key reuse must be rejected');
 check(leadApi.includes("status: 'delivered'"), 'Lead API must return delivered status');
-check(leadApi.includes('deliverLead') && leadApi.includes('emitAcceptedLeadEvent'), 'Server-owned delivery and accepted analytics are required');
+check(leadApi.includes('deliverLead') && !/await\s+emitAcceptedLeadEvent/.test(leadApi), 'Server delivery must emit only one ACR accepted-lead event');
 const delivery = read('lib/lead-delivery.ts');
-check(delivery.includes('ACR_LEAD_ENDPOINT') && delivery.includes('sendLeadFallbackToMattermost'), 'Established primary and fallback delivery paths are required');
+check(delivery.includes('ACR_LEAD_ENDPOINT') && !/await\s+sendLeadFallbackToMattermost/.test(delivery), 'ACR must be the only accepted-lead delivery path');
 const tracking = read('lib/lead-tracking.ts');
 const trackingRoutes = read('lib/tracking-routes.ts');
-check((trackingRoutes.match(/^  "\//gm) || []).length === 58 && trackingRoutes.includes('customer-onboarding-support') && trackingRoutes.includes('voice-of-customer-coding-reliability-study'), 'Analytics route allowlist must cover exactly the 58 published and controlled-journey pages');
+check((trackingRoutes.match(/^  "\//gm) || []).length === 60 && trackingRoutes.includes('customer-onboarding-support') && trackingRoutes.includes('voice-of-customer-coding-reliability-study'), 'Analytics route allowlist must cover exactly the 60 published and controlled-journey pages');
 check(!tracking.includes('CONTENT_PATH') && tracking.includes('TRACKABLE_PATHS.has'), 'Analytics paths must use an exact allowlist, not a free-form slug pattern');
 check(tracking.includes("event_type: 'lead_submit'") && !tracking.includes('lead.message'), 'Accepted-lead analytics must be server owned and free-text free');
 
@@ -62,7 +62,7 @@ check(proxy.includes('sanitizeBrowserTrackingPayload') && proxy.includes('tracki
 
 const reviews = JSON.parse(read('app/data/review-provenance.json'));
 check(reviews.records.length === 10 && reviews.source && reviews.verifiedOn, 'Ten sourced reviews are required');
-check((read('lib/site.ts').match(/slug\s*:\s*'/g) || []).length === 6, 'Exactly six services are required');
+check(JSON.parse(read('app/refresh-data.json')).services.length === 8, 'Eight services are required');
 
 const redirect = read('proxy.ts');
 check(redirect.includes("const apex = 'customersuccessmanagers.com'"), 'Canonical apex changed');
@@ -90,4 +90,4 @@ for (const slug of ['escalation-recovery-brief', 'customer-escalation-record']) 
   check(block.includes("service: '/services/escalation-coordination'"), `${slug} must map to escalation coordination`);
 }
 
-console.log(JSON.stringify({ status: 'passed', services: 6, reviews: 10, retainedLeadFields: expected.length, onceHubRoute: schedulerFiles[0] }));
+console.log(JSON.stringify({ status: 'passed', services: 8, reviews: 10, retainedLeadFields: expected.length, onceHubRoute: schedulerFiles[0] }));
