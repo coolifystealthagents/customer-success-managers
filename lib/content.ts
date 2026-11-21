@@ -51,6 +51,7 @@ import { october22ResearchPosts } from './october-22/researchPosts';
 import { enrichBlogPost, enrichResearchPost } from './editorial-enrichment';
 
 const rawBlogPosts: BlogPost[] = [
+  ...november21BlogPosts,
   ...november11BlogPosts, ...november10BlogPosts, ...november09BlogPosts, ...november12BlogPosts, ...november16BlogPosts, ...november17BlogPosts, ...november18BlogPosts, ...november19BlogPosts, ...november20BlogPosts, ...november08BlogPosts, ...november03BlogPosts, ...november04BlogPosts, ...november05BlogPosts, ...november06BlogPosts, ...november07BlogPosts, ...november02BlogPosts,
   ...november01BlogPosts,
   ...october28BlogPosts,
@@ -526,6 +527,7 @@ const rawBlogPosts: BlogPost[] = [
   }
 ];
 const rawResearchPosts: ResearchPost[] = [
+  ...november21ResearchPosts,
   ...november11ResearchPosts, ...november10ResearchPosts, ...november09ResearchPosts, ...november12ResearchPosts, ...november16ResearchPosts, ...november17ResearchPosts, ...november18ResearchPosts, ...november19ResearchPosts, ...november20ResearchPosts, ...november08ResearchPosts, ...november03ResearchPosts, ...november04ResearchPosts, ...november05ResearchPosts, ...november06ResearchPosts, ...november07ResearchPosts, ...november02ResearchPosts,
   ...november01ResearchPosts,
   ...october28ResearchPosts,
