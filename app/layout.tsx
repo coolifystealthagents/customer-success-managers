@@ -9,6 +9,8 @@ import './v3.css';
 const geist = Geist({ subsets: ['latin'], display: 'swap' });
 import './experience.css';
 
+import "./site-chrome-fixes.css";
+
 export const metadata: Metadata = {
   metadataBase: new URL(`https://${site.domain}`),
   title: { default: `${site.name} | Remote customer success support`, template: `%s | ${site.name}` },

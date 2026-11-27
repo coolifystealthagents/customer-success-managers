@@ -36,7 +36,7 @@ export function Header() {
 
   return <>
     <a className="skip-link" href="#main-content">Skip to main content</a>
-    <header className="site-header">
+    <header data-site-header="sticky" className="site-header">
       <Link className="brand" href="/" aria-label={`${site.name} home`} onClick={() => setOpen(false)}>
         <Image src="/logo.svg" alt="" width={42} height={42} priority /><span>{site.name}</span>
       </Link>
@@ -52,9 +52,9 @@ export function Header() {
 }
 
 export function Footer() {
-  return <footer>
+  return <footer data-site-footer="true">
     <div><Link className="brand inverse" href="/"><Image src="/logo.svg" alt="" width={44} height={44} /><span>{site.name}</span></Link><p>Operational support for customer journeys that stay visible, timely, and owned.</p><Attribution inverse /></div>
-    <nav className="footer-links" aria-label="Footer navigation">
+    <nav data-footer-menu="true" className="footer-links" aria-label="Footer navigation">
       <Link href="/">Home</Link><Link href="/services">Services</Link><Link href="/contact-us">Contact Us</Link>
       <Link href="/about">About</Link><Link href="/blog">Blog</Link><Link href="/research">Research</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link>
     </nav>
